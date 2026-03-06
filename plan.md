@@ -533,7 +533,7 @@ After Phase 2, you should have:
     - `summarizeContent(rawContent: object)` — Clean into structured format
   - Handle: no website exists, website is down, content behind login, JavaScript-heavy sites
 
-- [ ] **3.3 Define the BusinessProfile type**
+- [x] **3.3 Define the BusinessProfile type**
   - `packages/scraper/types.ts`
   ```typescript
   interface BusinessProfile {

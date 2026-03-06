@@ -36,22 +36,54 @@ export interface ScrapedWebsiteData {
   imageUrls: string[]
 }
 
+/** Structured business hours entry */
+export interface BusinessHours {
+  day: string
+  open: string
+  close: string
+}
+
+/** Structured photo with dimensions */
+export interface BusinessPhoto {
+  url: string
+  width: number
+  height: number
+}
+
+/** Structured review for site generation */
+export interface BusinessReview {
+  author: string
+  rating: number
+  text: string
+  date: string
+}
+
+/** Extracted content from an existing business website */
+export interface ExistingContent {
+  headlines: string[]
+  descriptions: string[]
+  services: string[]
+  about: string
+}
+
 /** Combined business profile used for site generation */
 export interface BusinessProfile {
   name: string
   address: string
-  phone?: string
+  city: string
+  state: string
+  phone: string
   website?: string
-  rating?: number
-  totalReviews?: number
-  hours?: string[]
+  rating: number
+  reviewCount: number
+  category: string
   industry: string
-  categories: string[]
-  photoUrls: string[]
-  reviews: GooglePlaceReview[]
+  hours: BusinessHours[]
+  photos: BusinessPhoto[]
+  reviews: BusinessReview[]
   location: {
     lat: number
     lng: number
   }
-  scrapedContent?: ScrapedWebsiteData
+  existingContent?: ExistingContent
 }
