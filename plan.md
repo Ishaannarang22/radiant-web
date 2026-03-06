@@ -226,7 +226,7 @@ pgvector is a PostgreSQL extension that lets you store "vector embeddings" — a
   - `google_place_id` — Unique ID from Google, prevents duplicate entries
   - `scraped_content` — Content from Firecrawl (their existing website)
 
-- [ ] **1.7 Create the `component_embeddings` table**
+- [x] **1.7 Create the `component_embeddings` table**
   ```sql
   CREATE TABLE component_embeddings (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),

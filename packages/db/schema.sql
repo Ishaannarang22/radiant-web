@@ -1,5 +1,5 @@
 -- Radiant Web Database Schema
--- Tables: users, projects, project_files, generations, businesses
+-- Tables: users, projects, project_files, generations, businesses, component_embeddings
 -- Vector tables: component_embeddings, template_embeddings, pattern_embeddings
 
 -- Enable pgvector extension for vector embeddings (RAG)
@@ -77,3 +77,20 @@ CREATE TABLE businesses (
   created_at TIMESTAMPTZ DEFAULT now(),
   updated_at TIMESTAMPTZ DEFAULT now()
 );
+
+-- Component embeddings table (vector/RAG)
+CREATE TABLE component_embeddings (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  library TEXT NOT NULL,
+  component_name TEXT NOT NULL,
+  description TEXT,
+  docs_text TEXT NOT NULL,
+  code_example TEXT,
+  tags TEXT[],
+  embedding vector(1536),
+  created_at TIMESTAMPTZ DEFAULT now(),
+  UNIQUE(library, component_name)
+);
+
+CREATE INDEX ON component_embeddings
+  USING ivfflat (embedding vector_cosine_ops) WITH (lists = 100);
