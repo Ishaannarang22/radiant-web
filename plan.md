@@ -513,7 +513,7 @@ After Phase 2, you should have:
 
 ### Steps
 
-- [ ] **3.1 Implement Google Places API client**
+- [x] **3.1 Implement Google Places API client**
   - `packages/scraper/google-places.ts`
   - Functions:
     - `searchBusiness(name: string, location: string)` — Find the business, return place_id
