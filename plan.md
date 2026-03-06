@@ -75,7 +75,7 @@ A monorepo is a single Git repository that contains multiple related projects (c
   - Create `packages/db/index.ts` — exports a configured Supabase client
   - Create `packages/db/schema.sql` — will hold our full database schema (filled in Phase 1)
 
-- [ ] **0.7 Create the scraper package (`packages/scraper`)**
+- [x] **0.7 Create the scraper package (`packages/scraper`)**
   - Create `packages/scraper/` folder
   - Create `packages/scraper/package.json` with name `@radiant/scraper`
   - Install Google Places client: `pnpm add @googlemaps/google-maps-services-js`
