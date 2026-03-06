@@ -93,7 +93,7 @@ CREATE TABLE component_embeddings (
 );
 
 CREATE INDEX ON component_embeddings
-  USING ivfflat (embedding vector_cosine_ops) WITH (lists = 100);
+  USING hnsw (embedding vector_cosine_ops);
 
 -- Template embeddings table (vector/RAG)
 CREATE TABLE template_embeddings (
@@ -107,7 +107,7 @@ CREATE TABLE template_embeddings (
 );
 
 CREATE INDEX ON template_embeddings
-  USING ivfflat (embedding vector_cosine_ops) WITH (lists = 50);
+  USING hnsw (embedding vector_cosine_ops);
 
 -- Pattern embeddings table (vector/RAG)
 CREATE TABLE pattern_embeddings (
@@ -121,7 +121,7 @@ CREATE TABLE pattern_embeddings (
 );
 
 CREATE INDEX ON pattern_embeddings
-  USING ivfflat (embedding vector_cosine_ops) WITH (lists = 50);
+  USING hnsw (embedding vector_cosine_ops);
 
 -- Similarity search function for component retrieval (RAG)
 CREATE OR REPLACE FUNCTION match_components(

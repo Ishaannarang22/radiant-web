@@ -488,7 +488,7 @@ Before Claude can generate websites using shadcn/ui, Aceternity UI, Magic UI, et
   - Log progress: "Embedded 45/120 components..."
   - Note: If using Supabase's built-in embedding support, leverage that. Otherwise, use OpenAI's embedding API (cheapest option for embeddings)
 
-- [ ] **2.10 Verify embeddings work**
+- [x] **2.10 Verify embeddings work**
   - Write a test query: "I need an animated hero section for a restaurant"
   - Run similarity search against `component_embeddings`
   - Verify it returns relevant results (Aceternity hero components, not random buttons)
