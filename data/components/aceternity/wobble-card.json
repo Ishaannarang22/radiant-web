@@ -1,0 +1,36 @@
+{
+  "name": "Wobble Card",
+  "library": "aceternity",
+  "description": "A card with a playful wobble/tilt animation on hover, creating a fun bouncy interaction effect using spring physics.",
+  "whenToUse": "Use for feature cards, testimonials, or any card grid where you want a playful, bouncy hover interaction.",
+  "installation": "npx aceternity-ui@latest add wobble-card",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Content to render inside the wobble card"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the card"
+    },
+    {
+      "name": "containerClassName",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for the outer container"
+    }
+  ],
+  "codeExample": "import { WobbleCard } from \"@/components/ui/wobble-card\"\n\nexport function WobbleCardDemo() {\n  return (\n    <div className=\"grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full\">\n      <WobbleCard containerClassName=\"col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]\">\n        <div className=\"max-w-xs\">\n          <h2 className=\"text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white\">\n            Gippity AI powers the entire universe\n          </h2>\n          <p className=\"mt-4 text-left text-base/6 text-neutral-200\">\n            With over 100,000 monthly active bot users, Gippity AI is the most popular AI platform.\n          </p>\n        </div>\n      </WobbleCard>\n      <WobbleCard containerClassName=\"col-span-1 min-h-[300px] bg-blue-900\">\n        <h2 className=\"max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white\">\n          No shirt, no shoes, no weapons.\n        </h2>\n      </WobbleCard>\n    </div>\n  )\n}",
+  "tags": [
+    "card",
+    "wobble",
+    "hover",
+    "bounce",
+    "spring",
+    "interactive"
+  ]
+}

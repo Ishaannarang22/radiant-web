@@ -1,0 +1,30 @@
+{
+  "name": "Container Scroll Animation",
+  "library": "aceternity",
+  "description": "A scroll-triggered animation that reveals content with a 3D perspective rotation as the user scrolls, creating a dramatic unveiling effect.",
+  "whenToUse": "Use for product showcases, app previews, or hero sections where you want content to dramatically rotate into view on scroll.",
+  "installation": "npx aceternity-ui@latest add container-scroll-animation",
+  "props": [
+    {
+      "name": "titleComponent",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Title content displayed above the scroll animation"
+    },
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Content that animates on scroll (typically an image or card)"
+    }
+  ],
+  "codeExample": "import { ContainerScroll } from \"@/components/ui/container-scroll-animation\"\n\nexport function HeroScrollDemo() {\n  return (\n    <div className=\"flex flex-col overflow-hidden\">\n      <ContainerScroll\n        titleComponent={\n          <>\n            <h1 className=\"text-4xl font-semibold text-black dark:text-white\">\n              Unleash the power of <br />\n              <span className=\"text-4xl md:text-[6rem] font-bold mt-1 leading-none\">\n                Scroll Animations\n              </span>\n            </h1>\n          </>\n        }\n      >\n        <img src=\"/hero.png\" alt=\"hero\" className=\"mx-auto rounded-2xl object-cover h-full object-left-top\" />\n      </ContainerScroll>\n    </div>\n  )\n}",
+  "tags": [
+    "scroll",
+    "animation",
+    "3d",
+    "perspective",
+    "hero",
+    "reveal"
+  ]
+}

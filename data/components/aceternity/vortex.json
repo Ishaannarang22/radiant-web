@@ -1,0 +1,66 @@
+{
+  "name": "Vortex",
+  "library": "aceternity",
+  "description": "A WebGL-powered animated vortex/portal effect that renders a swirling particle system, creating a mesmerizing visual focus point.",
+  "whenToUse": "Use for hero sections, loading states, or visual transitions where you want a dramatic spinning vortex/portal animation.",
+  "installation": "npx aceternity-ui@latest add vortex",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Content to render above the vortex effect"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the vortex container"
+    },
+    {
+      "name": "containerClassName",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for the outer container"
+    },
+    {
+      "name": "particleCount",
+      "type": "number",
+      "default": "500",
+      "description": "Number of particles in the vortex"
+    },
+    {
+      "name": "rangeY",
+      "type": "number",
+      "default": "100",
+      "description": "Vertical range of particle movement"
+    },
+    {
+      "name": "baseSpeed",
+      "type": "number",
+      "default": "0",
+      "description": "Base rotation speed of the vortex"
+    },
+    {
+      "name": "rangeSpeed",
+      "type": "number",
+      "default": "1.5",
+      "description": "Random speed variation range"
+    },
+    {
+      "name": "baseHue",
+      "type": "number",
+      "default": "220",
+      "description": "Base hue for particle colors (0-360)"
+    }
+  ],
+  "codeExample": "import { Vortex } from \"@/components/ui/vortex\"\n\nexport function VortexDemo() {\n  return (\n    <div className=\"w-[calc(100%-4rem)] mx-auto rounded-md h-[30rem] overflow-hidden\">\n      <Vortex\n        backgroundColor=\"black\"\n        className=\"flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full\"\n      >\n        <h2 className=\"text-white text-2xl md:text-6xl font-bold text-center\">\n          The hell is this?\n        </h2>\n        <p className=\"text-white text-sm md:text-2xl max-w-xl mt-6 text-center\">\n          This is chemical, this is &quot;Aceternity UI&quot;.\n        </p>\n      </Vortex>\n    </div>\n  )\n}",
+  "tags": [
+    "vortex",
+    "portal",
+    "webgl",
+    "particles",
+    "animation",
+    "3d"
+  ]
+}

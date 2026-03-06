@@ -1,0 +1,30 @@
+{
+  "name": "Parallax Scroll",
+  "library": "aceternity",
+  "description": "A parallax scrolling section with images arranged in columns that move at different speeds, creating a layered depth effect on scroll.",
+  "whenToUse": "Use for image galleries, portfolio sections, or visual storytelling where you want multi-speed parallax scrolling columns.",
+  "installation": "npx aceternity-ui@latest add parallax-scroll",
+  "props": [
+    {
+      "name": "images",
+      "type": "string[]",
+      "default": "[]",
+      "description": "Array of image URLs to display in the parallax columns"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the parallax container"
+    }
+  ],
+  "codeExample": "import { ParallaxScroll } from \"@/components/ui/parallax-scroll\"\n\nexport function ParallaxScrollDemo() {\n  return <ParallaxScroll images={images} />\n}\n\nconst images = [\n  \"/photo1.jpg\",\n  \"/photo2.jpg\",\n  \"/photo3.jpg\",\n  \"/photo4.jpg\",\n  \"/photo5.jpg\",\n  \"/photo6.jpg\",\n]",
+  "tags": [
+    "parallax",
+    "scroll",
+    "gallery",
+    "images",
+    "columns",
+    "animation"
+  ]
+}

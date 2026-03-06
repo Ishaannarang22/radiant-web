@@ -1,0 +1,24 @@
+{
+  "name": "Layout Grid",
+  "library": "aceternity",
+  "description": "An interactive grid layout where clicking on a card expands it to show detailed content, with smooth Framer Motion animations and a blurred backdrop.",
+  "whenToUse": "Use for portfolio grids, feature showcases, or gallery views where you want cards to expand on click to reveal more detail.",
+  "installation": "npx aceternity-ui@latest add layout-grid",
+  "props": [
+    {
+      "name": "cards",
+      "type": "{ id: number; content: React.ReactNode; className: string; thumbnail: string }[]",
+      "default": "[]",
+      "description": "Array of card objects with content and thumbnail"
+    }
+  ],
+  "codeExample": "import { LayoutGrid } from \"@/components/ui/layout-grid\"\n\nexport function LayoutGridDemo() {\n  return (\n    <div className=\"h-screen py-20 w-full\">\n      <LayoutGrid cards={cards} />\n    </div>\n  )\n}\n\nconst cards = [\n  {\n    id: 1,\n    content: <p className=\"font-bold text-4xl text-white\">House in the woods</p>,\n    className: \"md:col-span-2\",\n    thumbnail: \"/house.jpg\",\n  },\n  {\n    id: 2,\n    content: <p className=\"font-bold text-4xl text-white\">Rivers are serene</p>,\n    className: \"col-span-1\",\n    thumbnail: \"/river.jpg\",\n  },\n]",
+  "tags": [
+    "grid",
+    "layout",
+    "expandable",
+    "gallery",
+    "interactive",
+    "animation"
+  ]
+}

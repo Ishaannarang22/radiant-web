@@ -1,0 +1,42 @@
+{
+  "name": "Compare",
+  "library": "aceternity",
+  "description": "A before/after image comparison slider that lets users drag a divider to reveal two overlapping images, with smooth motion and touch support.",
+  "whenToUse": "Use for before/after comparisons, design previews, photo editing showcases, or any scenario requiring side-by-side visual comparison.",
+  "installation": "npx aceternity-ui@latest add compare",
+  "props": [
+    {
+      "name": "firstImage",
+      "type": "string",
+      "default": "undefined",
+      "description": "URL of the first (before) image"
+    },
+    {
+      "name": "secondImage",
+      "type": "string",
+      "default": "undefined",
+      "description": "URL of the second (after) image"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the compare container"
+    },
+    {
+      "name": "slideMode",
+      "type": "\"hover\" | \"drag\"",
+      "default": "\"hover\"",
+      "description": "Whether the slider follows hover position or requires dragging"
+    }
+  ],
+  "codeExample": "import { Compare } from \"@/components/ui/compare\"\n\nexport function CompareDemo() {\n  return (\n    <div className=\"p-4 border rounded-3xl dark:bg-neutral-900 bg-neutral-100 border-neutral-200 dark:border-neutral-800 px-4\">\n      <Compare\n        firstImage=\"/before.png\"\n        secondImage=\"/after.png\"\n        firstImageClassName=\"object-cover object-left-top\"\n        secondImageClassname=\"object-cover object-left-top\"\n        className=\"h-[250px] w-[200px] md:h-[500px] md:w-[500px]\"\n        slideMode=\"hover\"\n      />\n    </div>\n  )\n}",
+  "tags": [
+    "compare",
+    "before-after",
+    "slider",
+    "image",
+    "interactive",
+    "drag"
+  ]
+}

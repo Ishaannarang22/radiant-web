@@ -1,0 +1,48 @@
+{
+  "name": "Tabs (Animated)",
+  "library": "aceternity",
+  "description": "Animated tab component with smooth Framer Motion transitions between tab panels, featuring an underline indicator that slides between tabs.",
+  "whenToUse": "Use for tabbed content sections, feature comparisons, or any UI requiring animated tab switching with smooth content transitions.",
+  "installation": "npx aceternity-ui@latest add tabs",
+  "props": [
+    {
+      "name": "tabs",
+      "type": "{ title: string; value: string; content?: React.ReactNode }[]",
+      "default": "[]",
+      "description": "Array of tab definitions with title, value, and content"
+    },
+    {
+      "name": "containerClassName",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for the tabs container"
+    },
+    {
+      "name": "activeTabClassName",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for the active tab button"
+    },
+    {
+      "name": "tabClassName",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for each tab button"
+    },
+    {
+      "name": "contentClassName",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for the tab content panel"
+    }
+  ],
+  "codeExample": "import { Tabs } from \"@/components/ui/tabs\"\n\nexport function TabsDemo() {\n  const tabs = [\n    { title: \"Product\", value: \"product\", content: <div className=\"w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900\"><p>Product Tab</p></div> },\n    { title: \"Services\", value: \"services\", content: <div className=\"w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900\"><p>Services Tab</p></div> },\n    { title: \"Playground\", value: \"playground\", content: <div className=\"w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900\"><p>Playground Tab</p></div> },\n  ]\n  return (\n    <div className=\"h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-start justify-start my-40\">\n      <Tabs tabs={tabs} />\n    </div>\n  )\n}",
+  "tags": [
+    "tabs",
+    "animation",
+    "navigation",
+    "content",
+    "framer-motion",
+    "switching"
+  ]
+}

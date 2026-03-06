@@ -1,0 +1,30 @@
+{
+  "name": "Floating Navbar",
+  "library": "aceternity",
+  "description": "A sticky navigation bar that floats at the top of the viewport with a glassmorphism effect, smoothly appearing/disappearing on scroll.",
+  "whenToUse": "Use as the primary navigation bar for any website that needs a modern, floating nav with scroll-aware visibility.",
+  "installation": "npx aceternity-ui@latest add floating-navbar",
+  "props": [
+    {
+      "name": "navItems",
+      "type": "{ name: string; link: string; icon?: React.ReactNode }[]",
+      "default": "[]",
+      "description": "Array of navigation items to display"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the navbar"
+    }
+  ],
+  "codeExample": "import { FloatingNav } from \"@/components/ui/floating-navbar\"\nimport { IconHome, IconMessage, IconUser } from \"@tabler/icons-react\"\n\nexport function FloatingNavDemo() {\n  const navItems = [\n    { name: \"Home\", link: \"/\", icon: <IconHome className=\"h-4 w-4\" /> },\n    { name: \"About\", link: \"/about\", icon: <IconUser className=\"h-4 w-4\" /> },\n    { name: \"Contact\", link: \"/contact\", icon: <IconMessage className=\"h-4 w-4\" /> },\n  ]\n  return <FloatingNav navItems={navItems} />\n}",
+  "tags": [
+    "navbar",
+    "navigation",
+    "floating",
+    "sticky",
+    "glassmorphism",
+    "scroll"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Lamp Effect",
+  "library": "aceternity",
+  "description": "An elegant lamp/spotlight effect where a cone of light expands from above, illuminating text content with a dramatic reveal animation.",
+  "whenToUse": "Use for hero sections, headlines, or any section where you want a dramatic spotlight/lamp reveal effect on text.",
+  "installation": "npx aceternity-ui@latest add lamp-effect",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Content to illuminate with the lamp effect"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the lamp container"
+    }
+  ],
+  "codeExample": "import { LampContainer } from \"@/components/ui/lamp\"\nimport { motion } from \"framer-motion\"\n\nexport function LampDemo() {\n  return (\n    <LampContainer>\n      <motion.h1\n        initial={{ opacity: 0.5, y: 100 }}\n        whileInView={{ opacity: 1, y: 0 }}\n        transition={{ delay: 0.3, duration: 0.8, ease: \"easeInOut\" }}\n        className=\"mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl\"\n      >\n        Build lamps <br /> the right way\n      </motion.h1>\n    </LampContainer>\n  )\n}",
+  "tags": [
+    "lamp",
+    "spotlight",
+    "hero",
+    "reveal",
+    "animation",
+    "text"
+  ]
+}

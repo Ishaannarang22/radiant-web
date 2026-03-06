@@ -1,0 +1,43 @@
+{
+  "name": "Macbook Scroll",
+  "library": "aceternity",
+  "description": "A scroll-driven animation that simulates opening a MacBook lid, revealing screen content as the user scrolls, with realistic 3D perspective transforms.",
+  "whenToUse": "Use for product demos, app showcases, or feature reveals where you want to simulate opening a laptop to reveal your product.",
+  "installation": "npx aceternity-ui@latest add macbook-scroll",
+  "props": [
+    {
+      "name": "title",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Title content above the MacBook animation"
+    },
+    {
+      "name": "badge",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Badge element to display next to the title"
+    },
+    {
+      "name": "src",
+      "type": "string",
+      "default": "undefined",
+      "description": "Image URL to display on the MacBook screen"
+    },
+    {
+      "name": "showGradient",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether to show gradient overlay on the screen"
+    }
+  ],
+  "codeExample": "import { MacbookScroll } from \"@/components/ui/macbook-scroll\"\n\nexport function MacbookScrollDemo() {\n  return (\n    <div className=\"overflow-hidden dark:bg-[#0B0B0F] bg-white w-full\">\n      <MacbookScroll\n        title={<span>This Macbook is built with Tailwind CSS.</span>}\n        badge={<img src=\"/badge.png\" className=\"h-10 w-10 transform rounded-full\" alt=\"badge\" />}\n        src=\"/screen.png\"\n        showGradient={false}\n      />\n    </div>\n  )\n}",
+  "tags": [
+    "macbook",
+    "scroll",
+    "3d",
+    "product",
+    "laptop",
+    "reveal",
+    "animation"
+  ]
+}

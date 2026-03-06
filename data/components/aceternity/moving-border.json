@@ -1,0 +1,48 @@
+{
+  "name": "Moving Border",
+  "library": "aceternity",
+  "description": "A button or container with a continuously moving/rotating gradient border, creating a dynamic glowing edge effect using SVG animation.",
+  "whenToUse": "Use for CTA buttons, badges, or featured content borders where you want an animated moving border effect.",
+  "installation": "npx aceternity-ui@latest add moving-border",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Content to render inside the moving border"
+    },
+    {
+      "name": "duration",
+      "type": "number",
+      "default": "2000",
+      "description": "Duration of one complete border rotation in milliseconds"
+    },
+    {
+      "name": "borderRadius",
+      "type": "string",
+      "default": "\"1.75rem\"",
+      "description": "Border radius of the container"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the inner content"
+    },
+    {
+      "name": "containerClassName",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for the outer container"
+    }
+  ],
+  "codeExample": "import { Button } from \"@/components/ui/moving-border\"\n\nexport function MovingBorderDemo() {\n  return (\n    <div>\n      <Button\n        borderRadius=\"1.75rem\"\n        className=\"bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800\"\n      >\n        Borders are cool\n      </Button>\n    </div>\n  )\n}",
+  "tags": [
+    "border",
+    "moving",
+    "button",
+    "glow",
+    "animation",
+    "svg"
+  ]
+}

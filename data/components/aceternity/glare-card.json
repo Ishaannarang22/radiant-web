@@ -1,0 +1,30 @@
+{
+  "name": "Glare Card",
+  "library": "aceternity",
+  "description": "A card component with a glossy glare/shine effect that moves with the cursor, simulating a reflective surface like a holographic card.",
+  "whenToUse": "Use for premium product showcases, membership cards, or featured content where you want a reflective, high-end look.",
+  "installation": "npx aceternity-ui@latest add glare-card",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Content to render inside the glare card"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the card"
+    }
+  ],
+  "codeExample": "import { GlareCard } from \"@/components/ui/glare-card\"\n\nexport function GlareCardDemo() {\n  return (\n    <div className=\"flex items-center justify-center gap-8\">\n      <GlareCard className=\"flex flex-col items-center justify-center\">\n        <img className=\"h-full w-full absolute inset-0 object-cover\" src=\"/avatar.jpg\" alt=\"Avatar\" />\n      </GlareCard>\n      <GlareCard className=\"flex flex-col items-center justify-center p-8\">\n        <p className=\"text-white font-bold text-xl mt-4\">The Greatest Trick</p>\n      </GlareCard>\n    </div>\n  )\n}",
+  "tags": [
+    "card",
+    "glare",
+    "shine",
+    "holographic",
+    "hover",
+    "premium"
+  ]
+}

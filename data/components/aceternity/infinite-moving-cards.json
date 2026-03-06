@@ -1,0 +1,42 @@
+{
+  "name": "Infinite Moving Cards",
+  "library": "aceternity",
+  "description": "An infinitely scrolling horizontal carousel of cards that moves automatically with a seamless loop, ideal for testimonials or logos.",
+  "whenToUse": "Use for testimonials, client logos, partner showcases, or any content that benefits from a continuously scrolling horizontal feed.",
+  "installation": "npx aceternity-ui@latest add infinite-moving-cards",
+  "props": [
+    {
+      "name": "items",
+      "type": "{ quote: string; name: string; title: string }[]",
+      "default": "[]",
+      "description": "Array of items to display in the carousel"
+    },
+    {
+      "name": "direction",
+      "type": "\"left\" | \"right\"",
+      "default": "\"left\"",
+      "description": "Direction of the scrolling animation"
+    },
+    {
+      "name": "speed",
+      "type": "\"fast\" | \"normal\" | \"slow\"",
+      "default": "\"normal\"",
+      "description": "Speed of the scrolling animation"
+    },
+    {
+      "name": "pauseOnHover",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether to pause the animation on hover"
+    }
+  ],
+  "codeExample": "import { InfiniteMovingCards } from \"@/components/ui/infinite-moving-cards\"\n\nexport function InfiniteMovingCardsDemo() {\n  return (\n    <div className=\"h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black items-center justify-center relative overflow-hidden\">\n      <InfiniteMovingCards items={testimonials} direction=\"right\" speed=\"slow\" />\n    </div>\n  )\n}\n\nconst testimonials = [\n  { quote: \"It was the best of times, it was the worst of times.\", name: \"Charles Dickens\", title: \"A Tale of Two Cities\" },\n  { quote: \"Call me Ishmael.\", name: \"Herman Melville\", title: \"Moby Dick\" },\n]",
+  "tags": [
+    "carousel",
+    "infinite",
+    "scrolling",
+    "testimonials",
+    "logos",
+    "animation"
+  ]
+}

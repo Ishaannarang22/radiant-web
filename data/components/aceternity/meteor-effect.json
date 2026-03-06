@@ -1,0 +1,30 @@
+{
+  "name": "Meteor Effect",
+  "library": "aceternity",
+  "description": "Animated meteors/shooting stars that streak across a card or section, adding a cosmic and dynamic visual effect.",
+  "whenToUse": "Use for feature cards, pricing cards, or hero sections where you want animated shooting star trails in the background.",
+  "installation": "npx aceternity-ui@latest add meteors",
+  "props": [
+    {
+      "name": "number",
+      "type": "number",
+      "default": "20",
+      "description": "Number of meteor elements to render"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the meteors container"
+    }
+  ],
+  "codeExample": "import { Meteors } from \"@/components/ui/meteors\"\n\nexport function MeteorsDemo() {\n  return (\n    <div className=\"w-full relative max-w-xs\">\n      <div className=\"absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl\" />\n      <div className=\"relative shadow-xl bg-gray-900 border border-gray-800 px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start\">\n        <h1 className=\"font-bold text-xl text-white mb-4 relative z-50\">\n          Meteors because they&apos;re cool\n        </h1>\n        <p className=\"font-normal text-base text-slate-500 mb-4 relative z-50\">\n          I don&apos;t know what to write so I&apos;ll just paste something cool here.\n        </p>\n        <Meteors number={20} />\n      </div>\n    </div>\n  )\n}",
+  "tags": [
+    "meteors",
+    "shooting-stars",
+    "animation",
+    "background",
+    "cosmic",
+    "particles"
+  ]
+}

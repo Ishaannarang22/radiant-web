@@ -1,0 +1,30 @@
+{
+  "name": "Sticky Scroll Reveal",
+  "library": "aceternity",
+  "description": "A scroll-driven layout where text content is sticky on one side while images/visuals change on the other side as you scroll through sections.",
+  "whenToUse": "Use for feature showcases, product walkthroughs, or storytelling sections where you want content to stick while visuals change on scroll.",
+  "installation": "npx aceternity-ui@latest add sticky-scroll-reveal",
+  "props": [
+    {
+      "name": "content",
+      "type": "{ title: string; description: string; content?: React.ReactNode }[]",
+      "default": "[]",
+      "description": "Array of content sections with title, description, and optional visual content"
+    },
+    {
+      "name": "contentClassName",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for the content/visual panel"
+    }
+  ],
+  "codeExample": "import { StickyScroll } from \"@/components/ui/sticky-scroll-reveal\"\n\nexport function StickyScrollRevealDemo() {\n  const content = [\n    {\n      title: \"Collaborative Editing\",\n      description: \"Work together in real time with your team.\",\n      content: <div className=\"h-full w-full bg-gradient-to-br from-cyan-500 to-emerald-500 flex items-center justify-center text-white\">Collaborative Editing</div>,\n    },\n    {\n      title: \"Real time changes\",\n      description: \"See changes as they happen. No more refreshing.\",\n      content: <div className=\"h-full w-full bg-gradient-to-br from-orange-500 to-yellow-500 flex items-center justify-center text-white\">Real time changes</div>,\n    },\n  ]\n  return (\n    <div className=\"p-10\">\n      <StickyScroll content={content} />\n    </div>\n  )\n}",
+  "tags": [
+    "sticky",
+    "scroll",
+    "reveal",
+    "features",
+    "walkthrough",
+    "animation"
+  ]
+}

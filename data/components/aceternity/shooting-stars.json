@@ -1,0 +1,66 @@
+{
+  "name": "Shooting Stars",
+  "library": "aceternity",
+  "description": "An animated background effect with stars and shooting star trails that create a night sky atmosphere using CSS animations.",
+  "whenToUse": "Use for dark-themed hero sections, testimonial backgrounds, or any section that needs a starry night sky with animated shooting stars.",
+  "installation": "npx aceternity-ui@latest add shooting-stars",
+  "props": [
+    {
+      "name": "minSpeed",
+      "type": "number",
+      "default": "10",
+      "description": "Minimum animation speed of shooting stars"
+    },
+    {
+      "name": "maxSpeed",
+      "type": "number",
+      "default": "30",
+      "description": "Maximum animation speed of shooting stars"
+    },
+    {
+      "name": "minDelay",
+      "type": "number",
+      "default": "1200",
+      "description": "Minimum delay between shooting stars in ms"
+    },
+    {
+      "name": "maxDelay",
+      "type": "number",
+      "default": "4200",
+      "description": "Maximum delay between shooting stars in ms"
+    },
+    {
+      "name": "starColor",
+      "type": "string",
+      "default": "\"#9E00FF\"",
+      "description": "Color of the shooting stars"
+    },
+    {
+      "name": "trailColor",
+      "type": "string",
+      "default": "\"#2EB9DF\"",
+      "description": "Color of the star trails"
+    },
+    {
+      "name": "starWidth",
+      "type": "number",
+      "default": "10",
+      "description": "Width of the shooting star element"
+    },
+    {
+      "name": "starHeight",
+      "type": "number",
+      "default": "1",
+      "description": "Height of the shooting star element"
+    }
+  ],
+  "codeExample": "import { ShootingStars } from \"@/components/ui/shooting-stars\"\nimport { StarsBackground } from \"@/components/ui/stars-background\"\n\nexport function ShootingStarsDemo() {\n  return (\n    <div className=\"h-[40rem] rounded-md bg-neutral-900 flex flex-col items-center justify-center relative w-full\">\n      <h2 className=\"relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8\">\n        <span>Shooting Stars</span>\n        <span>And Stars Background</span>\n      </h2>\n      <ShootingStars />\n      <StarsBackground />\n    </div>\n  )\n}",
+  "tags": [
+    "stars",
+    "shooting",
+    "night",
+    "background",
+    "animation",
+    "cosmic"
+  ]
+}

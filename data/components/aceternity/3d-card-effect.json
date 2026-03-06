@@ -1,0 +1,36 @@
+{
+  "name": "3D Card Effect",
+  "library": "aceternity",
+  "description": "A card component with interactive 3D tilt/rotation effect that responds to mouse movement, creating depth and perspective.",
+  "whenToUse": "Use for featured content cards, product showcases, or portfolio items where you want an engaging hover interaction.",
+  "installation": "npx aceternity-ui@latest add 3d-card-effect",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Content to render inside the 3D card container"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the card container"
+    },
+    {
+      "name": "containerClassName",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for the outer perspective container"
+    }
+  ],
+  "codeExample": "import { CardBody, CardContainer, CardItem } from \"@/components/ui/3d-card\"\n\nexport function ThreeDCardDemo() {\n  return (\n    <CardContainer className=\"inter-var\">\n      <CardBody className=\"relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border\">\n        <CardItem translateZ=\"50\" className=\"text-xl font-bold text-neutral-600 dark:text-white\">\n          Make things float in air\n        </CardItem>\n        <CardItem as=\"p\" translateZ=\"60\" className=\"text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300\">\n          Hover over this card to unleash the power of CSS perspective\n        </CardItem>\n        <CardItem translateZ=\"100\" className=\"w-full mt-4\">\n          <img src=\"/placeholder.jpg\" className=\"h-60 w-full object-cover rounded-xl\" alt=\"thumbnail\" />\n        </CardItem>\n      </CardBody>\n    </CardContainer>\n  )\n}",
+  "tags": [
+    "card",
+    "3d",
+    "hover",
+    "interactive",
+    "perspective",
+    "animation"
+  ]
+}

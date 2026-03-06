@@ -1,0 +1,24 @@
+{
+  "name": "Hero Parallax",
+  "library": "aceternity",
+  "description": "A dramatic hero section with a grid of product images that move at different parallax speeds on scroll, creating depth and visual interest.",
+  "whenToUse": "Use for product showcases, portfolio hero sections, or landing pages where you want a dramatic multi-image parallax scrolling effect.",
+  "installation": "npx aceternity-ui@latest add hero-parallax",
+  "props": [
+    {
+      "name": "products",
+      "type": "{ title: string; link: string; thumbnail: string }[]",
+      "default": "[]",
+      "description": "Array of products to display in the parallax grid"
+    }
+  ],
+  "codeExample": "import { HeroParallax } from \"@/components/ui/hero-parallax\"\n\nexport function HeroParallaxDemo() {\n  return <HeroParallax products={products} />\n}\n\nconst products = [\n  { title: \"Moonbeam\", link: \"https://gomoonbeam.com\", thumbnail: \"/moonbeam.png\" },\n  { title: \"Cursor\", link: \"https://cursor.so\", thumbnail: \"/cursor.png\" },\n  { title: \"Rogue\", link: \"https://userogue.com\", thumbnail: \"/rogue.png\" },\n]",
+  "tags": [
+    "hero",
+    "parallax",
+    "scroll",
+    "products",
+    "grid",
+    "animation"
+  ]
+}

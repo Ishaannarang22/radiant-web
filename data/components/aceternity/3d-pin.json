@@ -1,0 +1,42 @@
+{
+  "name": "3D Pin",
+  "library": "aceternity",
+  "description": "An animated 3D pin component that appears to float above the surface with a connecting line, useful for map-like interfaces or highlighting locations.",
+  "whenToUse": "Use for location indicators, map pins, featured location highlights, or any UI that needs a floating pin aesthetic.",
+  "installation": "npx aceternity-ui@latest add 3d-pin",
+  "props": [
+    {
+      "name": "title",
+      "type": "string | React.ReactNode",
+      "default": "undefined",
+      "description": "Content displayed in the pin popup"
+    },
+    {
+      "name": "href",
+      "type": "string",
+      "default": "undefined",
+      "description": "Link URL when pin is clicked"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the pin container"
+    },
+    {
+      "name": "containerClassName",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for the outer wrapper"
+    }
+  ],
+  "codeExample": "import { PinContainer } from \"@/components/ui/3d-pin\"\n\nexport function AnimatedPinDemo() {\n  return (\n    <div className=\"h-[40rem] w-full flex items-center justify-center\">\n      <PinContainer title=\"Visit\" href=\"https://example.com\">\n        <div className=\"flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem]\">\n          <h3 className=\"max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100\">\n            Aceternity UI\n          </h3>\n          <div className=\"text-base !m-0 !p-0 font-normal\">\n            <span className=\"text-slate-500\">\n              Customizable Tailwind CSS and Framer Motion Components.\n            </span>\n          </div>\n        </div>\n      </PinContainer>\n    </div>\n  )\n}",
+  "tags": [
+    "pin",
+    "3d",
+    "location",
+    "map",
+    "floating",
+    "animation"
+  ]
+}

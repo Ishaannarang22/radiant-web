@@ -1,0 +1,30 @@
+{
+  "name": "Evervault Card",
+  "library": "aceternity",
+  "description": "A card with an animated encrypted-text effect where random characters shuffle and resolve on hover, inspired by Evervault's design.",
+  "whenToUse": "Use for security-themed sections, encryption showcases, or any card where you want a mysterious/techy character scramble effect.",
+  "installation": "npx aceternity-ui@latest add evervault-card",
+  "props": [
+    {
+      "name": "text",
+      "type": "string",
+      "default": "undefined",
+      "description": "The text to display with the encryption effect"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the card"
+    }
+  ],
+  "codeExample": "import { EvervaultCard, Icon } from \"@/components/ui/evervault-card\"\n\nexport function EvervaultCardDemo() {\n  return (\n    <div className=\"border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]\">\n      <Icon className=\"absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black\" />\n      <Icon className=\"absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black\" />\n      <Icon className=\"absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black\" />\n      <Icon className=\"absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black\" />\n      <EvervaultCard text=\"hover\" />\n    </div>\n  )\n}",
+  "tags": [
+    "card",
+    "encryption",
+    "text",
+    "hover",
+    "animation",
+    "security"
+  ]
+}

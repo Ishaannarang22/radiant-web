@@ -1,0 +1,24 @@
+{
+  "name": "Focus Cards",
+  "library": "aceternity",
+  "description": "A gallery of cards where hovering on one card focuses it while blurring the rest, creating an elegant spotlight effect.",
+  "whenToUse": "Use for image galleries, portfolio showcases, or feature highlights where you want to draw attention to a single item on hover.",
+  "installation": "npx aceternity-ui@latest add focus-cards",
+  "props": [
+    {
+      "name": "cards",
+      "type": "{ title: string; src: string }[]",
+      "default": "[]",
+      "description": "Array of card objects with title and image source"
+    }
+  ],
+  "codeExample": "import { FocusCards } from \"@/components/ui/focus-cards\"\n\nexport function FocusCardsDemo() {\n  const cards = [\n    { title: \"Forest Adventure\", src: \"/images/forest.jpg\" },\n    { title: \"Valley of life\", src: \"/images/valley.jpg\" },\n    { title: \"Sala behta dariya\", src: \"/images/river.jpg\" },\n    { title: \"Camping is for pros\", src: \"/images/camping.jpg\" },\n  ]\n  return <FocusCards cards={cards} />\n}",
+  "tags": [
+    "cards",
+    "focus",
+    "gallery",
+    "blur",
+    "hover",
+    "spotlight"
+  ]
+}

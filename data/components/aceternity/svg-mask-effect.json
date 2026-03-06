@@ -1,0 +1,48 @@
+{
+  "name": "SVG Mask Effect",
+  "library": "aceternity",
+  "description": "An interactive SVG mask that reveals content underneath as the user moves their cursor, creating a flashlight or reveal-through-mask effect.",
+  "whenToUse": "Use for interactive reveals, hidden content, creative hero sections, or any UI that needs a cursor-driven mask/reveal effect.",
+  "installation": "npx aceternity-ui@latest add svg-mask-effect",
+  "props": [
+    {
+      "name": "revealText",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Content revealed through the mask on hover"
+    },
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Default visible content (shown without hover)"
+    },
+    {
+      "name": "size",
+      "type": "number",
+      "default": "10",
+      "description": "Size of the reveal mask circle"
+    },
+    {
+      "name": "revealSize",
+      "type": "number",
+      "default": "600",
+      "description": "Size of the mask when hovering"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the container"
+    }
+  ],
+  "codeExample": "import { MaskContainer } from \"@/components/ui/svg-mask-effect\"\n\nexport function SVGMaskEffectDemo() {\n  return (\n    <div className=\"h-[40rem] w-full flex items-center justify-center overflow-hidden\">\n      <MaskContainer\n        revealText={\n          <p className=\"max-w-4xl mx-auto text-slate-800 text-center text-4xl font-bold\">\n            The first rule of Fight Club is you do not talk about Fight Club.\n          </p>\n        }\n        className=\"h-[40rem] border rounded-md\"\n      >\n        <span className=\"text-red-500\">The first rule of MRR Club</span> is you do not\n        talk about MRR Club.\n      </MaskContainer>\n    </div>\n  )\n}",
+  "tags": [
+    "mask",
+    "svg",
+    "reveal",
+    "cursor",
+    "interactive",
+    "flashlight"
+  ]
+}

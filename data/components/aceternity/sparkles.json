@@ -1,0 +1,78 @@
+{
+  "name": "Sparkles",
+  "library": "aceternity",
+  "description": "An animated sparkle/twinkle effect that renders particles around content using a TSParticles-based engine, creating a magical glittering look.",
+  "whenToUse": "Use for highlighting important text, headings, CTAs, or any element that needs a magical sparkle/glitter effect.",
+  "installation": "npx aceternity-ui@latest add sparkles",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Content to render with sparkles around it"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the sparkles container"
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "default": "\"tsparticlesfullpage\"",
+      "description": "Unique ID for the particles instance"
+    },
+    {
+      "name": "background",
+      "type": "string",
+      "default": "\"transparent\"",
+      "description": "Background color of the particles container"
+    },
+    {
+      "name": "particleSize",
+      "type": "number",
+      "default": "2",
+      "description": "Size of each sparkle particle"
+    },
+    {
+      "name": "minSize",
+      "type": "number",
+      "default": "0.6",
+      "description": "Minimum particle size"
+    },
+    {
+      "name": "maxSize",
+      "type": "number",
+      "default": "1.4",
+      "description": "Maximum particle size"
+    },
+    {
+      "name": "speed",
+      "type": "number",
+      "default": "1",
+      "description": "Movement speed of particles"
+    },
+    {
+      "name": "particleColor",
+      "type": "string",
+      "default": "\"#FFFFFF\"",
+      "description": "Color of the sparkle particles"
+    },
+    {
+      "name": "particleDensity",
+      "type": "number",
+      "default": "100",
+      "description": "Number of particles to render"
+    }
+  ],
+  "codeExample": "import { SparklesCore } from \"@/components/ui/sparkles\"\n\nexport function SparklesDemo() {\n  return (\n    <div className=\"h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md\">\n      <h1 className=\"md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20\">\n        Aceternity\n      </h1>\n      <div className=\"w-[40rem] h-40 relative\">\n        <SparklesCore\n          background=\"transparent\"\n          minSize={0.4}\n          maxSize={1}\n          particleDensity={1200}\n          className=\"w-full h-full\"\n          particleColor=\"#FFFFFF\"\n        />\n      </div>\n    </div>\n  )\n}",
+  "tags": [
+    "sparkles",
+    "particles",
+    "glitter",
+    "animation",
+    "magic",
+    "text"
+  ]
+}

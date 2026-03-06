@@ -1,0 +1,42 @@
+{
+  "name": "Text Generate Effect",
+  "library": "aceternity",
+  "description": "An animated text reveal effect where words appear one by one with a fade-in and blur animation, creating a typewriter-like generative feel.",
+  "whenToUse": "Use for hero section headlines, AI-generated content displays, or any text that should appear with a word-by-word reveal animation.",
+  "installation": "npx aceternity-ui@latest add text-generate-effect",
+  "props": [
+    {
+      "name": "words",
+      "type": "string",
+      "default": "undefined",
+      "description": "The text string to animate word by word"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the text container"
+    },
+    {
+      "name": "filter",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether to apply blur filter during animation"
+    },
+    {
+      "name": "duration",
+      "type": "number",
+      "default": "0.5",
+      "description": "Duration of each word's animation in seconds"
+    }
+  ],
+  "codeExample": "import { TextGenerateEffect } from \"@/components/ui/text-generate-effect\"\n\nexport function TextGenerateEffectDemo() {\n  const words = \"Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths.\"\n  return <TextGenerateEffect words={words} />\n}",
+  "tags": [
+    "text",
+    "generate",
+    "typewriter",
+    "animation",
+    "reveal",
+    "words"
+  ]
+}

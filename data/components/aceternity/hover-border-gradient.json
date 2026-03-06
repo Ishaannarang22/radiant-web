@@ -1,0 +1,48 @@
+{
+  "name": "Hover Border Gradient",
+  "library": "aceternity",
+  "description": "A button or container with an animated gradient border that rotates and glows on hover, creating a vibrant edge effect.",
+  "whenToUse": "Use for CTA buttons, feature cards, or any element where you want an animated gradient border that activates on hover.",
+  "installation": "npx aceternity-ui@latest add hover-border-gradient",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Content to render inside the bordered container"
+    },
+    {
+      "name": "containerClassName",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for the outer container"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for the inner content area"
+    },
+    {
+      "name": "as",
+      "type": "React.ElementType",
+      "default": "\"button\"",
+      "description": "The HTML element or React component to render as"
+    },
+    {
+      "name": "duration",
+      "type": "number",
+      "default": "1",
+      "description": "Duration of the gradient rotation animation in seconds"
+    }
+  ],
+  "codeExample": "import { HoverBorderGradient } from \"@/components/ui/hover-border-gradient\"\n\nexport function HoverBorderGradientDemo() {\n  return (\n    <div className=\"m-40 flex justify-center text-center\">\n      <HoverBorderGradient\n        containerClassName=\"rounded-full\"\n        as=\"button\"\n        className=\"dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2\"\n      >\n        <span>Aceternity UI</span>\n      </HoverBorderGradient>\n    </div>\n  )\n}",
+  "tags": [
+    "border",
+    "gradient",
+    "hover",
+    "button",
+    "glow",
+    "animation"
+  ]
+}

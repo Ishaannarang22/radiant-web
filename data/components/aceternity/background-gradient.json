@@ -1,0 +1,35 @@
+{
+  "name": "Background Gradient",
+  "library": "aceternity",
+  "description": "A smooth animated gradient background that cycles through colors with a blur effect, creating an organic flowing color transition.",
+  "whenToUse": "Use as a subtle animated background for sections, cards, or hero areas where you want gentle color movement.",
+  "installation": "npx aceternity-ui@latest add background-gradient",
+  "props": [
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the gradient container"
+    },
+    {
+      "name": "containerClassName",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for the wrapper element"
+    },
+    {
+      "name": "animate",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether the gradient should animate"
+    }
+  ],
+  "codeExample": "import { BackgroundGradient } from \"@/components/ui/background-gradient\"\n\nexport function BackgroundGradientDemo() {\n  return (\n    <div>\n      <BackgroundGradient className=\"rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900\">\n        <img src=\"/product.png\" alt=\"product\" className=\"object-contain\" />\n        <p className=\"text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200\">\n          Air Jordan 4 Retro Reimagined\n        </p>\n        <p className=\"text-sm text-neutral-600 dark:text-neutral-400\">\n          The Air Jordan 4 Retro Reimagined Bred will release on Saturday.\n        </p>\n        <button className=\"rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800\">\n          <span>Buy now</span>\n          <span className=\"bg-zinc-700 rounded-full text-[0.6rem] px-2 py-0 text-white\">$100</span>\n        </button>\n      </BackgroundGradient>\n    </div>\n  )\n}",
+  "tags": [
+    "background",
+    "gradient",
+    "animation",
+    "card",
+    "glow"
+  ]
+}

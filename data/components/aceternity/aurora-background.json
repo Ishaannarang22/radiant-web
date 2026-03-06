@@ -1,0 +1,35 @@
+{
+  "name": "Aurora Background",
+  "library": "aceternity",
+  "description": "A mesmerizing aurora borealis-style animated background with flowing gradient colors and smooth transitions.",
+  "whenToUse": "Use as a full-page background for hero sections, landing pages, or any section that needs an eye-catching animated gradient background.",
+  "installation": "npx aceternity-ui@latest add aurora-background",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Content to render on top of the aurora background"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the container"
+    },
+    {
+      "name": "showRadialGradient",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether to show the radial gradient overlay"
+    }
+  ],
+  "codeExample": "import { AuroraBackground } from \"@/components/ui/aurora-background\"\nimport { motion } from \"framer-motion\"\n\nexport function AuroraBackgroundDemo() {\n  return (\n    <AuroraBackground>\n      <motion.div\n        initial={{ opacity: 0, y: 40 }}\n        whileInView={{ opacity: 1, y: 0 }}\n        transition={{ delay: 0.3, duration: 0.8, ease: \"easeInOut\" }}\n        className=\"relative flex flex-col gap-4 items-center justify-center px-4\"\n      >\n        <div className=\"text-3xl md:text-7xl font-bold dark:text-white text-center\">\n          Background lights are cool you know.\n        </div>\n        <div className=\"font-extralight text-base md:text-4xl dark:text-neutral-200 py-4\">\n          And this, is chemical.\n        </div>\n        <button className=\"bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2\">\n          Debug now\n        </button>\n      </motion.div>\n    </AuroraBackground>\n  )\n}",
+  "tags": [
+    "background",
+    "aurora",
+    "gradient",
+    "animation",
+    "hero"
+  ]
+}

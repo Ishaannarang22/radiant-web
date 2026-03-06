@@ -1,0 +1,30 @@
+{
+  "name": "Card Hover Effect",
+  "library": "aceternity",
+  "description": "A collection of cards with smooth hover animations that highlight the active card while dimming others, featuring gradient borders and glowing effects.",
+  "whenToUse": "Use for pricing cards, feature comparisons, team member cards, or any grid of cards where you want an interactive hover spotlight effect.",
+  "installation": "npx aceternity-ui@latest add card-hover-effect",
+  "props": [
+    {
+      "name": "items",
+      "type": "{ title: string; description: string; link: string }[]",
+      "default": "[]",
+      "description": "Array of card data objects to render"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the card grid"
+    }
+  ],
+  "codeExample": "import { HoverEffect } from \"@/components/ui/card-hover-effect\"\n\nexport function CardHoverEffectDemo() {\n  return (\n    <div className=\"max-w-5xl mx-auto px-8\">\n      <HoverEffect items={projects} />\n    </div>\n  )\n}\n\nconst projects = [\n  { title: \"Stripe\", description: \"A payment infrastructure.\", link: \"https://stripe.com\" },\n  { title: \"Netflix\", description: \"A streaming service.\", link: \"https://netflix.com\" },\n  { title: \"Google\", description: \"A search engine.\", link: \"https://google.com\" },\n]",
+  "tags": [
+    "card",
+    "hover",
+    "spotlight",
+    "grid",
+    "animation",
+    "glow"
+  ]
+}

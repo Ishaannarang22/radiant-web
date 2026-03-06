@@ -1,0 +1,42 @@
+{
+  "name": "Canvas Reveal Effect",
+  "library": "aceternity",
+  "description": "An interactive reveal effect where hovering over an element reveals hidden content underneath using a canvas-based circular mask that follows the cursor.",
+  "whenToUse": "Use for interactive reveal experiences, before/after comparisons, hidden content reveals, or creative hover interactions.",
+  "installation": "npx aceternity-ui@latest add canvas-reveal-effect",
+  "props": [
+    {
+      "name": "animationSpeed",
+      "type": "number",
+      "default": "0.4",
+      "description": "Speed of the reveal animation"
+    },
+    {
+      "name": "opacities",
+      "type": "number[]",
+      "default": "[0.3, 0.3, 0.3, 0.5, 0.5, 0.5, 0.8, 0.8, 0.8, 1]",
+      "description": "Array of opacity values for the dot matrix"
+    },
+    {
+      "name": "colors",
+      "type": "number[][]",
+      "default": "[[0, 255, 255]]",
+      "description": "RGB color arrays for the canvas dots"
+    },
+    {
+      "name": "containerClassName",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for the container element"
+    }
+  ],
+  "codeExample": "import { CanvasRevealEffect } from \"@/components/ui/canvas-reveal-effect\"\n\nexport function CanvasRevealEffectDemo() {\n  return (\n    <div className=\"py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4 mx-auto px-8\">\n      <Card title=\"Sheetal is Naughty\" icon={<AcesIcon />}>\n        <CanvasRevealEffect\n          animationSpeed={5.1}\n          containerClassName=\"bg-emerald-900\"\n        />\n      </Card>\n      <Card title=\"Manu is Naughty\" icon={<AceIcon />}>\n        <CanvasRevealEffect\n          animationSpeed={3}\n          containerClassName=\"bg-black\"\n          colors={[[236, 72, 153], [232, 121, 249]]}\n          dotSize={2}\n        />\n      </Card>\n    </div>\n  )\n}",
+  "tags": [
+    "canvas",
+    "reveal",
+    "hover",
+    "interactive",
+    "animation",
+    "mask"
+  ]
+}

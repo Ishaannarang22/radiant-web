@@ -1,0 +1,36 @@
+{
+  "name": "Following Pointer",
+  "library": "aceternity",
+  "description": "A decorative cursor follower that creates a custom pointer element (avatar, emoji, or any content) that follows the mouse within a container.",
+  "whenToUse": "Use for interactive sections, blog cards, or creative layouts where you want a custom cursor/pointer that follows mouse movement.",
+  "installation": "npx aceternity-ui@latest add following-pointer",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Content that the pointer follows within"
+    },
+    {
+      "name": "title",
+      "type": "string | React.ReactNode",
+      "default": "undefined",
+      "description": "Content to display in the follower element"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the container"
+    }
+  ],
+  "codeExample": "import { FollowerPointerCard } from \"@/components/ui/following-pointer\"\n\nexport function FollowingPointerDemo() {\n  return (\n    <div className=\"w-80 mx-auto\">\n      <FollowerPointerCard title={<TitleComponent title=\"Blog Author\" avatar=\"/avatar.jpg\" />}>\n        <div className=\"relative overflow-hidden h-full rounded-2xl\">\n          <img src=\"/blog.jpg\" alt=\"blog thumbnail\" className=\"h-48 w-full object-cover\" />\n          <div className=\"p-4\">\n            <h2 className=\"font-bold my-4 text-lg text-zinc-700\">\n              How to make a website\n            </h2>\n            <p className=\"text-sm text-zinc-500\">\n              A practical guide to building modern websites.\n            </p>\n          </div>\n        </div>\n      </FollowerPointerCard>\n    </div>\n  )\n}",
+  "tags": [
+    "cursor",
+    "pointer",
+    "follower",
+    "interactive",
+    "hover",
+    "animation"
+  ]
+}

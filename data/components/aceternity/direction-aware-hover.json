@@ -1,0 +1,48 @@
+{
+  "name": "Direction Aware Hover",
+  "library": "aceternity",
+  "description": "A hover effect that detects the direction from which the cursor enters the element and animates an overlay accordingly, creating a natural sliding reveal.",
+  "whenToUse": "Use for image galleries, portfolio grids, or team member cards where you want directional hover reveals.",
+  "installation": "npx aceternity-ui@latest add direction-aware-hover",
+  "props": [
+    {
+      "name": "imageUrl",
+      "type": "string",
+      "default": "undefined",
+      "description": "URL of the image to display"
+    },
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Overlay content that slides in on hover"
+    },
+    {
+      "name": "childrenClassName",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for the overlay content wrapper"
+    },
+    {
+      "name": "imageClassName",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for the background image"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the container"
+    }
+  ],
+  "codeExample": "import { DirectionAwareHover } from \"@/components/ui/direction-aware-hover\"\n\nexport function DirectionAwareHoverDemo() {\n  return (\n    <div className=\"h-[40rem] relative flex items-center justify-center\">\n      <DirectionAwareHover imageUrl=\"/photo.jpg\">\n        <p className=\"font-bold text-xl\">In the mountains</p>\n        <p className=\"font-normal text-sm\">$1299 / night</p>\n      </DirectionAwareHover>\n    </div>\n  )\n}",
+  "tags": [
+    "hover",
+    "direction",
+    "reveal",
+    "gallery",
+    "animation",
+    "overlay"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Bento Grid",
+  "library": "aceternity",
+  "description": "A responsive bento-box style grid layout with animated items, supporting various sizes and hover effects for showcasing features or content.",
+  "whenToUse": "Use for feature showcases, dashboard layouts, portfolio grids, or any content that benefits from a modern bento-style grid layout.",
+  "installation": "npx aceternity-ui@latest add bento-grid",
+  "props": [
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the grid container"
+    },
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "BentoGridItem components to render in the grid"
+    }
+  ],
+  "codeExample": "import { BentoGrid, BentoGridItem } from \"@/components/ui/bento-grid\"\n\nexport function BentoGridDemo() {\n  return (\n    <BentoGrid className=\"max-w-4xl mx-auto\">\n      {items.map((item, i) => (\n        <BentoGridItem\n          key={i}\n          title={item.title}\n          description={item.description}\n          header={item.header}\n          icon={item.icon}\n          className={i === 3 || i === 6 ? \"md:col-span-2\" : \"\"}\n        />\n      ))}\n    </BentoGrid>\n  )\n}\n\nconst items = [\n  { title: \"The Dawn of Innovation\", description: \"Explore the birth of groundbreaking ideas.\" },\n  { title: \"The Digital Revolution\", description: \"Dive into the transformative power of technology.\" },\n]",
+  "tags": [
+    "grid",
+    "bento",
+    "layout",
+    "responsive",
+    "features",
+    "showcase"
+  ]
+}

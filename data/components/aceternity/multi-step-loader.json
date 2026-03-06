@@ -1,0 +1,42 @@
+{
+  "name": "Multi Step Loader",
+  "library": "aceternity",
+  "description": "An animated multi-step loading indicator that sequentially highlights steps with checkmarks, showing progress through a series of operations.",
+  "whenToUse": "Use for loading states, onboarding flows, or multi-step processes where you want to show animated progress through sequential steps.",
+  "installation": "npx aceternity-ui@latest add multi-step-loader",
+  "props": [
+    {
+      "name": "loadingStates",
+      "type": "{ text: string }[]",
+      "default": "[]",
+      "description": "Array of loading step descriptions"
+    },
+    {
+      "name": "loading",
+      "type": "boolean",
+      "default": "false",
+      "description": "Whether the loader is active"
+    },
+    {
+      "name": "duration",
+      "type": "number",
+      "default": "2000",
+      "description": "Duration of each step in milliseconds"
+    },
+    {
+      "name": "loop",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether to loop through the steps"
+    }
+  ],
+  "codeExample": "import { MultiStepLoader } from \"@/components/ui/multi-step-loader\"\n\nexport function MultiStepLoaderDemo() {\n  const loadingStates = [\n    { text: \"Buying a condo\" },\n    { text: \"Travelling in a flight\" },\n    { text: \"Meeting Tyler Durden\" },\n    { text: \"He makes mass soap\" },\n  ]\n  return (\n    <div className=\"w-full h-[60vh] flex items-center justify-center\">\n      <MultiStepLoader loadingStates={loadingStates} loading={true} duration={2000} loop={true} />\n    </div>\n  )\n}",
+  "tags": [
+    "loader",
+    "progress",
+    "steps",
+    "animation",
+    "loading",
+    "sequential"
+  ]
+}

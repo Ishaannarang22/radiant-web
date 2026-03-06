@@ -394,7 +394,7 @@ Before Claude can generate websites using shadcn/ui, Aceternity UI, Magic UI, et
   - Store as JSON: `data/components/shadcn/button.json`, etc.
   - Target: ~40-50 components
 
-- [ ] **2.3 Scrape Aceternity UI documentation**
+- [x] **2.3 Scrape Aceternity UI documentation**
   - Source: https://ui.aceternity.com/components
   - Focus on animated/interactive components:
     - Hero sections, text animations, card effects

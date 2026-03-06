@@ -1,0 +1,36 @@
+{
+  "name": "Floating Dock",
+  "library": "aceternity",
+  "description": "A macOS-style floating dock component with smooth icon magnification on hover, creating an app-launcher-like navigation bar.",
+  "whenToUse": "Use for navigation bars, toolbars, or action menus where you want a polished dock-style interaction with magnification.",
+  "installation": "npx aceternity-ui@latest add floating-dock",
+  "props": [
+    {
+      "name": "items",
+      "type": "{ title: string; icon: React.ReactNode; href: string }[]",
+      "default": "[]",
+      "description": "Array of dock items with title, icon, and link"
+    },
+    {
+      "name": "desktopClassName",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for the desktop dock variant"
+    },
+    {
+      "name": "mobileClassName",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for the mobile dock variant"
+    }
+  ],
+  "codeExample": "import { FloatingDock } from \"@/components/ui/floating-dock\"\nimport { IconHome, IconTerminal2, IconNewSection } from \"@tabler/icons-react\"\n\nexport function FloatingDockDemo() {\n  const links = [\n    { title: \"Home\", icon: <IconHome className=\"h-full w-full\" />, href: \"#\" },\n    { title: \"Products\", icon: <IconTerminal2 className=\"h-full w-full\" />, href: \"#\" },\n    { title: \"Components\", icon: <IconNewSection className=\"h-full w-full\" />, href: \"#\" },\n  ]\n  return (\n    <div className=\"flex items-center justify-center h-[35rem] w-full\">\n      <FloatingDock items={links} />\n    </div>\n  )\n}",
+  "tags": [
+    "dock",
+    "navigation",
+    "magnification",
+    "toolbar",
+    "macos",
+    "animation"
+  ]
+}

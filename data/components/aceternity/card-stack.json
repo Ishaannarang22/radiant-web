@@ -1,0 +1,36 @@
+{
+  "name": "Card Stack",
+  "library": "aceternity",
+  "description": "An animated stack of cards that automatically cycles through content with smooth transitions, showing one card at a time with a stack visual behind it.",
+  "whenToUse": "Use for testimonials, quotes, feature highlights, or any rotating content where you want a stacked card animation.",
+  "installation": "npx aceternity-ui@latest add card-stack",
+  "props": [
+    {
+      "name": "items",
+      "type": "{ id: number; name: string; designation: string; content: React.ReactNode }[]",
+      "default": "[]",
+      "description": "Array of card items to display in the stack"
+    },
+    {
+      "name": "offset",
+      "type": "number",
+      "default": "10",
+      "description": "Vertical offset between stacked cards in pixels"
+    },
+    {
+      "name": "scaleFactor",
+      "type": "number",
+      "default": "0.06",
+      "description": "Scale reduction factor for each subsequent card"
+    }
+  ],
+  "codeExample": "import { CardStack } from \"@/components/ui/card-stack\"\n\nexport function CardStackDemo() {\n  return (\n    <div className=\"h-[40rem] flex items-center justify-center w-full\">\n      <CardStack items={CARDS} />\n    </div>\n  )\n}\n\nconst CARDS = [\n  { id: 0, name: \"Manu Arora\", designation: \"Senior Engineer\", content: <p>These cards are amazing!</p> },\n  { id: 1, name: \"Elon Musk\", designation: \"Tech Lead\", content: <p>I love Aceternity UI.</p> },\n]",
+  "tags": [
+    "card",
+    "stack",
+    "testimonial",
+    "rotation",
+    "animation",
+    "carousel"
+  ]
+}

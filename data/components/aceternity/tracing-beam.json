@@ -1,0 +1,30 @@
+{
+  "name": "Tracing Beam",
+  "library": "aceternity",
+  "description": "An animated vertical beam/line that traces your scroll progress along the page, with a glowing dot indicator and gradient trail.",
+  "whenToUse": "Use for long-form content like blog posts, timelines, or documentation where you want a visual scroll progress indicator alongside the content.",
+  "installation": "npx aceternity-ui@latest add tracing-beam",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Content to display alongside the tracing beam"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the beam container"
+    }
+  ],
+  "codeExample": "import { TracingBeam } from \"@/components/ui/tracing-beam\"\n\nexport function TracingBeamDemo() {\n  return (\n    <TracingBeam className=\"px-6\">\n      <div className=\"max-w-2xl mx-auto antialiased pt-4 relative\">\n        {content.map((item, index) => (\n          <div key={index} className=\"mb-10\">\n            <h2 className=\"bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4\">\n              {item.badge}\n            </h2>\n            <p className=\"text-xl mb-4\">{item.title}</p>\n            <div className=\"text-sm prose prose-sm dark:prose-invert\">\n              {item.description}\n            </div>\n          </div>\n        ))}\n      </div>\n    </TracingBeam>\n  )\n}",
+  "tags": [
+    "tracing",
+    "beam",
+    "scroll",
+    "progress",
+    "timeline",
+    "animation"
+  ]
+}

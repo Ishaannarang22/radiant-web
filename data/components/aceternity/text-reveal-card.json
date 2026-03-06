@@ -1,0 +1,42 @@
+{
+  "name": "Text Reveal Card",
+  "library": "aceternity",
+  "description": "A card where hovering reveals hidden text underneath through a sliding mask effect, creating a before/after text comparison.",
+  "whenToUse": "Use for creative text reveals, content teases, testimonials with hidden messages, or any interactive text-over-text effect.",
+  "installation": "npx aceternity-ui@latest add text-reveal-card",
+  "props": [
+    {
+      "name": "text",
+      "type": "string",
+      "default": "undefined",
+      "description": "The base text displayed on the card"
+    },
+    {
+      "name": "revealText",
+      "type": "string",
+      "default": "undefined",
+      "description": "The hidden text revealed on hover"
+    },
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Additional content to render on the card"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the card"
+    }
+  ],
+  "codeExample": "import { TextRevealCard, TextRevealCardDescription, TextRevealCardTitle } from \"@/components/ui/text-reveal-card\"\n\nexport function TextRevealCardDemo() {\n  return (\n    <div className=\"flex items-center justify-center bg-[#0E0E10] h-[40rem] rounded-2xl w-full\">\n      <TextRevealCard text=\"You know the business\" revealText=\"I know the chemistry\">\n        <TextRevealCardTitle>Sometimes, you just need to see it.</TextRevealCardTitle>\n        <TextRevealCardDescription>\n          This is a text reveal card. Hover over the card to reveal the hidden text.\n        </TextRevealCardDescription>\n      </TextRevealCard>\n    </div>\n  )\n}",
+  "tags": [
+    "text",
+    "reveal",
+    "card",
+    "hover",
+    "mask",
+    "interactive"
+  ]
+}

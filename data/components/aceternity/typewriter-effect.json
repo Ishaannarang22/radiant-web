@@ -1,0 +1,36 @@
+{
+  "name": "Typewriter Effect",
+  "library": "aceternity",
+  "description": "An animated typewriter component that types out text character by character and can cycle through multiple strings with a blinking cursor.",
+  "whenToUse": "Use for hero section subtitles, feature descriptions, or any text that should appear with a typing animation effect.",
+  "installation": "npx aceternity-ui@latest add typewriter-effect",
+  "props": [
+    {
+      "name": "words",
+      "type": "{ text: string; className?: string }[]",
+      "default": "[]",
+      "description": "Array of word objects to type out sequentially"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the typewriter container"
+    },
+    {
+      "name": "cursorClassName",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for the blinking cursor element"
+    }
+  ],
+  "codeExample": "import { TypewriterEffect } from \"@/components/ui/typewriter-effect\"\n\nexport function TypewriterEffectDemo() {\n  const words = [\n    { text: \"Build\" },\n    { text: \"awesome\" },\n    { text: \"apps\" },\n    { text: \"with\" },\n    { text: \"Aceternity.\", className: \"text-blue-500 dark:text-blue-500\" },\n  ]\n  return (\n    <div className=\"flex flex-col items-center justify-center h-[40rem]\">\n      <p className=\"text-neutral-600 dark:text-neutral-200 text-base mb-10\">\n        The road to freedom starts from here\n      </p>\n      <TypewriterEffect words={words} />\n    </div>\n  )\n}",
+  "tags": [
+    "typewriter",
+    "text",
+    "typing",
+    "animation",
+    "cursor",
+    "sequential"
+  ]
+}

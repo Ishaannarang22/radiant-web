@@ -1,0 +1,72 @@
+{
+  "name": "Wavy Background",
+  "library": "aceternity",
+  "description": "An animated wavy background effect using CSS/SVG waves that create a flowing ocean-like motion behind content.",
+  "whenToUse": "Use for hero sections, CTA sections, or page backgrounds where you want animated flowing wave patterns.",
+  "installation": "npx aceternity-ui@latest add wavy-background",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Content to display above the wavy background"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the container"
+    },
+    {
+      "name": "containerClassName",
+      "type": "string",
+      "default": "\"\"",
+      "description": "CSS classes for the outer container"
+    },
+    {
+      "name": "colors",
+      "type": "string[]",
+      "default": "[\"#38bdf8\", \"#818cf8\", \"#c084fc\", \"#e879f9\", \"#22d3ee\"]",
+      "description": "Array of colors for the wave gradient"
+    },
+    {
+      "name": "waveWidth",
+      "type": "number",
+      "default": "50",
+      "description": "Width of each wave segment"
+    },
+    {
+      "name": "backgroundFill",
+      "type": "string",
+      "default": "\"black\"",
+      "description": "Background fill color behind the waves"
+    },
+    {
+      "name": "blur",
+      "type": "number",
+      "default": "10",
+      "description": "Blur amount applied to the waves"
+    },
+    {
+      "name": "speed",
+      "type": "\"slow\" | \"fast\"",
+      "default": "\"fast\"",
+      "description": "Speed of the wave animation"
+    },
+    {
+      "name": "waveOpacity",
+      "type": "number",
+      "default": "0.5",
+      "description": "Opacity of the wave elements"
+    }
+  ],
+  "codeExample": "import { WavyBackground } from \"@/components/ui/wavy-background\"\n\nexport function WavyBackgroundDemo() {\n  return (\n    <WavyBackground className=\"max-w-4xl mx-auto pb-40\">\n      <p className=\"text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center\">\n        Hero waves are cool\n      </p>\n      <p className=\"text-base md:text-lg mt-4 text-white font-normal inter-var text-center\">\n        Leverage the power of canvas to create a beautiful hero section\n      </p>\n    </WavyBackground>\n  )\n}",
+  "tags": [
+    "background",
+    "waves",
+    "animation",
+    "ocean",
+    "hero",
+    "flowing"
+  ]
+}

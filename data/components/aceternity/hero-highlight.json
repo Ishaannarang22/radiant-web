@@ -1,0 +1,30 @@
+{
+  "name": "Hero Highlight",
+  "library": "aceternity",
+  "description": "A text highlight animation component that draws attention to key words or phrases with an animated gradient highlight that appears on scroll or load.",
+  "whenToUse": "Use for hero section headlines where you want to emphasize key words with an animated marker/highlight effect.",
+  "installation": "npx aceternity-ui@latest add hero-highlight",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Content to render with the highlight container"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the highlight wrapper"
+    }
+  ],
+  "codeExample": "import { HeroHighlight, Highlight } from \"@/components/ui/hero-highlight\"\nimport { motion } from \"framer-motion\"\n\nexport function HeroHighlightDemo() {\n  return (\n    <HeroHighlight>\n      <motion.h1\n        initial={{ opacity: 0, y: 20 }}\n        animate={{ opacity: 1, y: [20, -5, 0] }}\n        transition={{ duration: 0.5, ease: [0.4, 0.0, 0.2, 1] }}\n        className=\"text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto\"\n      >\n        With insomnia, nothing&apos;s real. Everything is far away. Everything is a{\" \"}\n        <Highlight className=\"text-black dark:text-white\">\n          copy, of a copy, of a copy.\n        </Highlight>\n      </motion.h1>\n    </HeroHighlight>\n  )\n}",
+  "tags": [
+    "hero",
+    "highlight",
+    "text",
+    "animation",
+    "emphasis",
+    "heading"
+  ]
+}
