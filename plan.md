@@ -162,7 +162,7 @@ pgvector is a PostgreSQL extension that lets you store "vector embeddings" — a
   - `config` — Flexible JSON for colors, fonts, style preferences
   - `vercel_project_id` — Links to the Vercel project after deployment
 
-- [ ] **1.4 Create the `project_files` table**
+- [x] **1.4 Create the `project_files` table**
   ```sql
   CREATE TABLE project_files (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
