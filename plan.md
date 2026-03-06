@@ -319,7 +319,7 @@ pgvector is a PostgreSQL extension that lets you store "vector embeddings" — a
   - `<=>` is the cosine distance operator from pgvector
   - `match_threshold` filters out weak matches
 
-- [ ] **1.11 Create Row Level Security (RLS) policies**
+- [x] **1.11 Create Row Level Security (RLS) policies**
   - Enable RLS on all tables
   - Users can only read/write their own projects
   - Component/template/pattern embeddings are readable by all authenticated users
