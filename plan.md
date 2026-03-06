@@ -570,7 +570,7 @@ After Phase 2, you should have:
     - Everything else → "generic"
   - `packages/scraper/industry-mapper.ts`
 
-- [ ] **3.5 Build the main scraper orchestrator**
+- [x] **3.5 Build the main scraper orchestrator**
   - `packages/scraper/index.ts`
   - Main function: `scrapeBusinessProfile(name: string, location: string): Promise<BusinessProfile>`
   - Steps:

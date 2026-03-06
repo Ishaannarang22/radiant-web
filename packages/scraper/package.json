@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@googlemaps/google-maps-services-js": "^3.4.2",
+    "@radiant/db": "workspace:*",
     "cheerio": "^1.2.0"
   },
   "devDependencies": {

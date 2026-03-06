@@ -112,6 +112,9 @@ importers:
       '@googlemaps/google-maps-services-js':
         specifier: ^3.4.2
         version: 3.4.2
+      '@radiant/db':
+        specifier: workspace:*
+        version: link:../db
       cheerio:
         specifier: ^1.2.0
         version: 1.2.0
