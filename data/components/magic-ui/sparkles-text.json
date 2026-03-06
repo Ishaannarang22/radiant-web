@@ -1,0 +1,42 @@
+{
+  "name": "Sparkles Text",
+  "library": "magic-ui",
+  "description": "A text component with animated sparkle/star particles floating around and above the text, creating a magical twinkling effect.",
+  "whenToUse": "Use for highlighting special text, promotional headings, awards, or any text that should feel magical and sparkly.",
+  "installation": "npx magicui-cli@latest add sparkles-text",
+  "props": [
+    {
+      "name": "text",
+      "type": "string",
+      "default": "\"\"",
+      "description": "The text content to display with sparkles"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "colors",
+      "type": "{ first: string; second: string }",
+      "default": "{ first: \"#9E7AFF\", second: \"#FE8BBB\" }",
+      "description": "Colors for the sparkle particles"
+    },
+    {
+      "name": "sparklesCount",
+      "type": "number",
+      "default": "10",
+      "description": "Number of sparkle particles"
+    }
+  ],
+  "codeExample": "import { SparklesText } from \"@/components/ui/sparkles-text\"\n\nexport function SparklesTextDemo() {\n  return (\n    <SparklesText text=\"Magic UI\" />\n  )\n}",
+  "tags": [
+    "sparkles",
+    "text",
+    "magic",
+    "animation",
+    "particles",
+    "hero"
+  ]
+}

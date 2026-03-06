@@ -1,0 +1,48 @@
+{
+  "name": "Border Beam",
+  "library": "magic-ui",
+  "description": "An animated border effect where a glowing beam travels along the border of an element, creating a dynamic highlight that traces the perimeter.",
+  "whenToUse": "Use for highlighting cards, feature boxes, pricing tiers, or any container that needs an eye-catching animated border.",
+  "installation": "npx magicui-cli@latest add border-beam",
+  "props": [
+    {
+      "name": "size",
+      "type": "number",
+      "default": "200",
+      "description": "Size of the beam highlight in pixels"
+    },
+    {
+      "name": "duration",
+      "type": "number",
+      "default": "15",
+      "description": "Time in seconds for one full border loop"
+    },
+    {
+      "name": "borderWidth",
+      "type": "number",
+      "default": "1.5",
+      "description": "Width of the border in pixels"
+    },
+    {
+      "name": "colorFrom",
+      "type": "string",
+      "default": "\"#ffaa40\"",
+      "description": "Starting gradient color of the beam"
+    },
+    {
+      "name": "colorTo",
+      "type": "string",
+      "default": "\"#9c40ff\"",
+      "description": "Ending gradient color of the beam"
+    }
+  ],
+  "codeExample": "import { BorderBeam } from \"@/components/ui/border-beam\"\n\nexport function BorderBeamDemo() {\n  return (\n    <div className=\"relative flex h-[200px] w-[300px] flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl\">\n      <span className=\"pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10\">\n        Border Beam\n      </span>\n      <BorderBeam size={250} duration={12} delay={9} />\n    </div>\n  )\n}",
+  "tags": [
+    "border",
+    "beam",
+    "glow",
+    "animation",
+    "highlight",
+    "gradient"
+  ]
+}

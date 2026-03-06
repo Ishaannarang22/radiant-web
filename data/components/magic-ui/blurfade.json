@@ -1,0 +1,48 @@
+{
+  "name": "BlurFade",
+  "library": "magic-ui",
+  "description": "An entrance animation component that fades in content with a simultaneous blur-to-clear transition, creating an elegant reveal effect.",
+  "whenToUse": "Use for page entrance animations, section reveals on scroll, or any content that should appear with a smooth blur-to-focus transition.",
+  "installation": "npx magicui-cli@latest add blur-fade",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Content to animate"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "delay",
+      "type": "number",
+      "default": "0.25",
+      "description": "Delay before animation starts in seconds"
+    },
+    {
+      "name": "inView",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether to trigger animation when in viewport"
+    },
+    {
+      "name": "blur",
+      "type": "string",
+      "default": "\"6px\"",
+      "description": "Initial blur amount"
+    }
+  ],
+  "codeExample": "import { BlurFade } from \"@/components/ui/blur-fade\"\n\nexport function BlurFadeDemo() {\n  return (\n    <div className=\"flex flex-col gap-4\">\n      {[\"First item\", \"Second item\", \"Third item\"].map((text, idx) => (\n        <BlurFade key={text} delay={0.25 + idx * 0.05} inView>\n          <p className=\"text-lg font-medium\">{text}</p>\n        </BlurFade>\n      ))}\n    </div>\n  )\n}",
+  "tags": [
+    "blur",
+    "fade",
+    "entrance",
+    "animation",
+    "reveal",
+    "scroll"
+  ]
+}

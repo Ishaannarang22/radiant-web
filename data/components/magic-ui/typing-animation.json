@@ -1,0 +1,36 @@
+{
+  "name": "Typing Animation",
+  "library": "magic-ui",
+  "description": "A typewriter-style text animation that types out text character by character with a blinking cursor, simulating real-time typing.",
+  "whenToUse": "Use for hero headlines, chat interfaces, terminal effects, or any text that should appear as if being typed in real time.",
+  "installation": "npx magicui-cli@latest add typing-animation",
+  "props": [
+    {
+      "name": "text",
+      "type": "string",
+      "default": "\"\"",
+      "description": "The text to type out character by character"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "duration",
+      "type": "number",
+      "default": "200",
+      "description": "Duration between each character in milliseconds"
+    }
+  ],
+  "codeExample": "import { TypingAnimation } from \"@/components/ui/typing-animation\"\n\nexport function TypingAnimationDemo() {\n  return (\n    <TypingAnimation\n      text=\"Typing Animation\"\n      className=\"text-4xl font-bold text-black dark:text-white\"\n      duration={150}\n    />\n  )\n}",
+  "tags": [
+    "typing",
+    "typewriter",
+    "text",
+    "animation",
+    "cursor",
+    "terminal"
+  ]
+}

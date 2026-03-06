@@ -1,0 +1,48 @@
+{
+  "name": "Number Ticker",
+  "library": "magic-ui",
+  "description": "An animated number counter that ticks up from zero to a target value with a smooth rolling digit animation, perfect for statistics and metrics.",
+  "whenToUse": "Use for statistics sections, dashboards, pricing numbers, or any numeric value that should animate into view to draw attention.",
+  "installation": "npx magicui-cli@latest add number-ticker",
+  "props": [
+    {
+      "name": "value",
+      "type": "number",
+      "default": "0",
+      "description": "The target number to animate to"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "delay",
+      "type": "number",
+      "default": "0",
+      "description": "Delay before animation starts in seconds"
+    },
+    {
+      "name": "decimalPlaces",
+      "type": "number",
+      "default": "0",
+      "description": "Number of decimal places to show"
+    },
+    {
+      "name": "direction",
+      "type": "\"up\" | \"down\"",
+      "default": "\"up\"",
+      "description": "Direction of the counting animation"
+    }
+  ],
+  "codeExample": "import { NumberTicker } from \"@/components/ui/number-ticker\"\n\nexport function NumberTickerDemo() {\n  return (\n    <p className=\"whitespace-pre-wrap text-8xl font-medium tracking-tighter text-black dark:text-white\">\n      <NumberTicker value={9800} />\n    </p>\n  )\n}",
+  "tags": [
+    "number",
+    "counter",
+    "ticker",
+    "animation",
+    "statistics",
+    "metrics"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Animated Beam",
+  "library": "magic-ui",
+  "description": "An animated beam effect that draws a curved line between two elements, simulating a connection or data flow path with a glowing gradient.",
+  "whenToUse": "Use for architecture diagrams, connection visualizations, or showing data flow between components on a page.",
+  "installation": "npx magicui-cli@latest add animated-beam",
+  "props": [
+    {
+      "name": "containerRef",
+      "type": "React.RefObject<HTMLElement>",
+      "default": "undefined",
+      "description": "Ref to the container element that bounds the beam"
+    },
+    {
+      "name": "fromRef",
+      "type": "React.RefObject<HTMLElement>",
+      "default": "undefined",
+      "description": "Ref to the source element where the beam starts"
+    },
+    {
+      "name": "toRef",
+      "type": "React.RefObject<HTMLElement>",
+      "default": "undefined",
+      "description": "Ref to the target element where the beam ends"
+    },
+    {
+      "name": "curvature",
+      "type": "number",
+      "default": "0",
+      "description": "Amount of curve applied to the beam path"
+    },
+    {
+      "name": "duration",
+      "type": "number",
+      "default": "5",
+      "description": "Animation duration in seconds"
+    }
+  ],
+  "codeExample": "import { AnimatedBeam } from \"@/components/ui/animated-beam\"\nimport { useRef } from \"react\"\n\nexport function AnimatedBeamDemo() {\n  const containerRef = useRef<HTMLDivElement>(null)\n  const fromRef = useRef<HTMLDivElement>(null)\n  const toRef = useRef<HTMLDivElement>(null)\n\n  return (\n    <div ref={containerRef} className=\"relative flex h-[300px] w-full items-center justify-between p-10\">\n      <div ref={fromRef} className=\"z-10 flex h-12 w-12 items-center justify-center rounded-full border-2 bg-white\">\n        A\n      </div>\n      <div ref={toRef} className=\"z-10 flex h-12 w-12 items-center justify-center rounded-full border-2 bg-white\">\n        B\n      </div>\n      <AnimatedBeam containerRef={containerRef} fromRef={fromRef} toRef={toRef} />\n    </div>\n  )\n}",
+  "tags": [
+    "beam",
+    "connection",
+    "animation",
+    "flow",
+    "diagram"
+  ]
+}

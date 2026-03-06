@@ -1,0 +1,42 @@
+{
+  "name": "Pulsating Button",
+  "library": "magic-ui",
+  "description": "A button component with a continuous pulsating glow animation that draws attention, using a radiating ring effect around the button.",
+  "whenToUse": "Use for primary CTAs, important action buttons, or any button that needs maximum visibility and attention-grabbing animation.",
+  "installation": "npx magicui-cli@latest add pulsating-button",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Button content"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "pulseColor",
+      "type": "string",
+      "default": "\"#0096ff\"",
+      "description": "Color of the pulsating ring"
+    },
+    {
+      "name": "duration",
+      "type": "string",
+      "default": "\"1.5s\"",
+      "description": "Duration of one pulse cycle"
+    }
+  ],
+  "codeExample": "import { PulsatingButton } from \"@/components/ui/pulsating-button\"\n\nexport function PulsatingButtonDemo() {\n  return (\n    <PulsatingButton>Get Started</PulsatingButton>\n  )\n}",
+  "tags": [
+    "button",
+    "pulse",
+    "cta",
+    "animation",
+    "glow",
+    "attention"
+  ]
+}

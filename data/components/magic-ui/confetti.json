@@ -1,0 +1,29 @@
+{
+  "name": "Confetti",
+  "library": "magic-ui",
+  "description": "A confetti animation component that shoots colorful confetti particles, perfect for celebrating user actions like completing a purchase or achieving a milestone.",
+  "whenToUse": "Use for celebration moments, successful form submissions, purchase confirmations, or gamification milestones.",
+  "installation": "npx magicui-cli@latest add confetti",
+  "props": [
+    {
+      "name": "options",
+      "type": "ConfettiOptions",
+      "default": "{}",
+      "description": "Configuration options for the confetti burst (particleCount, spread, etc.)"
+    },
+    {
+      "name": "manualstart",
+      "type": "boolean",
+      "default": "false",
+      "description": "If true, confetti will not fire automatically"
+    }
+  ],
+  "codeExample": "import { Confetti } from \"@/components/ui/confetti\"\n\nexport function ConfettiDemo() {\n  return (\n    <div className=\"relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background\">\n      <button\n        className=\"rounded-md bg-primary px-4 py-2 text-primary-foreground\"\n        onClick={() => {\n          Confetti({\n            particleCount: 100,\n            spread: 70,\n            origin: { y: 0.6 },\n          })\n        }}\n      >\n        Celebrate!\n      </button>\n      <Confetti />\n    </div>\n  )\n}",
+  "tags": [
+    "confetti",
+    "celebration",
+    "particles",
+    "animation",
+    "interactive"
+  ]
+}

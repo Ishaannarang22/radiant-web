@@ -1,0 +1,48 @@
+{
+  "name": "Shine Border",
+  "library": "magic-ui",
+  "description": "A container component with an animated rotating gradient border that creates a continuous shining/glowing border effect.",
+  "whenToUse": "Use for highlighting premium content, featured cards, special offers, or any container that needs an animated glowing border.",
+  "installation": "npx magicui-cli@latest add shine-border",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Content to render inside the bordered container"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "color",
+      "type": "string | string[]",
+      "default": "\"#000000\"",
+      "description": "Border gradient color(s)"
+    },
+    {
+      "name": "borderWidth",
+      "type": "number",
+      "default": "1",
+      "description": "Width of the animated border"
+    },
+    {
+      "name": "duration",
+      "type": "number",
+      "default": "14",
+      "description": "Animation duration in seconds"
+    }
+  ],
+  "codeExample": "import { ShineBorder } from \"@/components/ui/shine-border\"\n\nexport function ShineBorderDemo() {\n  return (\n    <ShineBorder\n      className=\"relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl\"\n      color={[\"#A07CFE\", \"#FE8FB5\", \"#FFBE7B\"]}\n    >\n      <span className=\"pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10\">\n        Shine Border\n      </span>\n    </ShineBorder>\n  )\n}",
+  "tags": [
+    "border",
+    "shine",
+    "glow",
+    "gradient",
+    "animation",
+    "premium"
+  ]
+}

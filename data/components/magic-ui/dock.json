@@ -1,0 +1,48 @@
+{
+  "name": "Dock",
+  "library": "magic-ui",
+  "description": "A macOS-style dock component with magnification effect on hover, where icons scale up as the cursor approaches them.",
+  "whenToUse": "Use for navigation bars, tool palettes, or social link sections where a macOS dock-style interaction enhances the UX.",
+  "installation": "npx magicui-cli@latest add dock",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Dock items to render"
+    },
+    {
+      "name": "magnification",
+      "type": "number",
+      "default": "60",
+      "description": "Maximum icon size in pixels when magnified"
+    },
+    {
+      "name": "distance",
+      "type": "number",
+      "default": "140",
+      "description": "Distance in pixels at which magnification starts"
+    },
+    {
+      "name": "direction",
+      "type": "\"top\" | \"middle\" | \"bottom\"",
+      "default": "\"bottom\"",
+      "description": "Direction of the magnification growth"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { Dock, DockIcon } from \"@/components/ui/dock\"\nimport { Home, Mail, Settings, User } from \"lucide-react\"\n\nexport function DockDemo() {\n  return (\n    <div className=\"relative flex w-full items-center justify-center\">\n      <Dock magnification={60} distance={100}>\n        <DockIcon className=\"bg-black/10 dark:bg-white/10 p-3\">\n          <Home className=\"size-full\" />\n        </DockIcon>\n        <DockIcon className=\"bg-black/10 dark:bg-white/10 p-3\">\n          <User className=\"size-full\" />\n        </DockIcon>\n        <DockIcon className=\"bg-black/10 dark:bg-white/10 p-3\">\n          <Mail className=\"size-full\" />\n        </DockIcon>\n        <DockIcon className=\"bg-black/10 dark:bg-white/10 p-3\">\n          <Settings className=\"size-full\" />\n        </DockIcon>\n      </Dock>\n    </div>\n  )\n}",
+  "tags": [
+    "dock",
+    "navigation",
+    "magnification",
+    "hover",
+    "interactive",
+    "macos"
+  ]
+}

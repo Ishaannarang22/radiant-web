@@ -1,0 +1,48 @@
+{
+  "name": "Shimmer Button",
+  "library": "magic-ui",
+  "description": "A button with a continuous shimmer/shine animation that sweeps across its surface, creating an eye-catching metallic sheen effect.",
+  "whenToUse": "Use for primary CTA buttons, landing page actions, or any button that needs a premium shimmer effect to draw clicks.",
+  "installation": "npx magicui-cli@latest add shimmer-button",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Button content"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "shimmerColor",
+      "type": "string",
+      "default": "\"#ffffff\"",
+      "description": "Color of the shimmer sweep"
+    },
+    {
+      "name": "shimmerSize",
+      "type": "string",
+      "default": "\"0.05em\"",
+      "description": "Size of the shimmer effect"
+    },
+    {
+      "name": "background",
+      "type": "string",
+      "default": "\"rgba(0,0,0,1)\"",
+      "description": "Background color of the button"
+    }
+  ],
+  "codeExample": "import { ShimmerButton } from \"@/components/ui/shimmer-button\"\n\nexport function ShimmerButtonDemo() {\n  return (\n    <div className=\"z-10 flex items-center justify-center\">\n      <ShimmerButton className=\"shadow-2xl\">\n        <span className=\"whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg\">\n          Shimmer Button\n        </span>\n      </ShimmerButton>\n    </div>\n  )\n}",
+  "tags": [
+    "button",
+    "shimmer",
+    "shine",
+    "cta",
+    "animation",
+    "premium"
+  ]
+}

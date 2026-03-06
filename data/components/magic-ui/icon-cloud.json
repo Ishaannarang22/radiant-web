@@ -1,0 +1,30 @@
+{
+  "name": "Icon Cloud",
+  "library": "magic-ui",
+  "description": "A 3D rotating cloud of icons/logos rendered in a sphere formation, similar to a tag cloud but with smooth WebGL-powered rotation.",
+  "whenToUse": "Use for technology stack showcases, partner logos, skill displays, or any collection of icons that benefits from a 3D cloud visualization.",
+  "installation": "npx magicui-cli@latest add icon-cloud",
+  "props": [
+    {
+      "name": "iconSlugs",
+      "type": "string[]",
+      "default": "[]",
+      "description": "Array of Simple Icons slugs to display in the cloud"
+    },
+    {
+      "name": "images",
+      "type": "string[]",
+      "default": "[]",
+      "description": "Array of image URLs to use as icons"
+    }
+  ],
+  "codeExample": "import { IconCloud } from \"@/components/ui/icon-cloud\"\n\nconst slugs = [\n  \"typescript\", \"javascript\", \"react\", \"nextdotjs\", \"prisma\",\n  \"postgresql\", \"vercel\", \"docker\", \"git\", \"github\",\n  \"tailwindcss\", \"figma\", \"nodejs\", \"python\",\n]\n\nexport function IconCloudDemo() {\n  return (\n    <div className=\"relative flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg border bg-background px-20 pb-20 pt-8\">\n      <IconCloud iconSlugs={slugs} />\n    </div>\n  )\n}",
+  "tags": [
+    "icons",
+    "cloud",
+    "3d",
+    "logos",
+    "tech-stack",
+    "interactive"
+  ]
+}

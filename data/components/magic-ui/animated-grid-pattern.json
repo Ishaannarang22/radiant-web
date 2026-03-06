@@ -1,0 +1,53 @@
+{
+  "name": "Animated Grid Pattern",
+  "library": "magic-ui",
+  "description": "A grid pattern background with animated squares that fade in and out randomly, creating a dynamic and subtle background effect.",
+  "whenToUse": "Use as a background for hero sections, feature sections, or any area that needs a subtle animated grid pattern.",
+  "installation": "npx magicui-cli@latest add animated-grid-pattern",
+  "props": [
+    {
+      "name": "width",
+      "type": "number",
+      "default": "40",
+      "description": "Width of each grid cell in pixels"
+    },
+    {
+      "name": "height",
+      "type": "number",
+      "default": "40",
+      "description": "Height of each grid cell in pixels"
+    },
+    {
+      "name": "numSquares",
+      "type": "number",
+      "default": "50",
+      "description": "Number of animated squares visible at a time"
+    },
+    {
+      "name": "maxOpacity",
+      "type": "number",
+      "default": "0.5",
+      "description": "Maximum opacity of the animated squares"
+    },
+    {
+      "name": "duration",
+      "type": "number",
+      "default": "4",
+      "description": "Animation duration in seconds for each square"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { AnimatedGridPattern } from \"@/components/ui/animated-grid-pattern\"\nimport { cn } from \"@/lib/utils\"\n\nexport function AnimatedGridPatternDemo() {\n  return (\n    <div className=\"relative flex h-[500px] w-full items-center justify-center overflow-hidden rounded-lg border bg-background p-20\">\n      <p className=\"z-10 text-5xl font-medium tracking-tighter text-black dark:text-white\">\n        Magic UI\n      </p>\n      <AnimatedGridPattern\n        numSquares={30}\n        maxOpacity={0.1}\n        duration={3}\n        className={cn(\"[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]\")}\n      />\n    </div>\n  )\n}",
+  "tags": [
+    "grid",
+    "pattern",
+    "background",
+    "animation",
+    "subtle"
+  ]
+}

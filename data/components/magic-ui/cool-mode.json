@@ -1,0 +1,29 @@
+{
+  "name": "Cool Mode",
+  "library": "magic-ui",
+  "description": "A wrapper component that adds particle burst animations on click to any child element, creating playful interactive feedback with customizable emojis or shapes.",
+  "whenToUse": "Use for adding fun interactive feedback to buttons, likes, or any clickable element where playful particles enhance the experience.",
+  "installation": "npx magicui-cli@latest add cool-mode",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactElement",
+      "default": "undefined",
+      "description": "The clickable element to wrap"
+    },
+    {
+      "name": "options",
+      "type": "CoolModeOptions",
+      "default": "{}",
+      "description": "Configuration for particle type, size, speed, and count"
+    }
+  ],
+  "codeExample": "import { CoolMode } from \"@/components/ui/cool-mode\"\n\nexport function CoolModeDemo() {\n  return (\n    <div className=\"relative flex items-center justify-center\">\n      <CoolMode>\n        <button className=\"rounded-md bg-primary px-4 py-2 text-primary-foreground\">\n          Click Me!\n        </button>\n      </CoolMode>\n    </div>\n  )\n}",
+  "tags": [
+    "particles",
+    "click",
+    "interactive",
+    "fun",
+    "animation"
+  ]
+}

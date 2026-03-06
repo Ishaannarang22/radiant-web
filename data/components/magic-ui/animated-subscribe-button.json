@@ -1,0 +1,41 @@
+{
+  "name": "Animated Subscribe Button",
+  "library": "magic-ui",
+  "description": "A subscribe button with an animated state transition that morphs between 'Subscribe' and 'Subscribed' states with a smooth animation.",
+  "whenToUse": "Use for newsletter signups, subscription forms, or any toggle action that benefits from satisfying animated feedback.",
+  "installation": "npx magicui-cli@latest add animated-subscribe-button",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Two children: initial state and subscribed state content"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the button"
+    },
+    {
+      "name": "subscribeStatus",
+      "type": "boolean",
+      "default": "false",
+      "description": "Current subscription state"
+    },
+    {
+      "name": "onClick",
+      "type": "() => void",
+      "default": "undefined",
+      "description": "Click handler for the button"
+    }
+  ],
+  "codeExample": "import { AnimatedSubscribeButton } from \"@/components/ui/animated-subscribe-button\"\nimport { CheckIcon, ChevronRightIcon } from \"lucide-react\"\n\nexport function AnimatedSubscribeButtonDemo() {\n  return (\n    <AnimatedSubscribeButton className=\"w-36\">\n      <span className=\"group inline-flex items-center\">\n        Subscribe\n        <ChevronRightIcon className=\"ml-1 size-4 transition-transform duration-300 group-hover:translate-x-1\" />\n      </span>\n      <span className=\"group inline-flex items-center\">\n        <CheckIcon className=\"mr-2 size-4\" />\n        Subscribed\n      </span>\n    </AnimatedSubscribeButton>\n  )\n}",
+  "tags": [
+    "button",
+    "subscribe",
+    "animation",
+    "toggle",
+    "interactive"
+  ]
+}

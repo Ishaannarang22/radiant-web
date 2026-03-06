@@ -1,0 +1,30 @@
+{
+  "name": "Globe",
+  "library": "magic-ui",
+  "description": "An interactive 3D globe component rendered with WebGL/Three.js, displaying connection arcs between locations on a rotating Earth.",
+  "whenToUse": "Use for showcasing global presence, international customers, CDN coverage, or any feature that benefits from a geographic visualization.",
+  "installation": "npx magicui-cli@latest add globe",
+  "props": [
+    {
+      "name": "config",
+      "type": "COBEOptions",
+      "default": "{}",
+      "description": "Configuration object for the COBE globe renderer"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the canvas container"
+    }
+  ],
+  "codeExample": "import { Globe } from \"@/components/ui/globe\"\n\nexport function GlobeDemo() {\n  return (\n    <div className=\"relative flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border bg-background px-40 pb-40 pt-8 md:pb-60\">\n      <span className=\"pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10\">\n        Globe\n      </span>\n      <Globe className=\"top-28\" />\n    </div>\n  )\n}",
+  "tags": [
+    "globe",
+    "3d",
+    "map",
+    "interactive",
+    "webgl",
+    "geographic"
+  ]
+}

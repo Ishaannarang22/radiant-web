@@ -1,0 +1,36 @@
+{
+  "name": "Safari",
+  "library": "magic-ui",
+  "description": "A Safari browser mockup component that wraps content in a realistic browser chrome, complete with address bar, navigation buttons, and window controls.",
+  "whenToUse": "Use for product screenshots, app previews, website showcases, or any demo content that looks better framed in a browser window.",
+  "installation": "npx magicui-cli@latest add safari",
+  "props": [
+    {
+      "name": "url",
+      "type": "string",
+      "default": "\"magicui.design\"",
+      "description": "URL displayed in the browser address bar"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "src",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Image source URL for the browser content"
+    }
+  ],
+  "codeExample": "import { Safari } from \"@/components/ui/safari\"\n\nexport function SafariDemo() {\n  return (\n    <div className=\"relative\">\n      <Safari url=\"magicui.design\" className=\"size-full\" src=\"/screenshot.png\" />\n    </div>\n  )\n}",
+  "tags": [
+    "browser",
+    "mockup",
+    "safari",
+    "preview",
+    "screenshot",
+    "frame"
+  ]
+}

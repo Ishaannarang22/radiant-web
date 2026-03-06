@@ -1,0 +1,35 @@
+{
+  "name": "Animated List",
+  "library": "magic-ui",
+  "description": "A list component with staggered entrance animations, where each item slides in from below with a fade effect in sequence.",
+  "whenToUse": "Use for notification lists, activity feeds, feature lists, or any sequential content that benefits from animated entry.",
+  "installation": "npx magicui-cli@latest add animated-list",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "List items to animate"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the list container"
+    },
+    {
+      "name": "delay",
+      "type": "number",
+      "default": "1000",
+      "description": "Delay in ms between each item's animation"
+    }
+  ],
+  "codeExample": "import { AnimatedList } from \"@/components/ui/animated-list\"\n\nconst notifications = [\n  { name: \"Payment received\", description: \"Magic UI - $2,000.00\", time: \"15m ago\", icon: \"💸\" },\n  { name: \"User signed up\", description: \"john@example.com\", time: \"10m ago\", icon: \"👤\" },\n  { name: \"New message\", description: \"How's the project?\", time: \"5m ago\", icon: \"💬\" },\n]\n\nexport function AnimatedListDemo() {\n  return (\n    <div className=\"relative flex max-h-[400px] min-h-[400px] w-full max-w-[32rem] flex-col overflow-hidden rounded-lg border bg-background p-6\">\n      <AnimatedList>\n        {notifications.map((item, idx) => (\n          <div key={idx} className=\"flex items-center gap-3 rounded-lg border p-3\">\n            <span className=\"text-2xl\">{item.icon}</span>\n            <div>\n              <p className=\"text-sm font-medium\">{item.name}</p>\n              <p className=\"text-xs text-muted-foreground\">{item.description}</p>\n            </div>\n            <p className=\"ml-auto text-xs text-muted-foreground\">{item.time}</p>\n          </div>\n        ))}\n      </AnimatedList>\n    </div>\n  )\n}",
+  "tags": [
+    "list",
+    "animation",
+    "stagger",
+    "notification",
+    "feed"
+  ]
+}

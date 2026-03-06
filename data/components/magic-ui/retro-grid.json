@@ -1,0 +1,30 @@
+{
+  "name": "Retro Grid",
+  "library": "magic-ui",
+  "description": "A retro-style perspective grid background that creates a vaporwave/synthwave aesthetic with a vanishing point grid receding into the distance.",
+  "whenToUse": "Use for hero sections, landing pages, or any section where a retro/synthwave aesthetic with a perspective grid adds visual character.",
+  "installation": "npx magicui-cli@latest add retro-grid",
+  "props": [
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "angle",
+      "type": "number",
+      "default": "65",
+      "description": "Perspective angle of the grid in degrees"
+    }
+  ],
+  "codeExample": "import { RetroGrid } from \"@/components/ui/retro-grid\"\n\nexport function RetroGridDemo() {\n  return (\n    <div className=\"relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background\">\n      <span className=\"pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-center text-7xl font-bold leading-none tracking-tighter text-transparent\">\n        Retro Grid\n      </span>\n      <RetroGrid />\n    </div>\n  )\n}",
+  "tags": [
+    "retro",
+    "grid",
+    "background",
+    "synthwave",
+    "vaporwave",
+    "perspective"
+  ]
+}

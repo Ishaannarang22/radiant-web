@@ -1,0 +1,42 @@
+{
+  "name": "Fade Text",
+  "library": "magic-ui",
+  "description": "A text animation component that fades in each word sequentially with a slight upward motion, creating an elegant word-by-word reveal.",
+  "whenToUse": "Use for hero headlines, section titles, or any text that should appear with a dramatic word-by-word fade-in animation.",
+  "installation": "npx magicui-cli@latest add fade-text",
+  "props": [
+    {
+      "name": "text",
+      "type": "string",
+      "default": "\"\"",
+      "description": "The text content to animate word by word"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "direction",
+      "type": "\"up\" | \"down\"",
+      "default": "\"up\"",
+      "description": "Direction of the fade animation"
+    },
+    {
+      "name": "framerProps",
+      "type": "MotionProps",
+      "default": "{}",
+      "description": "Custom framer-motion animation properties"
+    }
+  ],
+  "codeExample": "import { FadeText } from \"@/components/ui/fade-text\"\n\nexport function FadeTextDemo() {\n  return (\n    <div className=\"flex flex-col items-center justify-center space-y-4\">\n      <FadeText\n        text=\"Welcome to Magic UI\"\n        className=\"text-4xl font-bold text-black dark:text-white\"\n        direction=\"up\"\n      />\n    </div>\n  )\n}",
+  "tags": [
+    "text",
+    "fade",
+    "animation",
+    "reveal",
+    "hero",
+    "headline"
+  ]
+}

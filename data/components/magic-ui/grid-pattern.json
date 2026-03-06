@@ -1,0 +1,41 @@
+{
+  "name": "Grid Pattern",
+  "library": "magic-ui",
+  "description": "A clean SVG-based grid pattern background component that creates a subtle lined grid effect, perfect for minimal design backgrounds.",
+  "whenToUse": "Use as a background for hero sections, code editors, or technical-looking interfaces that benefit from a grid aesthetic.",
+  "installation": "npx magicui-cli@latest add grid-pattern",
+  "props": [
+    {
+      "name": "width",
+      "type": "number",
+      "default": "40",
+      "description": "Width of each grid cell"
+    },
+    {
+      "name": "height",
+      "type": "number",
+      "default": "40",
+      "description": "Height of each grid cell"
+    },
+    {
+      "name": "strokeDasharray",
+      "type": "string",
+      "default": "\"0\"",
+      "description": "SVG stroke-dasharray for dashed grid lines"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { GridPattern } from \"@/components/ui/grid-pattern\"\nimport { cn } from \"@/lib/utils\"\n\nexport function GridPatternDemo() {\n  return (\n    <div className=\"relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background\">\n      <p className=\"z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-black dark:text-white\">\n        Grid Pattern\n      </p>\n      <GridPattern\n        width={30}\n        height={30}\n        className={cn(\"[mask-image:radial-gradient(400px_circle_at_center,white,transparent)]\")}\n      />\n    </div>\n  )\n}",
+  "tags": [
+    "grid",
+    "pattern",
+    "background",
+    "lines",
+    "minimal"
+  ]
+}

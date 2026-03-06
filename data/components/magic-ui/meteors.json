@@ -1,0 +1,24 @@
+{
+  "name": "Meteors",
+  "library": "magic-ui",
+  "description": "An animated meteor shower effect with glowing trails that streak across the component, creating a cosmic/space-themed visual effect.",
+  "whenToUse": "Use for hero sections, feature cards, or backgrounds where a cosmic/space meteor effect adds visual drama.",
+  "installation": "npx magicui-cli@latest add meteors",
+  "props": [
+    {
+      "name": "number",
+      "type": "number",
+      "default": "20",
+      "description": "Number of meteor particles"
+    }
+  ],
+  "codeExample": "import { Meteors } from \"@/components/ui/meteors\"\n\nexport function MeteorsDemo() {\n  return (\n    <div className=\"relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background\">\n      <Meteors number={30} />\n      <span className=\"pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10\">\n        Meteors\n      </span>\n    </div>\n  )\n}",
+  "tags": [
+    "meteors",
+    "space",
+    "particles",
+    "animation",
+    "background",
+    "cosmic"
+  ]
+}

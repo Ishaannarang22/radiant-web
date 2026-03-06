@@ -1,0 +1,54 @@
+{
+  "name": "Marquee",
+  "library": "magic-ui",
+  "description": "An infinite scrolling marquee component that smoothly loops content horizontally or vertically, perfect for testimonials, logos, or any repeating content.",
+  "whenToUse": "Use for client logos, testimonial carousels, partner lists, or any content that should scroll continuously in a loop.",
+  "installation": "npx magicui-cli@latest add marquee",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Content items to scroll in the marquee"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "reverse",
+      "type": "boolean",
+      "default": "false",
+      "description": "Reverse the scroll direction"
+    },
+    {
+      "name": "pauseOnHover",
+      "type": "boolean",
+      "default": "false",
+      "description": "Pause the animation on mouse hover"
+    },
+    {
+      "name": "vertical",
+      "type": "boolean",
+      "default": "false",
+      "description": "Scroll vertically instead of horizontally"
+    },
+    {
+      "name": "repeat",
+      "type": "number",
+      "default": "4",
+      "description": "Number of content repetitions for seamless loop"
+    }
+  ],
+  "codeExample": "import { Marquee } from \"@/components/ui/marquee\"\nimport { cn } from \"@/lib/utils\"\n\nconst reviews = [\n  { name: \"Jack\", body: \"This is amazing!\", img: \"/avatar1.png\" },\n  { name: \"Jill\", body: \"I love this so much!\", img: \"/avatar2.png\" },\n  { name: \"John\", body: \"Incredible work!\", img: \"/avatar3.png\" },\n]\n\nexport function MarqueeDemo() {\n  return (\n    <div className=\"relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background\">\n      <Marquee pauseOnHover className=\"[--duration:20s]\">\n        {reviews.map((review) => (\n          <figure key={review.name} className={cn(\"relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4\")}>\n            <div className=\"flex flex-row items-center gap-2\">\n              <img className=\"rounded-full\" width=\"32\" height=\"32\" alt=\"\" src={review.img} />\n              <figcaption className=\"text-sm font-medium dark:text-white\">{review.name}</figcaption>\n            </div>\n            <blockquote className=\"mt-2 text-sm\">{review.body}</blockquote>\n          </figure>\n        ))}\n      </Marquee>\n    </div>\n  )\n}",
+  "tags": [
+    "marquee",
+    "scroll",
+    "infinite",
+    "carousel",
+    "logos",
+    "testimonials"
+  ]
+}

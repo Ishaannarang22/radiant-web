@@ -403,7 +403,7 @@ Before Claude can generate websites using shadcn/ui, Aceternity UI, Magic UI, et
   - Store as JSON: `data/components/aceternity/[component].json`
   - Target: ~30-40 components
 
-- [ ] **2.4 Scrape Magic UI documentation**
+- [x] **2.4 Scrape Magic UI documentation**
   - Source: https://magicui.design/docs/components
   - Focus on:
     - Animated text, number tickers, typing effects

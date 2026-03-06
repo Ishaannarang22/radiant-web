@@ -1,0 +1,41 @@
+{
+  "name": "Hyper Text",
+  "library": "magic-ui",
+  "description": "A text animation where characters scramble through random letters before resolving to the final text, creating a hacker/decryption-style reveal effect.",
+  "whenToUse": "Use for hero text, loading states, or any element where a scrambling text reveal creates intrigue and visual interest.",
+  "installation": "npx magicui-cli@latest add hyper-text",
+  "props": [
+    {
+      "name": "text",
+      "type": "string",
+      "default": "\"\"",
+      "description": "The final text to display after scramble animation"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "duration",
+      "type": "number",
+      "default": "800",
+      "description": "Duration of the scramble animation in milliseconds"
+    },
+    {
+      "name": "animateOnLoad",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether to play the animation on mount"
+    }
+  ],
+  "codeExample": "import { HyperText } from \"@/components/ui/hyper-text\"\n\nexport function HyperTextDemo() {\n  return (\n    <HyperText\n      text=\"Hyper Text\"\n      className=\"text-4xl font-bold text-black dark:text-white\"\n      duration={800}\n    />\n  )\n}",
+  "tags": [
+    "text",
+    "scramble",
+    "hacker",
+    "animation",
+    "reveal"
+  ]
+}

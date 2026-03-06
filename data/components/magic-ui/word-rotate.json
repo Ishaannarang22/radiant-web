@@ -1,0 +1,42 @@
+{
+  "name": "Word Rotate",
+  "library": "magic-ui",
+  "description": "A text component that rotates through a list of words with a smooth vertical transition, perfect for cycling through features or descriptors.",
+  "whenToUse": "Use for hero sections with rotating descriptors, feature highlights, or anywhere you want to cycle through multiple words/phrases.",
+  "installation": "npx magicui-cli@latest add word-rotate",
+  "props": [
+    {
+      "name": "words",
+      "type": "string[]",
+      "default": "[]",
+      "description": "Array of words to rotate through"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "duration",
+      "type": "number",
+      "default": "2500",
+      "description": "Duration each word is shown in milliseconds"
+    },
+    {
+      "name": "framerProps",
+      "type": "MotionProps",
+      "default": "{}",
+      "description": "Custom framer-motion animation properties"
+    }
+  ],
+  "codeExample": "import { WordRotate } from \"@/components/ui/word-rotate\"\n\nexport function WordRotateDemo() {\n  return (\n    <WordRotate\n      className=\"text-4xl font-bold text-black dark:text-white\"\n      words={[\"Web\", \"Mobile\", \"Desktop\"]}\n    />\n  )\n}",
+  "tags": [
+    "text",
+    "rotate",
+    "cycle",
+    "animation",
+    "hero",
+    "dynamic"
+  ]
+}

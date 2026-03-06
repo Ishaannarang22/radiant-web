@@ -1,0 +1,30 @@
+{
+  "name": "Bento Grid",
+  "library": "magic-ui",
+  "description": "A flexible bento-style grid layout component for showcasing features or content in asymmetric, visually appealing grid cards.",
+  "whenToUse": "Use for feature sections, product showcases, or dashboard-style layouts where content cards need varied sizes and positions.",
+  "installation": "npx magicui-cli@latest add bento-grid",
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Grid items to render"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the grid container"
+    }
+  ],
+  "codeExample": "import { BentoGrid, BentoCard } from \"@/components/ui/bento-grid\"\n\nconst features = [\n  { name: \"Feature 1\", description: \"Description here\", className: \"col-span-3 lg:col-span-1\" },\n  { name: \"Feature 2\", description: \"Description here\", className: \"col-span-3 lg:col-span-2\" },\n  { name: \"Feature 3\", description: \"Description here\", className: \"col-span-3 lg:col-span-2\" },\n  { name: \"Feature 4\", description: \"Description here\", className: \"col-span-3 lg:col-span-1\" },\n]\n\nexport function BentoGridDemo() {\n  return (\n    <BentoGrid>\n      {features.map((feature) => (\n        <BentoCard key={feature.name} {...feature} />\n      ))}\n    </BentoGrid>\n  )\n}",
+  "tags": [
+    "grid",
+    "bento",
+    "layout",
+    "cards",
+    "features",
+    "dashboard"
+  ]
+}

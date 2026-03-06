@@ -1,0 +1,42 @@
+{
+  "name": "Word Pull Up",
+  "library": "magic-ui",
+  "description": "A text animation where each word pulls up from below with a spring-like bounce effect, creating an energetic entrance animation.",
+  "whenToUse": "Use for hero headlines, section titles, or any text that should animate in with a dynamic upward pull motion.",
+  "installation": "npx magicui-cli@latest add word-pull-up",
+  "props": [
+    {
+      "name": "words",
+      "type": "string",
+      "default": "\"\"",
+      "description": "The text content to animate word by word"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "wrapperFramerProps",
+      "type": "MotionProps",
+      "default": "{}",
+      "description": "Framer motion props for the wrapper element"
+    },
+    {
+      "name": "framerProps",
+      "type": "MotionProps",
+      "default": "{}",
+      "description": "Framer motion props for each word"
+    }
+  ],
+  "codeExample": "import { WordPullUp } from \"@/components/ui/word-pull-up\"\n\nexport function WordPullUpDemo() {\n  return (\n    <WordPullUp\n      words=\"Word Pull Up Animation\"\n      className=\"text-4xl font-bold tracking-[-0.02em] text-black dark:text-white md:text-7xl md:leading-[5rem]\"\n    />\n  )\n}",
+  "tags": [
+    "text",
+    "animation",
+    "pull",
+    "entrance",
+    "hero",
+    "headline"
+  ]
+}

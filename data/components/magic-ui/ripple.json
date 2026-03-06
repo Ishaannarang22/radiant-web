@@ -1,0 +1,42 @@
+{
+  "name": "Ripple",
+  "library": "magic-ui",
+  "description": "Concentric circle ripple animation expanding outward from a center point, creating a sonar/radar-like pulsing effect.",
+  "whenToUse": "Use for loading indicators, attention-drawing backgrounds, or any element that benefits from a radiating ripple animation.",
+  "installation": "npx magicui-cli@latest add ripple",
+  "props": [
+    {
+      "name": "mainCircleSize",
+      "type": "number",
+      "default": "210",
+      "description": "Size of the central circle in pixels"
+    },
+    {
+      "name": "mainCircleOpacity",
+      "type": "number",
+      "default": "0.24",
+      "description": "Opacity of the main circle"
+    },
+    {
+      "name": "numCircles",
+      "type": "number",
+      "default": "8",
+      "description": "Number of ripple circles"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { Ripple } from \"@/components/ui/ripple\"\n\nexport function RippleDemo() {\n  return (\n    <div className=\"relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background\">\n      <p className=\"z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-white\">\n        Ripple\n      </p>\n      <Ripple />\n    </div>\n  )\n}",
+  "tags": [
+    "ripple",
+    "pulse",
+    "animation",
+    "background",
+    "sonar",
+    "radar"
+  ]
+}

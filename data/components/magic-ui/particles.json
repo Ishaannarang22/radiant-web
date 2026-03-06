@@ -1,0 +1,41 @@
+{
+  "name": "Particles",
+  "library": "magic-ui",
+  "description": "A full-screen particle animation background using HTML Canvas, with particles that float, connect, and respond to mouse proximity.",
+  "whenToUse": "Use for hero section backgrounds, landing pages, or tech-focused designs where floating connected particles add ambiance.",
+  "installation": "npx magicui-cli@latest add particles",
+  "props": [
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for the canvas container"
+    },
+    {
+      "name": "quantity",
+      "type": "number",
+      "default": "100",
+      "description": "Number of particles"
+    },
+    {
+      "name": "color",
+      "type": "string",
+      "default": "\"#ffffff\"",
+      "description": "Color of the particles"
+    },
+    {
+      "name": "refresh",
+      "type": "boolean",
+      "default": "false",
+      "description": "Trigger re-initialization of particles"
+    }
+  ],
+  "codeExample": "import { Particles } from \"@/components/ui/particles\"\nimport { useTheme } from \"next-themes\"\nimport { useEffect, useState } from \"react\"\n\nexport function ParticlesDemo() {\n  const { resolvedTheme } = useTheme()\n  const [color, setColor] = useState(\"#ffffff\")\n\n  useEffect(() => {\n    setColor(resolvedTheme === \"dark\" ? \"#ffffff\" : \"#000000\")\n  }, [resolvedTheme])\n\n  return (\n    <div className=\"relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background\">\n      <span className=\"pointer-events-none text-center text-8xl font-semibold text-black dark:text-white\">\n        Particles\n      </span>\n      <Particles className=\"absolute inset-0\" quantity={100} color={color} refresh />\n    </div>\n  )\n}",
+  "tags": [
+    "particles",
+    "background",
+    "canvas",
+    "floating",
+    "interactive"
+  ]
+}
