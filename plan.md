@@ -784,7 +784,7 @@ After Phase 3, you should have:
   - Should be async — return immediately with a job ID, poll for completion
   - Or use Server-Sent Events (SSE) for real-time progress updates
 
-- [ ] **4.9 Test generation with real data**
+- [x] **4.9 Test generation with real data**
   - Use the 5 businesses scraped in Phase 3
   - Generate a site for each
   - Review generated code quality:
