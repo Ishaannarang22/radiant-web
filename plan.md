@@ -141,7 +141,7 @@ pgvector is a PostgreSQL extension that lets you store "vector embeddings" — a
   - `email` — User's email, must be unique
   - `plan` — What pricing tier they're on (free, pro, agency)
 
-- [ ] **1.3 Create the `projects` table**
+- [x] **1.3 Create the `projects` table**
   ```sql
   CREATE TABLE projects (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
