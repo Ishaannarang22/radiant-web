@@ -81,7 +81,7 @@ A monorepo is a single Git repository that contains multiple related projects (c
   - Install Google Places client: `pnpm add @googlemaps/google-maps-services-js`
   - Create placeholder files: `google-places.ts`, `firecrawl.ts`, `types.ts`
 
-- [ ] **0.8 Set up shared TypeScript config**
+- [x] **0.8 Set up shared TypeScript config**
   - Create root `tsconfig.json` with strict mode, path aliases
   - Each sub-project extends it: `"extends": "../../tsconfig.json"`
   - This ensures consistent TypeScript behavior everywhere
