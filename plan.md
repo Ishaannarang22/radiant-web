@@ -421,7 +421,7 @@ Before Claude can generate websites using shadcn/ui, Aceternity UI, Magic UI, et
   - Store as JSON: `data/components/21st-dev/[component].json`
   - Target: ~20-30 components
 
-- [ ] **2.6 Create the scraping script**
+- [x] **2.6 Create the scraping script**
   - `scripts/scrape-docs.ts`
   - Uses fetch + HTML parsing (cheerio or similar) to extract component docs
   - Outputs clean JSON files per component
