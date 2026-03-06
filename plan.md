@@ -522,7 +522,7 @@ After Phase 2, you should have:
   - Handle errors: business not found, API quota exceeded, invalid location
   - Cache results in `businesses` table to avoid redundant API calls
 
-- [ ] **3.2 Implement Firecrawl scraper**
+- [x] **3.2 Implement Firecrawl scraper**
   - `packages/scraper/firecrawl.ts`
   - Self-hosted Firecrawl setup:
     - Document how to run Firecrawl locally (Docker)
