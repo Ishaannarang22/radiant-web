@@ -830,7 +830,7 @@ After Phase 4, you should have:
   - Use shadcn/ui + Aceternity/Magic UI for visual impact
   - Must be fully responsive
 
-- [ ] **5.2 Build the generation flow UI**
+- [x] **5.2 Build the generation flow UI**
   - `apps/web/app/generate/page.tsx`
   - Step 1: **Input**
     - Business name text input
