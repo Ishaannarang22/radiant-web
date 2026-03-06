@@ -559,7 +559,7 @@ After Phase 2, you should have:
   }
   ```
 
-- [ ] **3.4 Build the category-to-industry mapper**
+- [x] **3.4 Build the category-to-industry mapper**
   - Google Places returns categories like "Italian restaurant", "General dentist", "Hair salon"
   - Map these to our industry templates:
     - "* restaurant" → "restaurant"
