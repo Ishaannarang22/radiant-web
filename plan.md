@@ -126,7 +126,7 @@ pgvector is a PostgreSQL extension that lets you store "vector embeddings" — a
   - This adds the `vector` data type to PostgreSQL
   - Alternatively, create a migration script that does this automatically
 
-- [ ] **1.2 Create the `users` table**
+- [x] **1.2 Create the `users` table**
   ```sql
   CREATE TABLE users (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
