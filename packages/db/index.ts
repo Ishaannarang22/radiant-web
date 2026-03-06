@@ -27,3 +27,4 @@ export function getServiceClient() {
 
 export { createClient } from "@supabase/supabase-js"
 export * from "./types"
+export * from "./queries"

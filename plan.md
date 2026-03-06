@@ -338,7 +338,7 @@ pgvector is a PostgreSQL extension that lets you store "vector embeddings" — a
   - Use Supabase's type generator: `pnpm supabase gen types typescript` if available
   - Export all types so other packages can import them
 
-- [ ] **1.14 Create database helper functions**
+- [x] **1.14 Create database helper functions**
   - `packages/db/queries.ts` — Common queries:
     - `createProject(userId, businessName, subdomain)`
     - `getProjectsByUser(userId)`
