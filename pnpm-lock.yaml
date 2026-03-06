@@ -11,6 +11,9 @@ importers:
       '@playwright/test':
         specifier: ^1.58.2
         version: 1.58.2
+      '@supabase/supabase-js':
+        specifier: ^2.98.0
+        version: 2.98.0
       dotenv:
         specifier: ^17.3.1
         version: 17.3.1

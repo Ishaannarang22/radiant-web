@@ -325,7 +325,7 @@ pgvector is a PostgreSQL extension that lets you store "vector embeddings" — a
   - Component/template/pattern embeddings are readable by all authenticated users
   - Service role key bypasses RLS (used by server-side API routes)
 
-- [ ] **1.12 Write migration script**
+- [x] **1.12 Write migration script**
   - Create `packages/db/schema.sql` with all the above SQL
   - Create `scripts/setup-supabase.ts` that:
     1. Connects to Supabase using service role key
