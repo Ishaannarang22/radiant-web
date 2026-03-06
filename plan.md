@@ -591,7 +591,7 @@ After Phase 2, you should have:
   - Returns BusinessProfile JSON
   - Rate limit: max 10 scrapes per user per hour
 
-- [ ] **3.7 Test with real businesses**
+- [x] **3.7 Test with real businesses**
   - Test with 5 real businesses across industries:
     - A local restaurant
     - A dental office
