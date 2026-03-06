@@ -1,0 +1,119 @@
+{
+  "pattern_type": "copy-formulas",
+  "description": "Headline, subheadline, and CTA copy templates organized by persuasion strategy. Use {placeholders} for business-specific data.",
+  "formulas": {
+    "problem_solution_headlines": {
+      "description": "Headlines that name a problem the customer has, then position the business as the solution.",
+      "templates": [
+        "Tired of {pain_point}? {business_name} has the answer.",
+        "Stop struggling with {pain_point}. Start with {business_name}.",
+        "{pain_point}? Not anymore. Meet {business_name}.",
+        "The {city} {industry} that actually {solves_problem}.",
+        "Finally, a {industry} in {city} you can trust.",
+        "Say goodbye to {pain_point}. Say hello to {business_name}."
+      ],
+      "best_for": ["plumber", "auto-repair", "cleaning-service", "dental"]
+    },
+    "social_proof_headlines": {
+      "description": "Headlines that lead with credibility — ratings, reviews, years of experience.",
+      "templates": [
+        "Rated {rating} stars by {review_count}+ {city} customers.",
+        "{city}'s #1 rated {industry} — {review_count}+ five-star reviews.",
+        "Trusted by {city} families for over {years} years.",
+        "See why {review_count}+ customers choose {business_name}.",
+        "The {industry} {city} trusts most.",
+        "Join {review_count}+ happy customers in {city}."
+      ],
+      "best_for": ["dental", "lawyer", "plumber", "auto-repair", "restaurant"]
+    },
+    "benefit_driven_headlines": {
+      "description": "Headlines focused on the outcome or transformation the customer will experience.",
+      "templates": [
+        "A smile you'll be proud of — guaranteed.",
+        "Your home, transformed. Your life, simplified.",
+        "Look your best. Feel your best. Be your best.",
+        "The {cuisine} experience your taste buds deserve.",
+        "Professional results. Personal attention. Fair prices.",
+        "Where great {service_type} meets genuine care."
+      ],
+      "best_for": ["salon", "dental", "restaurant", "cleaning-service", "gym"]
+    },
+    "location_authority_headlines": {
+      "description": "Headlines that establish local authority and community connection.",
+      "templates": [
+        "{city}'s premier {industry} since {year}.",
+        "Proudly serving {city} and surrounding areas.",
+        "Your neighborhood {industry} — right here in {city}.",
+        "The heart of {city}'s {industry} scene.",
+        "Locally owned. Community trusted. {city} proud.",
+        "{city}'s go-to {industry} for {specialty}."
+      ],
+      "best_for": ["restaurant", "plumber", "auto-repair", "salon", "generic"]
+    },
+    "subheadlines": {
+      "description": "Supporting lines that add detail, credibility, or emotion below the main headline.",
+      "templates": [
+        "Serving {city} with {specialty} since {year}.",
+        "Family-owned and operated — treating every customer like family.",
+        "Licensed, insured, and backed by {review_count}+ five-star reviews.",
+        "Open {days}. Walk-ins welcome.",
+        "Free estimates. No surprises. Just great {service_type}.",
+        "Book online in 30 seconds or call us at {phone}.",
+        "Fresh ingredients. Authentic recipes. Unforgettable flavors.",
+        "From consultation to completion — we handle everything."
+      ]
+    },
+    "urgency_ctas": {
+      "description": "CTA copy that creates urgency or scarcity to drive immediate action.",
+      "templates": [
+        "Book today — limited slots available.",
+        "Get your free quote before they fill up.",
+        "Schedule now — same-day appointments available.",
+        "Don't wait — call now for priority service.",
+        "Limited-time offer: {offer_details}.",
+        "This week only: {promotion}."
+      ],
+      "best_for": ["plumber", "dental", "cleaning-service", "salon", "auto-repair"]
+    },
+    "trust_building_ctas": {
+      "description": "CTA copy that reduces risk and builds confidence in taking action.",
+      "templates": [
+        "Get a free, no-obligation quote.",
+        "Schedule your free consultation.",
+        "See our work — no commitment required.",
+        "Try us risk-free. Satisfaction guaranteed.",
+        "Free estimate. Zero pressure.",
+        "Talk to an expert — it's free."
+      ],
+      "best_for": ["lawyer", "plumber", "auto-repair", "dental", "real-estate"]
+    },
+    "direct_action_ctas": {
+      "description": "Simple, direct CTA buttons that tell the user exactly what to do.",
+      "templates": [
+        "Book Now",
+        "Get a Free Quote",
+        "Call {phone}",
+        "Schedule Appointment",
+        "Order Online",
+        "View Our Menu",
+        "See Our Work",
+        "Contact Us",
+        "Get Directions",
+        "Reserve a Table",
+        "Start Your Project",
+        "Claim Your Spot"
+      ]
+    },
+    "about_section_openers": {
+      "description": "Opening lines for the About section that tell the business story.",
+      "templates": [
+        "For over {years} years, {business_name} has been {city}'s trusted {industry}.",
+        "What started as a small {origin_story} has grown into {city}'s favorite {industry}.",
+        "At {business_name}, we believe {core_belief}.",
+        "Founded in {year}, {business_name} was born from a simple idea: {mission}.",
+        "We're not just another {industry}. We're your neighbors, your friends, your {relationship}.",
+        "Every {service_type} we deliver is backed by {years} years of experience and a commitment to excellence."
+      ]
+    }
+  }
+}

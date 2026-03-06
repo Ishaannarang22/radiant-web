@@ -1,0 +1,146 @@
+{
+  "pattern_type": "hero-sections",
+  "description": "Hero section layout patterns for business websites. Each pattern defines structure, visual approach, and recommended components.",
+  "patterns": [
+    {
+      "name": "Full-Width Image Background",
+      "description": "Full-bleed background image with dark overlay and centered white text. High visual impact, best when business has strong photography.",
+      "layout": "full-width-image",
+      "structure": {
+        "container": "relative w-full h-screen",
+        "background": "absolute inset-0 bg-cover bg-center",
+        "overlay": "absolute inset-0 bg-black/50",
+        "content": "relative z-10 flex flex-col items-center justify-center text-center text-white px-4"
+      },
+      "elements": ["background-image", "overlay", "headline", "subheadline", "cta-button"],
+      "suggested_components": ["shadcn:button"],
+      "best_for": ["restaurant", "salon", "real-estate", "gym"],
+      "notes": "Use the business's best photo. Overlay opacity 40-60% depending on image brightness."
+    },
+    {
+      "name": "Split Layout",
+      "description": "Text content on left, image on right (or vice versa). Clean, professional look. Good for services that need explanation.",
+      "layout": "split-horizontal",
+      "structure": {
+        "container": "grid grid-cols-1 md:grid-cols-2 min-h-screen",
+        "text_side": "flex flex-col justify-center px-8 md:px-16 py-12",
+        "image_side": "relative h-64 md:h-auto"
+      },
+      "elements": ["headline", "subheadline", "body-text", "cta-button", "secondary-button", "image"],
+      "suggested_components": ["shadcn:button", "aceternity:hero-highlight"],
+      "best_for": ["dental", "lawyer", "plumber", "cleaning-service"],
+      "notes": "Text side should have ample whitespace. Image side can use object-cover for full bleed."
+    },
+    {
+      "name": "Centered Text with Gradient",
+      "description": "Centered headline with animated gradient background. Modern, tech-forward aesthetic. No image dependency.",
+      "layout": "centered-gradient",
+      "structure": {
+        "container": "relative flex flex-col items-center justify-center min-h-screen px-4",
+        "background": "absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-secondary/20",
+        "content": "relative z-10 max-w-3xl text-center space-y-6"
+      },
+      "elements": ["gradient-background", "headline", "subheadline", "cta-button", "trust-badges"],
+      "suggested_components": ["aceternity:aurora-background", "magic-ui:animated-shiny-text", "shadcn:button"],
+      "best_for": ["generic", "gym", "cleaning-service"],
+      "notes": "Works well without photos. Add subtle animation for visual interest."
+    },
+    {
+      "name": "Video Background",
+      "description": "Looping background video with text overlay. Maximum visual impact for businesses with video content.",
+      "layout": "video-background",
+      "structure": {
+        "container": "relative w-full h-screen overflow-hidden",
+        "video": "absolute inset-0 w-full h-full object-cover",
+        "overlay": "absolute inset-0 bg-black/40",
+        "content": "relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4"
+      },
+      "elements": ["background-video", "overlay", "headline", "subheadline", "cta-button"],
+      "suggested_components": ["shadcn:button"],
+      "best_for": ["restaurant", "gym", "salon", "real-estate"],
+      "notes": "Video should be short (10-15s), muted, and autoplay. Provide fallback image for mobile."
+    },
+    {
+      "name": "Animated Text Hero",
+      "description": "Focus on animated text effects — typewriter, generate, or sparkle animations. Minimal but eye-catching.",
+      "layout": "animated-text",
+      "structure": {
+        "container": "flex flex-col items-center justify-center min-h-screen px-4 bg-background",
+        "content": "max-w-4xl text-center space-y-8"
+      },
+      "elements": ["animated-headline", "subheadline", "cta-button", "scroll-indicator"],
+      "suggested_components": ["aceternity:text-generate-effect", "aceternity:typewriter-effect", "magic-ui:typing-animation", "magic-ui:sparkles-text", "shadcn:button"],
+      "best_for": ["generic", "lawyer", "dental", "cleaning-service"],
+      "notes": "Choose one text animation effect — don't combine multiple. Keep animation duration under 3 seconds."
+    },
+    {
+      "name": "Hero with Card Grid",
+      "description": "Headline above a grid of 3-4 service cards. Immediately shows what the business offers.",
+      "layout": "headline-plus-cards",
+      "structure": {
+        "container": "min-h-screen px-4 py-20 md:py-32 bg-background",
+        "header": "max-w-3xl mx-auto text-center mb-12",
+        "grid": "grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto"
+      },
+      "elements": ["headline", "subheadline", "service-cards", "cta-button"],
+      "suggested_components": ["shadcn:card", "aceternity:card-hover-effect", "magic-ui:bento-grid"],
+      "best_for": ["plumber", "auto-repair", "cleaning-service", "dental"],
+      "notes": "Each card should have an icon, title, and short description. 3 cards works best for balance."
+    },
+    {
+      "name": "Hero Parallax",
+      "description": "Multiple images floating with parallax scroll effect. Creates depth and showcases multiple photos.",
+      "layout": "parallax-gallery",
+      "structure": {
+        "container": "relative min-h-[150vh]",
+        "parallax_layer": "sticky top-0 h-screen overflow-hidden",
+        "content": "relative z-10 pt-[50vh] px-4 text-center"
+      },
+      "elements": ["parallax-images", "headline", "subheadline", "cta-button"],
+      "suggested_components": ["aceternity:hero-parallax", "shadcn:button"],
+      "best_for": ["restaurant", "salon", "real-estate", "gym"],
+      "notes": "Needs 5-10 good photos. Very impressive but heavy — consider lazy loading."
+    },
+    {
+      "name": "Minimal with Social Proof",
+      "description": "Clean minimal hero with headline, then a row of trust indicators (rating, review count, years in business).",
+      "layout": "minimal-social-proof",
+      "structure": {
+        "container": "flex flex-col items-center justify-center min-h-screen px-4 bg-background",
+        "content": "max-w-2xl text-center space-y-6",
+        "social_proof": "flex items-center justify-center gap-8 mt-8"
+      },
+      "elements": ["headline", "subheadline", "cta-button", "rating-stars", "review-count", "years-badge"],
+      "suggested_components": ["shadcn:button", "shadcn:badge", "21st-dev:social-proof-bar"],
+      "best_for": ["lawyer", "dental", "plumber", "auto-repair"],
+      "notes": "Social proof row should show 3-4 metrics. Use real data from Google Places API."
+    },
+    {
+      "name": "Sticky Scroll Hero",
+      "description": "Left side stays fixed with business info while right side scrolls through content sections. Immersive storytelling.",
+      "layout": "sticky-scroll",
+      "structure": {
+        "container": "grid grid-cols-1 md:grid-cols-2 min-h-[200vh]",
+        "sticky_side": "md:sticky md:top-0 md:h-screen flex flex-col justify-center px-8 md:px-16",
+        "scroll_side": "px-8 py-20 space-y-32"
+      },
+      "elements": ["headline", "subheadline", "cta-button", "scrolling-content-sections"],
+      "suggested_components": ["aceternity:sticky-scroll-reveal", "shadcn:button"],
+      "best_for": ["restaurant", "salon", "real-estate"],
+      "notes": "Right side should have 3-5 distinct content blocks. Each block tells part of the business story."
+    },
+    {
+      "name": "Bento Hero",
+      "description": "Asymmetric bento grid layout combining headline, images, stats, and CTAs in a dynamic grid.",
+      "layout": "bento-grid",
+      "structure": {
+        "container": "min-h-screen px-4 py-20 bg-background",
+        "grid": "grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto auto-rows-[200px]"
+      },
+      "elements": ["headline-cell", "image-cells", "stat-cells", "cta-cell", "review-cell"],
+      "suggested_components": ["magic-ui:bento-grid", "aceternity:bento-grid", "shadcn:card"],
+      "best_for": ["gym", "salon", "restaurant", "generic"],
+      "notes": "Hero cell should span 2 columns. Mix content types for visual variety. Keep to 6-8 cells max."
+    }
+  ]
+}

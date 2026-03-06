@@ -452,7 +452,7 @@ Before Claude can generate websites using shadcn/ui, Aceternity UI, Magic UI, et
   - Create templates for: **restaurant, dental, salon/barbershop, plumber/HVAC, lawyer, real-estate, gym/fitness, auto-repair, cleaning-service, generic**
   - Each template defines: sections, color schemes, copy patterns, required sections, photo strategy
 
-- [ ] **2.8 Curate design patterns**
+- [x] **2.8 Curate design patterns**
   - `data/patterns/hero-sections.json` — 8-10 hero section patterns:
     - Full-width image background with overlay text
     - Split layout (text left, image right)

@@ -1,0 +1,186 @@
+{
+  "pattern_type": "color-schemes",
+  "description": "Curated color palettes for business websites. Each palette includes primary, secondary, accent, background, and text colors with industry recommendations.",
+  "palettes": [
+    {
+      "name": "Warm Professional",
+      "primary": "#B45309",
+      "secondary": "#FEF3C7",
+      "accent": "#D97706",
+      "background": "#FFFBEB",
+      "text": "#1C1917",
+      "industries": ["restaurant", "salon", "generic"],
+      "mood": "Inviting, warm, approachable"
+    },
+    {
+      "name": "Clean Medical",
+      "primary": "#0284C7",
+      "secondary": "#E0F2FE",
+      "accent": "#0EA5E9",
+      "background": "#F8FAFC",
+      "text": "#0F172A",
+      "industries": ["dental", "generic"],
+      "mood": "Trustworthy, clean, professional"
+    },
+    {
+      "name": "Bold Creative",
+      "primary": "#7C3AED",
+      "secondary": "#EDE9FE",
+      "accent": "#A78BFA",
+      "background": "#FAFAF9",
+      "text": "#1C1917",
+      "industries": ["salon", "gym", "generic"],
+      "mood": "Modern, creative, energetic"
+    },
+    {
+      "name": "Forest Trust",
+      "primary": "#166534",
+      "secondary": "#DCFCE7",
+      "accent": "#22C55E",
+      "background": "#F0FDF4",
+      "text": "#14532D",
+      "industries": ["lawyer", "real-estate", "cleaning-service"],
+      "mood": "Trustworthy, natural, stable"
+    },
+    {
+      "name": "Slate Authority",
+      "primary": "#1E293B",
+      "secondary": "#F1F5F9",
+      "accent": "#3B82F6",
+      "background": "#FFFFFF",
+      "text": "#0F172A",
+      "industries": ["lawyer", "real-estate", "auto-repair"],
+      "mood": "Authoritative, serious, dependable"
+    },
+    {
+      "name": "Coral Energy",
+      "primary": "#E11D48",
+      "secondary": "#FFF1F2",
+      "accent": "#FB7185",
+      "background": "#FFFFFF",
+      "text": "#1C1917",
+      "industries": ["salon", "gym", "restaurant"],
+      "mood": "Vibrant, passionate, lively"
+    },
+    {
+      "name": "Ocean Calm",
+      "primary": "#0F766E",
+      "secondary": "#CCFBF1",
+      "accent": "#14B8A6",
+      "background": "#F0FDFA",
+      "text": "#134E4A",
+      "industries": ["dental", "salon", "cleaning-service"],
+      "mood": "Calming, refreshing, clean"
+    },
+    {
+      "name": "Midnight Gold",
+      "primary": "#1A1A2E",
+      "secondary": "#F5F0E8",
+      "accent": "#C4A35A",
+      "background": "#FAFAF8",
+      "text": "#1A1A2E",
+      "industries": ["restaurant", "lawyer", "real-estate"],
+      "mood": "Luxurious, premium, sophisticated"
+    },
+    {
+      "name": "Sunshine Friendly",
+      "primary": "#EA580C",
+      "secondary": "#FFF7ED",
+      "accent": "#F59E0B",
+      "background": "#FFFBEB",
+      "text": "#292524",
+      "industries": ["restaurant", "cleaning-service", "generic"],
+      "mood": "Cheerful, friendly, approachable"
+    },
+    {
+      "name": "Industrial Steel",
+      "primary": "#374151",
+      "secondary": "#F3F4F6",
+      "accent": "#EF4444",
+      "background": "#FFFFFF",
+      "text": "#111827",
+      "industries": ["plumber", "auto-repair", "generic"],
+      "mood": "Strong, reliable, no-nonsense"
+    },
+    {
+      "name": "Royal Blue",
+      "primary": "#1D4ED8",
+      "secondary": "#DBEAFE",
+      "accent": "#60A5FA",
+      "background": "#F8FAFC",
+      "text": "#1E3A5F",
+      "industries": ["plumber", "dental", "auto-repair"],
+      "mood": "Professional, dependable, classic"
+    },
+    {
+      "name": "Espresso Rich",
+      "primary": "#78350F",
+      "secondary": "#FDE68A",
+      "accent": "#92400E",
+      "background": "#FFFBEB",
+      "text": "#1C1917",
+      "industries": ["restaurant", "salon"],
+      "mood": "Rich, earthy, artisanal"
+    },
+    {
+      "name": "Fresh Green",
+      "primary": "#15803D",
+      "secondary": "#F0FDF4",
+      "accent": "#4ADE80",
+      "background": "#FFFFFF",
+      "text": "#1A2E1A",
+      "industries": ["cleaning-service", "gym", "dental"],
+      "mood": "Fresh, clean, healthy"
+    },
+    {
+      "name": "Charcoal Modern",
+      "primary": "#18181B",
+      "secondary": "#F4F4F5",
+      "accent": "#A855F7",
+      "background": "#FAFAFA",
+      "text": "#18181B",
+      "industries": ["gym", "salon", "generic"],
+      "mood": "Sleek, modern, bold"
+    },
+    {
+      "name": "Blush Elegant",
+      "primary": "#9F1239",
+      "secondary": "#FFF1F2",
+      "accent": "#FDA4AF",
+      "background": "#FFFBFC",
+      "text": "#1C1917",
+      "industries": ["salon", "restaurant", "real-estate"],
+      "mood": "Elegant, feminine, refined"
+    },
+    {
+      "name": "Copper Craft",
+      "primary": "#9A3412",
+      "secondary": "#FED7AA",
+      "accent": "#C2410C",
+      "background": "#FFF7ED",
+      "text": "#1C1917",
+      "industries": ["auto-repair", "plumber", "restaurant"],
+      "mood": "Craftsmanship, rugged, authentic"
+    },
+    {
+      "name": "Navy Professional",
+      "primary": "#1E3A5F",
+      "secondary": "#EFF6FF",
+      "accent": "#2563EB",
+      "background": "#FFFFFF",
+      "text": "#1E3A5F",
+      "industries": ["lawyer", "dental", "real-estate"],
+      "mood": "Professional, established, trustworthy"
+    },
+    {
+      "name": "Lime Vitality",
+      "primary": "#4D7C0F",
+      "secondary": "#ECFCCB",
+      "accent": "#84CC16",
+      "background": "#FEFCE8",
+      "text": "#1A2E05",
+      "industries": ["gym", "cleaning-service", "restaurant"],
+      "mood": "Energetic, natural, health-focused"
+    }
+  ]
+}

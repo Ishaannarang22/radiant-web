@@ -1,0 +1,119 @@
+{
+  "pattern_type": "cta-patterns",
+  "description": "Call-to-action section patterns for business websites. Each pattern defines layout, elements, and conversion-optimized structure.",
+  "patterns": [
+    {
+      "name": "Single Button Centered",
+      "description": "Clean centered CTA with headline, supporting text, and a single prominent button. The simplest and most versatile CTA.",
+      "layout": "centered-single",
+      "structure": {
+        "container": "py-16 md:py-24 px-4 bg-primary text-primary-foreground",
+        "content": "max-w-2xl mx-auto text-center space-y-6"
+      },
+      "elements": ["headline", "supporting-text", "primary-button"],
+      "suggested_components": ["shadcn:button"],
+      "best_for": ["all"],
+      "conversion_tip": "Use action verbs: 'Get Your Free Quote', 'Book Now', 'Start Today'."
+    },
+    {
+      "name": "Two Buttons",
+      "description": "Primary and secondary action buttons side by side. Lets users choose between direct action and learning more.",
+      "layout": "centered-dual",
+      "structure": {
+        "container": "py-16 md:py-24 px-4 bg-muted",
+        "content": "max-w-2xl mx-auto text-center space-y-6",
+        "buttons": "flex flex-col sm:flex-row items-center justify-center gap-4"
+      },
+      "elements": ["headline", "supporting-text", "primary-button", "secondary-button"],
+      "suggested_components": ["shadcn:button"],
+      "best_for": ["all"],
+      "conversion_tip": "Primary: direct action ('Book Appointment'). Secondary: lower commitment ('See Our Work')."
+    },
+    {
+      "name": "CTA with Phone Number",
+      "description": "Prominent phone number alongside a button. Essential for service businesses where calls drive revenue.",
+      "layout": "phone-cta",
+      "structure": {
+        "container": "py-16 md:py-24 px-4 bg-primary text-primary-foreground",
+        "content": "max-w-3xl mx-auto text-center space-y-6",
+        "phone": "text-3xl md:text-4xl font-bold",
+        "actions": "flex flex-col sm:flex-row items-center justify-center gap-4"
+      },
+      "elements": ["headline", "phone-number", "call-button", "secondary-button"],
+      "suggested_components": ["shadcn:button"],
+      "best_for": ["plumber", "auto-repair", "dental", "lawyer", "cleaning-service"],
+      "conversion_tip": "Make the phone number tappable (tel: link). Show hours next to it if applicable."
+    },
+    {
+      "name": "CTA with Form",
+      "description": "Inline form embedded in the CTA section. Captures leads directly without page navigation.",
+      "layout": "inline-form",
+      "structure": {
+        "container": "py-16 md:py-24 px-4 bg-muted",
+        "content": "max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center",
+        "text_side": "space-y-4",
+        "form_side": "bg-background rounded-lg p-6 shadow-lg space-y-4"
+      },
+      "elements": ["headline", "supporting-text", "trust-badges", "form-name", "form-email", "form-phone", "form-message", "submit-button"],
+      "suggested_components": ["shadcn:input", "shadcn:label", "shadcn:textarea", "shadcn:button", "shadcn:card"],
+      "best_for": ["lawyer", "plumber", "dental", "real-estate", "cleaning-service"],
+      "conversion_tip": "Keep form fields to 3-4 max. Add privacy note below submit button."
+    },
+    {
+      "name": "CTA with Testimonial",
+      "description": "CTA paired with a customer testimonial for social proof reinforcement at the conversion point.",
+      "layout": "cta-plus-testimonial",
+      "structure": {
+        "container": "py-16 md:py-24 px-4 bg-background",
+        "content": "max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center",
+        "cta_side": "space-y-6",
+        "testimonial_side": "bg-muted rounded-lg p-8"
+      },
+      "elements": ["headline", "supporting-text", "primary-button", "testimonial-quote", "testimonial-author", "rating-stars"],
+      "suggested_components": ["shadcn:button", "shadcn:card", "shadcn:avatar", "21st-dev:review-card"],
+      "best_for": ["dental", "salon", "auto-repair", "lawyer", "restaurant"],
+      "conversion_tip": "Use the most specific, results-oriented testimonial. Include the reviewer's name and photo."
+    },
+    {
+      "name": "Sticky Bottom Bar",
+      "description": "Fixed bar at the bottom of the viewport with business name, phone, and CTA button. Always visible on scroll.",
+      "layout": "sticky-bottom",
+      "structure": {
+        "container": "fixed bottom-0 left-0 right-0 z-50 bg-background border-t shadow-lg",
+        "content": "max-w-6xl mx-auto px-4 py-3 flex items-center justify-between"
+      },
+      "elements": ["business-name", "phone-number", "cta-button"],
+      "suggested_components": ["shadcn:button"],
+      "best_for": ["plumber", "auto-repair", "cleaning-service", "dental"],
+      "conversion_tip": "Show only on mobile. Hide after user has scrolled past the main CTA section."
+    },
+    {
+      "name": "Banner CTA",
+      "description": "Full-width banner with contrasting background, urgency-driven copy, and inline CTA. Good for promotions.",
+      "layout": "full-width-banner",
+      "structure": {
+        "container": "py-4 px-4 bg-accent text-accent-foreground",
+        "content": "max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4"
+      },
+      "elements": ["promo-text", "cta-button"],
+      "suggested_components": ["shadcn:button", "21st-dev:banner"],
+      "best_for": ["restaurant", "salon", "gym", "cleaning-service"],
+      "conversion_tip": "Use urgency: 'Limited Time', 'This Week Only', 'First Visit'. Keep text to one line."
+    },
+    {
+      "name": "Map + CTA",
+      "description": "Interactive map showing business location alongside contact info and CTA button. Drives foot traffic.",
+      "layout": "map-cta",
+      "structure": {
+        "container": "py-16 md:py-24 px-4 bg-muted",
+        "content": "max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8",
+        "map_side": "rounded-lg overflow-hidden h-64 md:h-auto",
+        "info_side": "flex flex-col justify-center space-y-6"
+      },
+      "elements": ["map-embed", "address", "phone-number", "hours-summary", "directions-button", "cta-button"],
+      "suggested_components": ["21st-dev:map-embed", "21st-dev:hours-and-location", "shadcn:button"],
+      "best_for": ["restaurant", "salon", "dental", "auto-repair", "gym"],
+      "conversion_tip": "Link directions button to Google Maps. Show today's hours prominently."
+    }
+  ]
+}
