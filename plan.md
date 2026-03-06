@@ -179,7 +179,7 @@ pgvector is a PostgreSQL extension that lets you store "vector embeddings" — a
   - `content` — The actual code as a string
   - One project has many files
 
-- [ ] **1.5 Create the `generations` table**
+- [x] **1.5 Create the `generations` table**
   ```sql
   CREATE TABLE generations (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
