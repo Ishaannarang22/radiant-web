@@ -383,7 +383,7 @@ Before Claude can generate websites using shadcn/ui, Aceternity UI, Magic UI, et
   └── patterns/
   ```
 
-- [ ] **2.2 Scrape shadcn/ui documentation**
+- [x] **2.2 Scrape shadcn/ui documentation**
   - Source: https://ui.shadcn.com/docs/components
   - For each component (Button, Card, Dialog, Dropdown, Input, etc.):
     - Component name

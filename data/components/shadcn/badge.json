@@ -1,0 +1,22 @@
+{
+  "name": "Badge",
+  "library": "shadcn",
+  "description": "Displays a badge or a component that looks like a badge for status indicators and labels.",
+  "whenToUse": "Use for status indicators, category labels, counts, tags, and small pieces of metadata.",
+  "installation": "npx shadcn@latest add badge",
+  "props": [
+    {
+      "name": "variant",
+      "type": "\"default\" | \"secondary\" | \"destructive\" | \"outline\"",
+      "default": "\"default\"",
+      "description": "The visual style variant of the badge"
+    }
+  ],
+  "codeExample": "import { Badge } from \"@/components/ui/badge\"\n\nexport function BadgeDemo() {\n  return (\n    <div className=\"flex gap-2\">\n      <Badge>Default</Badge>\n      <Badge variant=\"secondary\">Secondary</Badge>\n      <Badge variant=\"outline\">Outline</Badge>\n      <Badge variant=\"destructive\">Destructive</Badge>\n    </div>\n  )\n}",
+  "tags": [
+    "label",
+    "status",
+    "tag",
+    "indicator"
+  ]
+}

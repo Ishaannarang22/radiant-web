@@ -1,0 +1,22 @@
+{
+  "name": "Menubar",
+  "library": "shadcn",
+  "description": "A visually persistent menu common in desktop applications, providing quick access to a consistent set of commands.",
+  "whenToUse": "Use for application menu bars, toolbar menus, and desktop-style navigation with nested options.",
+  "installation": "npx shadcn@latest add menubar",
+  "props": [
+    {
+      "name": "className",
+      "type": "string",
+      "default": "undefined",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import {\n  Menubar,\n  MenubarContent,\n  MenubarItem,\n  MenubarMenu,\n  MenubarSeparator,\n  MenubarTrigger,\n} from \"@/components/ui/menubar\"\n\nexport function MenubarDemo() {\n  return (\n    <Menubar>\n      <MenubarMenu>\n        <MenubarTrigger>File</MenubarTrigger>\n        <MenubarContent>\n          <MenubarItem>New Tab</MenubarItem>\n          <MenubarItem>New Window</MenubarItem>\n          <MenubarSeparator />\n          <MenubarItem>Print</MenubarItem>\n        </MenubarContent>\n      </MenubarMenu>\n      <MenubarMenu>\n        <MenubarTrigger>Edit</MenubarTrigger>\n        <MenubarContent>\n          <MenubarItem>Undo</MenubarItem>\n          <MenubarItem>Redo</MenubarItem>\n        </MenubarContent>\n      </MenubarMenu>\n    </Menubar>\n  )\n}",
+  "tags": [
+    "menu",
+    "toolbar",
+    "navigation",
+    "desktop"
+  ]
+}

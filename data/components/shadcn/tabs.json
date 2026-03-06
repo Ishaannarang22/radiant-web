@@ -1,0 +1,34 @@
+{
+  "name": "Tabs",
+  "library": "shadcn",
+  "description": "A set of layered sections of content displayed one at a time, known as tab panels.",
+  "whenToUse": "Use for organizing content into sections, settings pages, dashboard views, and categorized content.",
+  "installation": "npx shadcn@latest add tabs",
+  "props": [
+    {
+      "name": "value",
+      "type": "string",
+      "default": "undefined",
+      "description": "The controlled active tab value"
+    },
+    {
+      "name": "onValueChange",
+      "type": "(value: string) => void",
+      "default": "undefined",
+      "description": "Callback when active tab changes"
+    },
+    {
+      "name": "defaultValue",
+      "type": "string",
+      "default": "undefined",
+      "description": "The default active tab"
+    }
+  ],
+  "codeExample": "import { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\"\n\nexport function TabsDemo() {\n  return (\n    <Tabs defaultValue=\"account\" className=\"w-[400px]\">\n      <TabsList>\n        <TabsTrigger value=\"account\">Account</TabsTrigger>\n        <TabsTrigger value=\"password\">Password</TabsTrigger>\n      </TabsList>\n      <TabsContent value=\"account\">\n        <p>Make changes to your account here.</p>\n      </TabsContent>\n      <TabsContent value=\"password\">\n        <p>Change your password here.</p>\n      </TabsContent>\n    </Tabs>\n  )\n}",
+  "tags": [
+    "navigation",
+    "tabs",
+    "sections",
+    "organize"
+  ]
+}

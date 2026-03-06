@@ -1,0 +1,22 @@
+{
+  "name": "Card",
+  "library": "shadcn",
+  "description": "Displays a card with header, content, and footer sections for grouping related information.",
+  "whenToUse": "Use for content containers, product cards, pricing cards, feature highlights, and dashboard widgets.",
+  "installation": "npx shadcn@latest add card",
+  "props": [
+    {
+      "name": "className",
+      "type": "string",
+      "default": "undefined",
+      "description": "Additional CSS classes for the card"
+    }
+  ],
+  "codeExample": "import {\n  Card,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\"\nimport { Button } from \"@/components/ui/button\"\n\nexport function CardDemo() {\n  return (\n    <Card className=\"w-[350px]\">\n      <CardHeader>\n        <CardTitle>Card Title</CardTitle>\n        <CardDescription>Card Description</CardDescription>\n      </CardHeader>\n      <CardContent>\n        <p>Card Content</p>\n      </CardContent>\n      <CardFooter>\n        <Button>Action</Button>\n      </CardFooter>\n    </Card>\n  )\n}",
+  "tags": [
+    "container",
+    "content",
+    "layout",
+    "widget"
+  ]
+}

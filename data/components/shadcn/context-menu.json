@@ -1,0 +1,22 @@
+{
+  "name": "ContextMenu",
+  "library": "shadcn",
+  "description": "Displays a menu to the user triggered by right-click, with support for submenus and keyboard navigation.",
+  "whenToUse": "Use for right-click context menus, additional actions on elements, and power-user interactions.",
+  "installation": "npx shadcn@latest add context-menu",
+  "props": [
+    {
+      "name": "modal",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether the context menu should be modal"
+    }
+  ],
+  "codeExample": "import {\n  ContextMenu,\n  ContextMenuContent,\n  ContextMenuItem,\n  ContextMenuTrigger,\n  ContextMenuSeparator,\n} from \"@/components/ui/context-menu\"\n\nexport function ContextMenuDemo() {\n  return (\n    <ContextMenu>\n      <ContextMenuTrigger className=\"flex h-[150px] w-[300px] items-center justify-center rounded-md border border-dashed text-sm\">\n        Right click here\n      </ContextMenuTrigger>\n      <ContextMenuContent className=\"w-64\">\n        <ContextMenuItem>Back</ContextMenuItem>\n        <ContextMenuItem>Forward</ContextMenuItem>\n        <ContextMenuItem>Reload</ContextMenuItem>\n        <ContextMenuSeparator />\n        <ContextMenuItem>View Source</ContextMenuItem>\n      </ContextMenuContent>\n    </ContextMenu>\n  )\n}",
+  "tags": [
+    "menu",
+    "right-click",
+    "actions",
+    "context"
+  ]
+}

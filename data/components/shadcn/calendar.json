@@ -1,0 +1,40 @@
+{
+  "name": "Calendar",
+  "library": "shadcn",
+  "description": "A date field component that allows users to enter and edit dates via a calendar interface.",
+  "whenToUse": "Use for date selection in forms, booking systems, scheduling, and date range pickers.",
+  "installation": "npx shadcn@latest add calendar",
+  "props": [
+    {
+      "name": "mode",
+      "type": "\"single\" | \"multiple\" | \"range\"",
+      "default": "\"single\"",
+      "description": "The selection mode of the calendar"
+    },
+    {
+      "name": "selected",
+      "type": "Date | Date[] | DateRange",
+      "default": "undefined",
+      "description": "The currently selected date(s)"
+    },
+    {
+      "name": "onSelect",
+      "type": "(date: Date | undefined) => void",
+      "default": "undefined",
+      "description": "Callback when a date is selected"
+    },
+    {
+      "name": "disabled",
+      "type": "Matcher | Matcher[]",
+      "default": "undefined",
+      "description": "Dates that should be disabled"
+    }
+  ],
+  "codeExample": "\"use client\"\n\nimport { useState } from \"react\"\nimport { Calendar } from \"@/components/ui/calendar\"\n\nexport function CalendarDemo() {\n  const [date, setDate] = useState<Date | undefined>(new Date())\n\n  return (\n    <Calendar\n      mode=\"single\"\n      selected={date}\n      onSelect={setDate}\n      className=\"rounded-md border\"\n    />\n  )\n}",
+  "tags": [
+    "date",
+    "picker",
+    "form",
+    "scheduling"
+  ]
+}

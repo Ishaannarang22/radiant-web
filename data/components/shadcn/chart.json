@@ -1,0 +1,22 @@
+{
+  "name": "Chart",
+  "library": "shadcn",
+  "description": "Beautiful chart components built on top of Recharts with built-in theming and tooltip support.",
+  "whenToUse": "Use for data visualization, dashboards, analytics, reports, and any graphical data representation.",
+  "installation": "npx shadcn@latest add chart",
+  "props": [
+    {
+      "name": "config",
+      "type": "ChartConfig",
+      "default": "{}",
+      "description": "Chart configuration for colors and labels"
+    }
+  ],
+  "codeExample": "\"use client\"\n\nimport { Bar, BarChart, XAxis, YAxis } from \"recharts\"\nimport { ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from \"@/components/ui/chart\"\n\nconst chartData = [\n  { month: \"January\", desktop: 186 },\n  { month: \"February\", desktop: 305 },\n  { month: \"March\", desktop: 237 },\n]\n\nconst chartConfig = {\n  desktop: { label: \"Desktop\", color: \"hsl(var(--chart-1))\" },\n} satisfies ChartConfig\n\nexport function ChartDemo() {\n  return (\n    <ChartContainer config={chartConfig} className=\"min-h-[200px] w-full\">\n      <BarChart data={chartData}>\n        <XAxis dataKey=\"month\" />\n        <YAxis />\n        <ChartTooltip content={<ChartTooltipContent />} />\n        <Bar dataKey=\"desktop\" fill=\"var(--color-desktop)\" radius={4} />\n      </BarChart>\n    </ChartContainer>\n  )\n}",
+  "tags": [
+    "data",
+    "visualization",
+    "graph",
+    "analytics"
+  ]
+}

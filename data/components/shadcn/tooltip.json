@@ -1,0 +1,28 @@
+{
+  "name": "Tooltip",
+  "library": "shadcn",
+  "description": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+  "whenToUse": "Use for icon button labels, additional context, abbreviated text expansion, and helpful hints.",
+  "installation": "npx shadcn@latest add tooltip",
+  "props": [
+    {
+      "name": "delayDuration",
+      "type": "number",
+      "default": "700",
+      "description": "Delay in ms before showing the tooltip"
+    },
+    {
+      "name": "side",
+      "type": "\"top\" | \"right\" | \"bottom\" | \"left\"",
+      "default": "\"top\"",
+      "description": "The preferred side of the trigger to render"
+    }
+  ],
+  "codeExample": "import {\n  Tooltip,\n  TooltipContent,\n  TooltipProvider,\n  TooltipTrigger,\n} from \"@/components/ui/tooltip\"\nimport { Button } from \"@/components/ui/button\"\n\nexport function TooltipDemo() {\n  return (\n    <TooltipProvider>\n      <Tooltip>\n        <TooltipTrigger asChild>\n          <Button variant=\"outline\">Hover me</Button>\n        </TooltipTrigger>\n        <TooltipContent>\n          <p>Add to library</p>\n        </TooltipContent>\n      </Tooltip>\n    </TooltipProvider>\n  )\n}",
+  "tags": [
+    "hint",
+    "label",
+    "hover",
+    "accessibility"
+  ]
+}

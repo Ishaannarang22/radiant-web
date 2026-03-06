@@ -1,0 +1,28 @@
+{
+  "name": "Carousel",
+  "library": "shadcn",
+  "description": "A carousel with motion and swipe built using Embla Carousel.",
+  "whenToUse": "Use for image galleries, testimonial sliders, product showcases, and content that needs horizontal scrolling.",
+  "installation": "npx shadcn@latest add carousel",
+  "props": [
+    {
+      "name": "opts",
+      "type": "EmblaOptionsType",
+      "default": "{}",
+      "description": "Embla Carousel options (loop, align, etc.)"
+    },
+    {
+      "name": "orientation",
+      "type": "\"horizontal\" | \"vertical\"",
+      "default": "\"horizontal\"",
+      "description": "The orientation of the carousel"
+    }
+  ],
+  "codeExample": "import {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n  CarouselNext,\n  CarouselPrevious,\n} from \"@/components/ui/carousel\"\nimport { Card, CardContent } from \"@/components/ui/card\"\n\nexport function CarouselDemo() {\n  return (\n    <Carousel className=\"w-full max-w-xs\">\n      <CarouselContent>\n        {Array.from({ length: 5 }).map((_, index) => (\n          <CarouselItem key={index}>\n            <Card>\n              <CardContent className=\"flex aspect-square items-center justify-center p-6\">\n                <span className=\"text-4xl font-semibold\">{index + 1}</span>\n              </CardContent>\n            </Card>\n          </CarouselItem>\n        ))}\n      </CarouselContent>\n      <CarouselPrevious />\n      <CarouselNext />\n    </Carousel>\n  )\n}",
+  "tags": [
+    "slider",
+    "gallery",
+    "testimonial",
+    "showcase"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Toggle",
+  "library": "shadcn",
+  "description": "A two-state button that can be either on or off.",
+  "whenToUse": "Use for toggling bold/italic in editors, on/off states, view mode switches, and binary options.",
+  "installation": "npx shadcn@latest add toggle",
+  "props": [
+    {
+      "name": "variant",
+      "type": "\"default\" | \"outline\"",
+      "default": "\"default\"",
+      "description": "The visual style variant"
+    },
+    {
+      "name": "size",
+      "type": "\"default\" | \"sm\" | \"lg\"",
+      "default": "\"default\"",
+      "description": "The size of the toggle"
+    },
+    {
+      "name": "pressed",
+      "type": "boolean",
+      "default": "false",
+      "description": "The controlled pressed state"
+    },
+    {
+      "name": "onPressedChange",
+      "type": "(pressed: boolean) => void",
+      "default": "undefined",
+      "description": "Callback when pressed state changes"
+    }
+  ],
+  "codeExample": "import { Toggle } from \"@/components/ui/toggle\"\nimport { Bold } from \"lucide-react\"\n\nexport function ToggleDemo() {\n  return (\n    <Toggle aria-label=\"Toggle bold\">\n      <Bold className=\"h-4 w-4\" />\n    </Toggle>\n  )\n}",
+  "tags": [
+    "button",
+    "toggle",
+    "state",
+    "editor"
+  ]
+}

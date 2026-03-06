@@ -1,0 +1,34 @@
+{
+  "name": "Accordion",
+  "library": "shadcn",
+  "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
+  "whenToUse": "Use for FAQ sections, collapsible content panels, and organizing long content into expandable sections.",
+  "installation": "npx shadcn@latest add accordion",
+  "props": [
+    {
+      "name": "type",
+      "type": "\"single\" | \"multiple\"",
+      "default": "\"single\"",
+      "description": "Whether one or multiple items can be opened at once"
+    },
+    {
+      "name": "collapsible",
+      "type": "boolean",
+      "default": "false",
+      "description": "When type is single, allows closing all items by clicking the open item"
+    },
+    {
+      "name": "defaultValue",
+      "type": "string | string[]",
+      "default": "undefined",
+      "description": "The default open item(s)"
+    }
+  ],
+  "codeExample": "import {\n  Accordion,\n  AccordionContent,\n  AccordionItem,\n  AccordionTrigger,\n} from \"@/components/ui/accordion\"\n\nexport function AccordionDemo() {\n  return (\n    <Accordion type=\"single\" collapsible className=\"w-full\">\n      <AccordionItem value=\"item-1\">\n        <AccordionTrigger>Is it accessible?</AccordionTrigger>\n        <AccordionContent>\n          Yes. It adheres to the WAI-ARIA design pattern.\n        </AccordionContent>\n      </AccordionItem>\n      <AccordionItem value=\"item-2\">\n        <AccordionTrigger>Is it styled?</AccordionTrigger>\n        <AccordionContent>\n          Yes. It comes with default styles that match your theme.\n        </AccordionContent>\n      </AccordionItem>\n    </Accordion>\n  )\n}",
+  "tags": [
+    "disclosure",
+    "faq",
+    "collapsible",
+    "content"
+  ]
+}

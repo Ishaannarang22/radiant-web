@@ -1,0 +1,28 @@
+{
+  "name": "Toast",
+  "library": "shadcn",
+  "description": "A succinct message that is displayed temporarily as a toast notification.",
+  "whenToUse": "Use for brief notifications, action confirmations, error messages, and non-intrusive alerts.",
+  "installation": "npx shadcn@latest add toast",
+  "props": [
+    {
+      "name": "variant",
+      "type": "\"default\" | \"destructive\"",
+      "default": "\"default\"",
+      "description": "The visual style of the toast"
+    },
+    {
+      "name": "duration",
+      "type": "number",
+      "default": "5000",
+      "description": "Duration in ms before auto-dismiss"
+    }
+  ],
+  "codeExample": "\"use client\"\n\nimport { useToast } from \"@/hooks/use-toast\"\nimport { Button } from \"@/components/ui/button\"\n\nexport function ToastDemo() {\n  const { toast } = useToast()\n\n  return (\n    <Button\n      onClick={() => {\n        toast({\n          title: \"Scheduled: Catch up\",\n          description: \"Friday, February 10, 2023 at 5:57 PM\",\n        })\n      }}\n    >\n      Show Toast\n    </Button>\n  )\n}",
+  "tags": [
+    "notification",
+    "feedback",
+    "alert",
+    "message"
+  ]
+}

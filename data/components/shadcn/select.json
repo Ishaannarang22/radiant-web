@@ -1,0 +1,34 @@
+{
+  "name": "Select",
+  "library": "shadcn",
+  "description": "Displays a list of options for the user to pick from, triggered by a button.",
+  "whenToUse": "Use for dropdowns, form selects, option pickers, and any selection from a list of choices.",
+  "installation": "npx shadcn@latest add select",
+  "props": [
+    {
+      "name": "value",
+      "type": "string",
+      "default": "undefined",
+      "description": "The controlled value"
+    },
+    {
+      "name": "onValueChange",
+      "type": "(value: string) => void",
+      "default": "undefined",
+      "description": "Callback when value changes"
+    },
+    {
+      "name": "defaultValue",
+      "type": "string",
+      "default": "undefined",
+      "description": "The default selected value"
+    }
+  ],
+  "codeExample": "import {\n  Select,\n  SelectContent,\n  SelectItem,\n  SelectTrigger,\n  SelectValue,\n} from \"@/components/ui/select\"\n\nexport function SelectDemo() {\n  return (\n    <Select>\n      <SelectTrigger className=\"w-[180px]\">\n        <SelectValue placeholder=\"Select a fruit\" />\n      </SelectTrigger>\n      <SelectContent>\n        <SelectItem value=\"apple\">Apple</SelectItem>\n        <SelectItem value=\"banana\">Banana</SelectItem>\n        <SelectItem value=\"orange\">Orange</SelectItem>\n      </SelectContent>\n    </Select>\n  )\n}",
+  "tags": [
+    "form",
+    "dropdown",
+    "selection",
+    "picker"
+  ]
+}

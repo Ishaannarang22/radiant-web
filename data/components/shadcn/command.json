@@ -1,0 +1,28 @@
+{
+  "name": "Command",
+  "library": "shadcn",
+  "description": "A fast, composable command palette or search interface using cmdk.",
+  "whenToUse": "Use for command palettes, search interfaces, autocomplete, and keyboard-navigable menus.",
+  "installation": "npx shadcn@latest add command",
+  "props": [
+    {
+      "name": "filter",
+      "type": "(value: string, search: string) => number",
+      "default": "built-in",
+      "description": "Custom filter function for search results"
+    },
+    {
+      "name": "shouldFilter",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether to filter items based on search"
+    }
+  ],
+  "codeExample": "import {\n  Command,\n  CommandEmpty,\n  CommandGroup,\n  CommandInput,\n  CommandItem,\n  CommandList,\n  CommandSeparator,\n} from \"@/components/ui/command\"\n\nexport function CommandDemo() {\n  return (\n    <Command className=\"rounded-lg border shadow-md\">\n      <CommandInput placeholder=\"Type a command or search...\" />\n      <CommandList>\n        <CommandEmpty>No results found.</CommandEmpty>\n        <CommandGroup heading=\"Suggestions\">\n          <CommandItem>Calendar</CommandItem>\n          <CommandItem>Search</CommandItem>\n          <CommandItem>Settings</CommandItem>\n        </CommandGroup>\n      </CommandList>\n    </Command>\n  )\n}",
+  "tags": [
+    "search",
+    "palette",
+    "keyboard",
+    "navigation"
+  ]
+}

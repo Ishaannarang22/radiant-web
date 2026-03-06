@@ -1,0 +1,34 @@
+{
+  "name": "DropdownMenu",
+  "library": "shadcn",
+  "description": "Displays a menu triggered by a button, with support for submenus, checkboxes, and radio items.",
+  "whenToUse": "Use for action menus, settings dropdowns, user account menus, and any grouped list of actions.",
+  "installation": "npx shadcn@latest add dropdown-menu",
+  "props": [
+    {
+      "name": "open",
+      "type": "boolean",
+      "default": "undefined",
+      "description": "Controlled open state"
+    },
+    {
+      "name": "onOpenChange",
+      "type": "(open: boolean) => void",
+      "default": "undefined",
+      "description": "Callback when open state changes"
+    },
+    {
+      "name": "modal",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether the dropdown should be modal"
+    }
+  ],
+  "codeExample": "import {\n  DropdownMenu,\n  DropdownMenuContent,\n  DropdownMenuItem,\n  DropdownMenuLabel,\n  DropdownMenuSeparator,\n  DropdownMenuTrigger,\n} from \"@/components/ui/dropdown-menu\"\nimport { Button } from \"@/components/ui/button\"\n\nexport function DropdownMenuDemo() {\n  return (\n    <DropdownMenu>\n      <DropdownMenuTrigger asChild>\n        <Button variant=\"outline\">Open Menu</Button>\n      </DropdownMenuTrigger>\n      <DropdownMenuContent className=\"w-56\">\n        <DropdownMenuLabel>My Account</DropdownMenuLabel>\n        <DropdownMenuSeparator />\n        <DropdownMenuItem>Profile</DropdownMenuItem>\n        <DropdownMenuItem>Settings</DropdownMenuItem>\n        <DropdownMenuItem>Billing</DropdownMenuItem>\n        <DropdownMenuSeparator />\n        <DropdownMenuItem>Log out</DropdownMenuItem>\n      </DropdownMenuContent>\n    </DropdownMenu>\n  )\n}",
+  "tags": [
+    "menu",
+    "actions",
+    "navigation",
+    "settings"
+  ]
+}

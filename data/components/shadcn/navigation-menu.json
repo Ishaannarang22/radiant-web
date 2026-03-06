@@ -1,0 +1,28 @@
+{
+  "name": "NavigationMenu",
+  "library": "shadcn",
+  "description": "A collection of links for navigating websites, with support for dropdown content and viewport animations.",
+  "whenToUse": "Use for main site navigation, header menus, mega menus, and primary navigation bars.",
+  "installation": "npx shadcn@latest add navigation-menu",
+  "props": [
+    {
+      "name": "orientation",
+      "type": "\"horizontal\" | \"vertical\"",
+      "default": "\"horizontal\"",
+      "description": "The orientation of the navigation menu"
+    },
+    {
+      "name": "delayDuration",
+      "type": "number",
+      "default": "200",
+      "description": "Delay in ms before opening on hover"
+    }
+  ],
+  "codeExample": "import {\n  NavigationMenu,\n  NavigationMenuContent,\n  NavigationMenuItem,\n  NavigationMenuLink,\n  NavigationMenuList,\n  NavigationMenuTrigger,\n} from \"@/components/ui/navigation-menu\"\n\nexport function NavigationMenuDemo() {\n  return (\n    <NavigationMenu>\n      <NavigationMenuList>\n        <NavigationMenuItem>\n          <NavigationMenuTrigger>Getting Started</NavigationMenuTrigger>\n          <NavigationMenuContent>\n            <ul className=\"grid gap-3 p-4 md:w-[400px]\">\n              <li><NavigationMenuLink href=\"/docs\">Introduction</NavigationMenuLink></li>\n              <li><NavigationMenuLink href=\"/docs/installation\">Installation</NavigationMenuLink></li>\n            </ul>\n          </NavigationMenuContent>\n        </NavigationMenuItem>\n        <NavigationMenuItem>\n          <NavigationMenuLink href=\"/docs/components\">Components</NavigationMenuLink>\n        </NavigationMenuItem>\n      </NavigationMenuList>\n    </NavigationMenu>\n  )\n}",
+  "tags": [
+    "navigation",
+    "header",
+    "menu",
+    "links"
+  ]
+}

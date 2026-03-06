@@ -1,0 +1,28 @@
+{
+  "name": "Collapsible",
+  "library": "shadcn",
+  "description": "An interactive component which expands/collapses a panel.",
+  "whenToUse": "Use for expandable sections, show/hide content, advanced options panels, and supplementary information.",
+  "installation": "npx shadcn@latest add collapsible",
+  "props": [
+    {
+      "name": "open",
+      "type": "boolean",
+      "default": "false",
+      "description": "The controlled open state"
+    },
+    {
+      "name": "onOpenChange",
+      "type": "(open: boolean) => void",
+      "default": "undefined",
+      "description": "Callback when open state changes"
+    }
+  ],
+  "codeExample": "\"use client\"\n\nimport { useState } from \"react\"\nimport {\n  Collapsible,\n  CollapsibleContent,\n  CollapsibleTrigger,\n} from \"@/components/ui/collapsible\"\nimport { Button } from \"@/components/ui/button\"\n\nexport function CollapsibleDemo() {\n  const [isOpen, setIsOpen] = useState(false)\n\n  return (\n    <Collapsible open={isOpen} onOpenChange={setIsOpen} className=\"w-[350px] space-y-2\">\n      <CollapsibleTrigger asChild>\n        <Button variant=\"ghost\">Toggle</Button>\n      </CollapsibleTrigger>\n      <CollapsibleContent className=\"space-y-2\">\n        <div className=\"rounded-md border px-4 py-3 text-sm\">Content 1</div>\n        <div className=\"rounded-md border px-4 py-3 text-sm\">Content 2</div>\n      </CollapsibleContent>\n    </Collapsible>\n  )\n}",
+  "tags": [
+    "disclosure",
+    "expandable",
+    "toggle",
+    "panel"
+  ]
+}

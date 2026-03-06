@@ -1,0 +1,28 @@
+{
+  "name": "Progress",
+  "library": "shadcn",
+  "description": "Displays an indicator showing the completion progress of a task.",
+  "whenToUse": "Use for loading states, file upload progress, step completion, and any task with measurable progress.",
+  "installation": "npx shadcn@latest add progress",
+  "props": [
+    {
+      "name": "value",
+      "type": "number",
+      "default": "0",
+      "description": "The progress value (0-100)"
+    },
+    {
+      "name": "max",
+      "type": "number",
+      "default": "100",
+      "description": "The maximum progress value"
+    }
+  ],
+  "codeExample": "\"use client\"\n\nimport { useEffect, useState } from \"react\"\nimport { Progress } from \"@/components/ui/progress\"\n\nexport function ProgressDemo() {\n  const [progress, setProgress] = useState(13)\n\n  useEffect(() => {\n    const timer = setTimeout(() => setProgress(66), 500)\n    return () => clearTimeout(timer)\n  }, [])\n\n  return <Progress value={progress} className=\"w-[60%]\" />\n}",
+  "tags": [
+    "loading",
+    "progress",
+    "status",
+    "indicator"
+  ]
+}

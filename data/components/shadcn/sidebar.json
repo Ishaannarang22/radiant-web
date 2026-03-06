@@ -1,0 +1,34 @@
+{
+  "name": "Sidebar",
+  "library": "shadcn",
+  "description": "A composable, themeable, and customizable sidebar component for building dashboard layouts.",
+  "whenToUse": "Use for dashboard navigation, admin panels, app layouts with persistent side navigation.",
+  "installation": "npx shadcn@latest add sidebar",
+  "props": [
+    {
+      "name": "side",
+      "type": "\"left\" | \"right\"",
+      "default": "\"left\"",
+      "description": "The side the sidebar appears on"
+    },
+    {
+      "name": "variant",
+      "type": "\"sidebar\" | \"floating\" | \"inset\"",
+      "default": "\"sidebar\"",
+      "description": "The visual variant of the sidebar"
+    },
+    {
+      "name": "collapsible",
+      "type": "\"offcanvas\" | \"icon\" | \"none\"",
+      "default": "\"offcanvas\"",
+      "description": "How the sidebar collapses"
+    }
+  ],
+  "codeExample": "import {\n  Sidebar,\n  SidebarContent,\n  SidebarGroup,\n  SidebarGroupContent,\n  SidebarGroupLabel,\n  SidebarMenu,\n  SidebarMenuButton,\n  SidebarMenuItem,\n  SidebarProvider,\n  SidebarTrigger,\n} from \"@/components/ui/sidebar\"\nimport { Home, Settings } from \"lucide-react\"\n\nexport function SidebarDemo() {\n  return (\n    <SidebarProvider>\n      <Sidebar>\n        <SidebarContent>\n          <SidebarGroup>\n            <SidebarGroupLabel>Application</SidebarGroupLabel>\n            <SidebarGroupContent>\n              <SidebarMenu>\n                <SidebarMenuItem>\n                  <SidebarMenuButton>\n                    <Home />\n                    <span>Home</span>\n                  </SidebarMenuButton>\n                </SidebarMenuItem>\n                <SidebarMenuItem>\n                  <SidebarMenuButton>\n                    <Settings />\n                    <span>Settings</span>\n                  </SidebarMenuButton>\n                </SidebarMenuItem>\n              </SidebarMenu>\n            </SidebarGroupContent>\n          </SidebarGroup>\n        </SidebarContent>\n      </Sidebar>\n      <main>\n        <SidebarTrigger />\n      </main>\n    </SidebarProvider>\n  )\n}",
+  "tags": [
+    "navigation",
+    "layout",
+    "dashboard",
+    "panel"
+  ]
+}

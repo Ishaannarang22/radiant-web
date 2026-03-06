@@ -1,0 +1,22 @@
+{
+  "name": "AspectRatio",
+  "library": "shadcn",
+  "description": "Displays content within a desired ratio, maintaining consistent proportions.",
+  "whenToUse": "Use for images, videos, and maps that need to maintain a specific aspect ratio regardless of container size.",
+  "installation": "npx shadcn@latest add aspect-ratio",
+  "props": [
+    {
+      "name": "ratio",
+      "type": "number",
+      "default": "1",
+      "description": "The desired aspect ratio (e.g. 16/9, 4/3)"
+    }
+  ],
+  "codeExample": "import { AspectRatio } from \"@/components/ui/aspect-ratio\"\n\nexport function AspectRatioDemo() {\n  return (\n    <AspectRatio ratio={16 / 9} className=\"bg-muted\">\n      <img\n        src=\"/placeholder.jpg\"\n        alt=\"Photo\"\n        className=\"rounded-md object-cover h-full w-full\"\n      />\n    </AspectRatio>\n  )\n}",
+  "tags": [
+    "layout",
+    "image",
+    "video",
+    "responsive"
+  ]
+}

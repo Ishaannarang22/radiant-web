@@ -1,0 +1,34 @@
+{
+  "name": "Textarea",
+  "library": "shadcn",
+  "description": "Displays a form textarea for multi-line text input.",
+  "whenToUse": "Use for multi-line text input, comments, descriptions, messages, and long-form text entry.",
+  "installation": "npx shadcn@latest add textarea",
+  "props": [
+    {
+      "name": "placeholder",
+      "type": "string",
+      "default": "undefined",
+      "description": "Placeholder text shown when empty"
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "default": "false",
+      "description": "Whether the textarea is disabled"
+    },
+    {
+      "name": "rows",
+      "type": "number",
+      "default": "3",
+      "description": "Number of visible text lines"
+    }
+  ],
+  "codeExample": "import { Textarea } from \"@/components/ui/textarea\"\nimport { Label } from \"@/components/ui/label\"\n\nexport function TextareaDemo() {\n  return (\n    <div className=\"grid w-full gap-1.5\">\n      <Label htmlFor=\"message\">Your message</Label>\n      <Textarea placeholder=\"Type your message here.\" id=\"message\" />\n    </div>\n  )\n}",
+  "tags": [
+    "form",
+    "text",
+    "input",
+    "multiline"
+  ]
+}

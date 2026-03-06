@@ -1,0 +1,28 @@
+{
+  "name": "ScrollArea",
+  "library": "shadcn",
+  "description": "Augments native scroll functionality for custom, cross-browser styled scrollbars.",
+  "whenToUse": "Use for scrollable containers, long lists, code blocks, and any content that needs custom scrollbar styling.",
+  "installation": "npx shadcn@latest add scroll-area",
+  "props": [
+    {
+      "name": "type",
+      "type": "\"auto\" | \"always\" | \"scroll\" | \"hover\"",
+      "default": "\"hover\"",
+      "description": "When the scrollbar should be visible"
+    },
+    {
+      "name": "scrollHideDelay",
+      "type": "number",
+      "default": "600",
+      "description": "Delay in ms before hiding scrollbar after scroll ends"
+    }
+  ],
+  "codeExample": "import { ScrollArea } from \"@/components/ui/scroll-area\"\nimport { Separator } from \"@/components/ui/separator\"\n\nconst tags = Array.from({ length: 50 }).map((_, i) => `Tag ${i + 1}`)\n\nexport function ScrollAreaDemo() {\n  return (\n    <ScrollArea className=\"h-72 w-48 rounded-md border\">\n      <div className=\"p-4\">\n        <h4 className=\"mb-4 text-sm font-medium leading-none\">Tags</h4>\n        {tags.map((tag) => (\n          <div key={tag}>\n            <div className=\"text-sm\">{tag}</div>\n            <Separator className=\"my-2\" />\n          </div>\n        ))}\n      </div>\n    </ScrollArea>\n  )\n}",
+  "tags": [
+    "scroll",
+    "container",
+    "overflow",
+    "list"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Avatar",
+  "library": "shadcn",
+  "description": "An image element with a fallback for representing the user or entity.",
+  "whenToUse": "Use for user profile pictures, team member photos, testimonial authors, and entity representation.",
+  "installation": "npx shadcn@latest add avatar",
+  "props": [
+    {
+      "name": "src",
+      "type": "string",
+      "default": "undefined",
+      "description": "The image source URL (on AvatarImage)"
+    },
+    {
+      "name": "alt",
+      "type": "string",
+      "default": "undefined",
+      "description": "Alt text for the avatar image"
+    }
+  ],
+  "codeExample": "import { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\"\n\nexport function AvatarDemo() {\n  return (\n    <Avatar>\n      <AvatarImage src=\"https://github.com/shadcn.png\" alt=\"@shadcn\" />\n      <AvatarFallback>CN</AvatarFallback>\n    </Avatar>\n  )\n}",
+  "tags": [
+    "profile",
+    "user",
+    "image",
+    "testimonial"
+  ]
+}

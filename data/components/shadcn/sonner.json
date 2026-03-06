@@ -1,0 +1,28 @@
+{
+  "name": "Sonner",
+  "library": "shadcn",
+  "description": "An opinionated toast notification component built on top of sonner.",
+  "whenToUse": "Use for success/error/info notifications, action confirmations, and non-blocking user feedback.",
+  "installation": "npx shadcn@latest add sonner",
+  "props": [
+    {
+      "name": "position",
+      "type": "\"top-left\" | \"top-right\" | \"bottom-left\" | \"bottom-right\" | \"top-center\" | \"bottom-center\"",
+      "default": "\"bottom-right\"",
+      "description": "The position of the toast"
+    },
+    {
+      "name": "richColors",
+      "type": "boolean",
+      "default": "false",
+      "description": "Enable rich colors for different toast types"
+    }
+  ],
+  "codeExample": "import { toast } from \"sonner\"\nimport { Button } from \"@/components/ui/button\"\n\nexport function SonnerDemo() {\n  return (\n    <Button\n      variant=\"outline\"\n      onClick={() =>\n        toast(\"Event has been created\", {\n          description: \"Sunday, December 03, 2023 at 9:00 AM\",\n          action: {\n            label: \"Undo\",\n            onClick: () => console.log(\"Undo\"),\n          },\n        })\n      }\n    >\n      Show Toast\n    </Button>\n  )\n}",
+  "tags": [
+    "notification",
+    "toast",
+    "feedback",
+    "alert"
+  ]
+}

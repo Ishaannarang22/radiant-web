@@ -1,0 +1,22 @@
+{
+  "name": "Label",
+  "library": "shadcn",
+  "description": "Renders an accessible label associated with form controls.",
+  "whenToUse": "Use with all form inputs, checkboxes, radio buttons, and any interactive element that needs a text label.",
+  "installation": "npx shadcn@latest add label",
+  "props": [
+    {
+      "name": "htmlFor",
+      "type": "string",
+      "default": "undefined",
+      "description": "The id of the form element the label is for"
+    }
+  ],
+  "codeExample": "import { Label } from \"@/components/ui/label\"\nimport { Input } from \"@/components/ui/input\"\n\nexport function LabelDemo() {\n  return (\n    <div className=\"grid w-full max-w-sm items-center gap-1.5\">\n      <Label htmlFor=\"picture\">Picture</Label>\n      <Input id=\"picture\" type=\"file\" />\n    </div>\n  )\n}",
+  "tags": [
+    "form",
+    "accessibility",
+    "text",
+    "input"
+  ]
+}

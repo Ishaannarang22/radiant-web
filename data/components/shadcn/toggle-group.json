@@ -1,0 +1,40 @@
+{
+  "name": "ToggleGroup",
+  "library": "shadcn",
+  "description": "A set of two-state buttons that can be toggled on or off, functioning as a group.",
+  "whenToUse": "Use for view mode selectors (grid/list), text alignment controls, filter toggles, and grouped options.",
+  "installation": "npx shadcn@latest add toggle-group",
+  "props": [
+    {
+      "name": "type",
+      "type": "\"single\" | \"multiple\"",
+      "default": "\"single\"",
+      "description": "Whether single or multiple items can be toggled"
+    },
+    {
+      "name": "value",
+      "type": "string | string[]",
+      "default": "undefined",
+      "description": "The controlled value(s)"
+    },
+    {
+      "name": "onValueChange",
+      "type": "(value: string | string[]) => void",
+      "default": "undefined",
+      "description": "Callback when value changes"
+    },
+    {
+      "name": "variant",
+      "type": "\"default\" | \"outline\"",
+      "default": "\"default\"",
+      "description": "The visual style variant"
+    }
+  ],
+  "codeExample": "import { ToggleGroup, ToggleGroupItem } from \"@/components/ui/toggle-group\"\nimport { AlignLeft, AlignCenter, AlignRight } from \"lucide-react\"\n\nexport function ToggleGroupDemo() {\n  return (\n    <ToggleGroup type=\"single\">\n      <ToggleGroupItem value=\"left\" aria-label=\"Align left\">\n        <AlignLeft className=\"h-4 w-4\" />\n      </ToggleGroupItem>\n      <ToggleGroupItem value=\"center\" aria-label=\"Align center\">\n        <AlignCenter className=\"h-4 w-4\" />\n      </ToggleGroupItem>\n      <ToggleGroupItem value=\"right\" aria-label=\"Align right\">\n        <AlignRight className=\"h-4 w-4\" />\n      </ToggleGroupItem>\n    </ToggleGroup>\n  )\n}",
+  "tags": [
+    "button",
+    "group",
+    "toggle",
+    "toolbar"
+  ]
+}
