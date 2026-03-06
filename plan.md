@@ -68,7 +68,7 @@ A monorepo is a single Git repository that contains multiple related projects (c
   - This creates `components/ui/` folder and configures Tailwind for shadcn
   - Install initial components: `pnpm dlx shadcn@latest add button card input label textarea tabs dialog toast`
 
-- [ ] **0.6 Create the database package (`packages/db`)**
+- [x] **0.6 Create the database package (`packages/db`)**
   - Create `packages/db/` folder
   - Create `packages/db/package.json` with name `@radiant/db`
   - Install Supabase client: `pnpm add @supabase/supabase-js` in this package
