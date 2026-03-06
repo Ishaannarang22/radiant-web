@@ -718,7 +718,7 @@ After Phase 3, you should have:
     - Color palette recommendations
     - What makes a good website in this industry
 
-- [ ] **4.3 Build the RAG retrieval layer**
+- [x] **4.3 Build the RAG retrieval layer**
   - `apps/web/lib/embeddings.ts`
   - Functions:
     - `generateEmbedding(text: string): Promise<number[]>` — Convert text to vector
