@@ -761,7 +761,7 @@ After Phase 3, you should have:
     - No placeholder content ("Lorem ipsum", "TODO", etc.)
   - If validation fails, can request a fix from Claude (retry with error context)
 
-- [ ] **4.7 Build the generation orchestrator**
+- [x] **4.7 Build the generation orchestrator**
   - `apps/web/lib/generator.ts`
   - Main function: `generateSite(projectId: string, profile: BusinessProfile): Promise<void>`
   - Steps:
