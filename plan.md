@@ -727,7 +727,7 @@ After Phase 3, you should have:
     - `retrievePatterns(query: string, limit: number): Promise<Pattern[]>` — Find design patterns
   - Uses the `match_components` SQL function from Phase 1
 
-- [ ] **4.4 Build the prompt assembler**
+- [x] **4.4 Build the prompt assembler**
   - `apps/web/lib/prompt-builder.ts`
   - `buildGenerationPrompt(profile: BusinessProfile): { system: string, user: string }`
   - Steps:
