@@ -776,7 +776,7 @@ After Phase 3, you should have:
   - Handle errors: API timeout, invalid response, quota exceeded
   - Total time target: < 30 seconds
 
-- [ ] **4.8 Create API route for generation**
+- [x] **4.8 Create API route for generation**
   - `apps/web/app/api/generate/route.ts`
   - POST endpoint: `{ projectId: string, businessProfile: BusinessProfile }`
   - Calls generation orchestrator
