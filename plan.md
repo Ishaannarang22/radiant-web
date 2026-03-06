@@ -477,7 +477,7 @@ Before Claude can generate websites using shadcn/ui, Aceternity UI, Magic UI, et
     - Urgency/scarcity CTAs
     - Trust-building CTAs
 
-- [ ] **2.9 Generate embeddings for all data**
+- [x] **2.9 Generate embeddings for all data**
   - `scripts/seed-embeddings.ts`
   - For each component JSON file:
     1. Concatenate: `${name} ${description} ${docs_text} ${tags}`
