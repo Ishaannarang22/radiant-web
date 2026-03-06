@@ -704,7 +704,7 @@ After Phase 3, you should have:
       - Individual component files in `components/`
       - `tailwind.config.ts` — Custom theme colors
 
-- [ ] **4.2 Write industry-specific prompt fragments**
+- [x] **4.2 Write industry-specific prompt fragments**
   - `apps/web/prompts/industries/restaurant.ts`
   - `apps/web/prompts/industries/dental.ts`
   - `apps/web/prompts/industries/salon.ts`
