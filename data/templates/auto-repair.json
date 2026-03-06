@@ -1,0 +1,83 @@
+{
+  "industry": "auto-repair",
+  "display_name": "Auto Repair / Mechanic",
+  "sections": [
+    "hero-with-trust",
+    "services-grid",
+    "why-choose-us",
+    "specials-offers",
+    "customer-reviews",
+    "certifications-brands",
+    "appointment-cta",
+    "hours-location",
+    "footer"
+  ],
+  "color_schemes": [
+    {
+      "name": "Garage Red",
+      "primary": "#B91C1C",
+      "secondary": "#FEF2F2",
+      "accent": "#1E3A5F",
+      "background": "#FFFFFF",
+      "text": "#171717"
+    },
+    {
+      "name": "Industrial Blue",
+      "primary": "#1E3A5F",
+      "secondary": "#E8F0FE",
+      "accent": "#F59E0B",
+      "background": "#FFFFFF",
+      "text": "#1A2332"
+    },
+    {
+      "name": "Clean & Professional",
+      "primary": "#0F766E",
+      "secondary": "#F0FDFA",
+      "accent": "#EA580C",
+      "background": "#FFFFFF",
+      "text": "#1A2E2A"
+    }
+  ],
+  "copy_patterns": {
+    "hero_headline": [
+      "Honest auto repair you can count on",
+      "Keeping {city} on the road since {year}",
+      "Expert mechanics, fair prices",
+      "Your car deserves the best"
+    ],
+    "hero_subheadline": [
+      "ASE certified technicians",
+      "Same-day service available",
+      "Free estimates on all repairs"
+    ],
+    "cta": [
+      "Schedule Service",
+      "Get a Free Estimate",
+      "Call Now",
+      "Book an Appointment"
+    ],
+    "about": [
+      "{business_name} has been {city}'s trusted auto repair shop for over {years} years.",
+      "We treat every car like our own and every customer like family."
+    ]
+  },
+  "must_have_sections": [
+    "services",
+    "phone_number_prominent",
+    "hours",
+    "location_map",
+    "reviews"
+  ],
+  "photo_placement": [
+    "hero_background",
+    "shop_interior",
+    "team_at_work",
+    "certification_logos"
+  ],
+  "suggested_components": {
+    "shadcn": ["card", "badge", "button", "accordion", "separator"],
+    "aceternity": ["bento-grid", "text-generate-effect", "card-hover-effect"],
+    "magic-ui": ["number-ticker", "shimmer-button", "border-beam", "marquee"],
+    "21st-dev": ["hero-section", "services-section", "testimonials", "stats", "logo-cloud"]
+  }
+}

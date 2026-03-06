@@ -1,0 +1,83 @@
+{
+  "industry": "salon",
+  "display_name": "Salon / Barbershop",
+  "sections": [
+    "hero-with-portfolio",
+    "services-pricing",
+    "stylist-team",
+    "before-after-gallery",
+    "reviews-testimonials",
+    "booking-cta",
+    "products",
+    "hours-location",
+    "footer"
+  ],
+  "color_schemes": [
+    {
+      "name": "Elegant Gold",
+      "primary": "#2C2C2C",
+      "secondary": "#F5F0EB",
+      "accent": "#C9A96E",
+      "background": "#FFFDF9",
+      "text": "#1A1A1A"
+    },
+    {
+      "name": "Fresh & Vibrant",
+      "primary": "#E91E8C",
+      "secondary": "#FFF0F7",
+      "accent": "#7C3AED",
+      "background": "#FFFFFF",
+      "text": "#2D2D2D"
+    },
+    {
+      "name": "Classic Barbershop",
+      "primary": "#8B4513",
+      "secondary": "#F4EDE4",
+      "accent": "#D4382C",
+      "background": "#FAF8F5",
+      "text": "#1C1C1C"
+    }
+  ],
+  "copy_patterns": {
+    "hero_headline": [
+      "Look your best, feel your best",
+      "Where style meets confidence",
+      "Your new look starts here",
+      "Premium grooming in {city}"
+    ],
+    "hero_subheadline": [
+      "Expert stylists, personalized service",
+      "Book your transformation today",
+      "Walk-ins welcome"
+    ],
+    "cta": [
+      "Book Now",
+      "View Services & Prices",
+      "Schedule an Appointment",
+      "Call to Book"
+    ],
+    "about": [
+      "{business_name} has been helping clients look and feel their best since {year}.",
+      "Our talented stylists are dedicated to bringing your vision to life."
+    ]
+  },
+  "must_have_sections": [
+    "services_with_pricing",
+    "booking",
+    "hours",
+    "location_map",
+    "reviews"
+  ],
+  "photo_placement": [
+    "hero_background",
+    "portfolio_gallery",
+    "before_after",
+    "stylist_headshots"
+  ],
+  "suggested_components": {
+    "shadcn": ["card", "tabs", "badge", "separator", "avatar"],
+    "aceternity": ["wobble-card", "3d-card-effect", "hero-highlight", "floating-navbar"],
+    "magic-ui": ["dock", "blur-fade", "animated-shiny-text"],
+    "21st-dev": ["hero-section", "services-section", "before-after-slider", "booking-section", "gallery"]
+  }
+}

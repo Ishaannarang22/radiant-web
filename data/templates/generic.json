@@ -1,0 +1,83 @@
+{
+  "industry": "generic",
+  "display_name": "General Business",
+  "sections": [
+    "hero-with-value-prop",
+    "services-overview",
+    "about-us",
+    "why-choose-us",
+    "testimonials",
+    "contact-cta",
+    "hours-location",
+    "faq",
+    "footer"
+  ],
+  "color_schemes": [
+    {
+      "name": "Professional Blue",
+      "primary": "#2563EB",
+      "secondary": "#EFF6FF",
+      "accent": "#F59E0B",
+      "background": "#FFFFFF",
+      "text": "#1E293B"
+    },
+    {
+      "name": "Warm Neutral",
+      "primary": "#78716C",
+      "secondary": "#FAF9F6",
+      "accent": "#D97706",
+      "background": "#FFFFFF",
+      "text": "#292524"
+    },
+    {
+      "name": "Bold Modern",
+      "primary": "#7C3AED",
+      "secondary": "#F5F3FF",
+      "accent": "#EC4899",
+      "background": "#FFFFFF",
+      "text": "#1E1B4B"
+    }
+  ],
+  "copy_patterns": {
+    "hero_headline": [
+      "Welcome to {business_name}",
+      "Your trusted partner in {city}",
+      "Quality service, every time",
+      "Serving {city} with pride"
+    ],
+    "hero_subheadline": [
+      "Discover what sets us apart",
+      "Locally owned and operated",
+      "Contact us today for a free consultation"
+    ],
+    "cta": [
+      "Get Started",
+      "Contact Us",
+      "Learn More",
+      "Call Today"
+    ],
+    "about": [
+      "{business_name} has been proudly serving {city} and surrounding communities.",
+      "We are committed to delivering outstanding service and building lasting relationships."
+    ]
+  },
+  "must_have_sections": [
+    "services",
+    "contact_info",
+    "hours",
+    "location_map",
+    "reviews"
+  ],
+  "photo_placement": [
+    "hero_background",
+    "about_section",
+    "team_photo",
+    "services_section"
+  ],
+  "suggested_components": {
+    "shadcn": ["card", "button", "badge", "accordion", "separator"],
+    "aceternity": ["hero-highlight", "bento-grid", "text-generate-effect", "wavy-background"],
+    "magic-ui": ["number-ticker", "shimmer-button", "blur-fade", "marquee"],
+    "21st-dev": ["hero-section", "features-grid", "testimonials", "faq", "contact", "footer"]
+  }
+}

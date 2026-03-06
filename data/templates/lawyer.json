@@ -1,0 +1,84 @@
+{
+  "industry": "lawyer",
+  "display_name": "Law Firm / Attorney",
+  "sections": [
+    "hero-with-authority",
+    "practice-areas",
+    "attorney-profiles",
+    "case-results",
+    "client-testimonials",
+    "why-choose-us",
+    "free-consultation-cta",
+    "faq",
+    "hours-location",
+    "footer"
+  ],
+  "color_schemes": [
+    {
+      "name": "Authoritative Navy",
+      "primary": "#1B2A4A",
+      "secondary": "#F0F3F9",
+      "accent": "#B8860B",
+      "background": "#FFFFFF",
+      "text": "#1B2A4A"
+    },
+    {
+      "name": "Warm Professional",
+      "primary": "#4A2C1B",
+      "secondary": "#FAF5F0",
+      "accent": "#8B6914",
+      "background": "#FFFCF8",
+      "text": "#2C1810"
+    },
+    {
+      "name": "Modern Legal",
+      "primary": "#0F172A",
+      "secondary": "#F1F5F9",
+      "accent": "#3B82F6",
+      "background": "#FFFFFF",
+      "text": "#0F172A"
+    }
+  ],
+  "copy_patterns": {
+    "hero_headline": [
+      "Experienced legal representation you can trust",
+      "Fighting for your rights in {city}",
+      "Your case matters — let us prove it",
+      "Skilled attorneys, proven results"
+    ],
+    "hero_subheadline": [
+      "Free initial consultation",
+      "Over {years} years of combined experience",
+      "No fee unless we win"
+    ],
+    "cta": [
+      "Free Consultation",
+      "Call for a Case Review",
+      "Schedule a Meeting",
+      "Contact Us Today"
+    ],
+    "about": [
+      "{business_name} has been serving clients in {city} with dedication and integrity.",
+      "Our attorneys bring decades of experience to every case."
+    ]
+  },
+  "must_have_sections": [
+    "practice_areas",
+    "attorney_bios",
+    "consultation_cta",
+    "reviews",
+    "location_map"
+  ],
+  "photo_placement": [
+    "hero_background",
+    "attorney_headshots",
+    "office_exterior",
+    "courtroom_imagery"
+  ],
+  "suggested_components": {
+    "shadcn": ["card", "tabs", "accordion", "badge", "separator"],
+    "aceternity": ["sticky-scroll-reveal", "text-generate-effect", "background-gradient-animation", "tracing-beam"],
+    "magic-ui": ["animated-list", "number-ticker", "blur-fade"],
+    "21st-dev": ["hero-section", "services-section", "testimonials", "faq", "team", "stats"]
+  }
+}

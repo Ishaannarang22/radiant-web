@@ -428,7 +428,7 @@ Before Claude can generate websites using shadcn/ui, Aceternity UI, Magic UI, et
   - Handles rate limiting (don't hammer the sites)
   - Logs progress: "Scraped 15/42 shadcn components..."
 
-- [ ] **2.7 Curate industry-specific templates**
+- [x] **2.7 Curate industry-specific templates**
   - Manually create JSON template definitions for each industry:
 
   **Restaurant** (`data/templates/restaurant.json`):

@@ -1,0 +1,83 @@
+{
+  "industry": "real-estate",
+  "display_name": "Real Estate Agency",
+  "sections": [
+    "hero-with-property-search",
+    "featured-listings",
+    "agent-profiles",
+    "neighborhood-guides",
+    "client-testimonials",
+    "market-stats",
+    "contact-cta",
+    "blog-preview",
+    "footer"
+  ],
+  "color_schemes": [
+    {
+      "name": "Luxury Property",
+      "primary": "#1A1A2E",
+      "secondary": "#F5F0EB",
+      "accent": "#C9A96E",
+      "background": "#FFFFFF",
+      "text": "#1A1A2E"
+    },
+    {
+      "name": "Fresh Residential",
+      "primary": "#1D7A4E",
+      "secondary": "#EEFBF4",
+      "accent": "#3B82F6",
+      "background": "#FFFFFF",
+      "text": "#1A2E1A"
+    },
+    {
+      "name": "Modern Realty",
+      "primary": "#7C3AED",
+      "secondary": "#F5F3FF",
+      "accent": "#EC4899",
+      "background": "#FAFAFE",
+      "text": "#1E1E2E"
+    }
+  ],
+  "copy_patterns": {
+    "hero_headline": [
+      "Find your dream home in {city}",
+      "Your next chapter starts here",
+      "Helping families find home since {year}",
+      "Expert real estate services in {city}"
+    ],
+    "hero_subheadline": [
+      "Browse listings in your area",
+      "Trusted by {count}+ happy homeowners",
+      "From first-time buyers to luxury estates"
+    ],
+    "cta": [
+      "Search Listings",
+      "Get a Free Home Valuation",
+      "Contact an Agent",
+      "Schedule a Showing"
+    ],
+    "about": [
+      "{business_name} has been helping families buy and sell homes in {city} for over {years} years.",
+      "Our agents know the local market inside and out."
+    ]
+  },
+  "must_have_sections": [
+    "featured_listings",
+    "agent_profiles",
+    "contact_form",
+    "reviews",
+    "location_map"
+  ],
+  "photo_placement": [
+    "hero_background",
+    "property_photos",
+    "agent_headshots",
+    "neighborhood_photos"
+  ],
+  "suggested_components": {
+    "shadcn": ["card", "carousel", "tabs", "badge", "input", "select"],
+    "aceternity": ["3d-card-effect", "parallax-scroll", "hero-parallax", "bento-grid"],
+    "magic-ui": ["number-ticker", "globe", "marquee", "animated-grid-pattern"],
+    "21st-dev": ["hero-section", "features-grid", "testimonials", "stats", "contact"]
+  }
+}

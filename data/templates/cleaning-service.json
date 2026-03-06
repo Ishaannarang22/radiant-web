@@ -1,0 +1,84 @@
+{
+  "industry": "cleaning-service",
+  "display_name": "Cleaning Service",
+  "sections": [
+    "hero-with-before-after",
+    "services-packages",
+    "how-it-works",
+    "pricing-tiers",
+    "customer-reviews",
+    "service-areas",
+    "booking-cta",
+    "satisfaction-guarantee",
+    "faq",
+    "footer"
+  ],
+  "color_schemes": [
+    {
+      "name": "Sparkling Clean",
+      "primary": "#0EA5E9",
+      "secondary": "#F0F9FF",
+      "accent": "#22C55E",
+      "background": "#FFFFFF",
+      "text": "#0F172A"
+    },
+    {
+      "name": "Fresh & Green",
+      "primary": "#16A34A",
+      "secondary": "#F0FDF4",
+      "accent": "#3B82F6",
+      "background": "#FFFFFF",
+      "text": "#14532D"
+    },
+    {
+      "name": "Professional White",
+      "primary": "#6366F1",
+      "secondary": "#EEF2FF",
+      "accent": "#F59E0B",
+      "background": "#FFFFFF",
+      "text": "#1E1B4B"
+    }
+  ],
+  "copy_patterns": {
+    "hero_headline": [
+      "A spotless home, every time",
+      "Professional cleaning services in {city}",
+      "Come home to clean",
+      "Let us handle the mess"
+    ],
+    "hero_subheadline": [
+      "Trusted by {count}+ happy customers",
+      "Eco-friendly products, professional results",
+      "Book online in 60 seconds"
+    ],
+    "cta": [
+      "Get a Free Quote",
+      "Book a Cleaning",
+      "See Our Prices",
+      "Call for Estimate"
+    ],
+    "about": [
+      "{business_name} provides reliable, thorough cleaning services for homes and businesses in {city}.",
+      "We bring our own supplies and leave your space sparkling."
+    ]
+  },
+  "must_have_sections": [
+    "services_with_pricing",
+    "booking",
+    "service_areas",
+    "reviews",
+    "satisfaction_guarantee"
+  ],
+  "photo_placement": [
+    "hero_background",
+    "before_after",
+    "team_in_action",
+    "clean_results"
+  ],
+  "suggested_components": {
+    "shadcn": ["card", "badge", "button", "tabs", "accordion"],
+    "aceternity": ["bento-grid", "card-hover-effect", "aurora-background"],
+    "magic-ui": ["number-ticker", "shimmer-button", "animated-list", "confetti"],
+    "21st-dev": ["hero-section", "pricing-section", "testimonials", "faq", "before-after-slider"]
+  }
+}

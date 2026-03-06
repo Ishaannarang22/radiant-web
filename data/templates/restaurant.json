@@ -1,0 +1,82 @@
+{
+  "industry": "restaurant",
+  "display_name": "Restaurant / Food Service",
+  "sections": [
+    "hero-with-food-photo",
+    "about-story",
+    "menu-grid",
+    "specials-carousel",
+    "hours-location",
+    "reviews-testimonials",
+    "gallery",
+    "reservation-cta",
+    "footer"
+  ],
+  "color_schemes": [
+    {
+      "name": "Classic Italian",
+      "primary": "#D4382C",
+      "secondary": "#F5E6CC",
+      "accent": "#2D5016",
+      "background": "#FFFDF7",
+      "text": "#1A1A1A"
+    },
+    {
+      "name": "Modern Upscale",
+      "primary": "#1A1A2E",
+      "secondary": "#E8D5B7",
+      "accent": "#C4A35A",
+      "background": "#FAFAF8",
+      "text": "#1A1A2E"
+    },
+    {
+      "name": "Fresh & Casual",
+      "primary": "#E85D26",
+      "secondary": "#FFF8F0",
+      "accent": "#3D8B37",
+      "background": "#FFFFFF",
+      "text": "#2C2C2C"
+    }
+  ],
+  "copy_patterns": {
+    "hero_headline": [
+      "Authentic {cuisine} in the heart of {city}",
+      "Where every meal tells a story",
+      "A taste of {cuisine} you won't forget",
+      "Welcome to {business_name}"
+    ],
+    "hero_subheadline": [
+      "Serving {city} since {year}",
+      "Fresh ingredients, unforgettable flavors",
+      "Family recipes, modern dining"
+    ],
+    "cta": [
+      "Reserve a Table",
+      "View Our Menu",
+      "Order Online",
+      "Call to Book"
+    ],
+    "about": [
+      "At {business_name}, we believe great food brings people together.",
+      "Our story begins with a passion for {cuisine} cuisine."
+    ]
+  },
+  "must_have_sections": [
+    "menu",
+    "hours",
+    "location_map",
+    "reviews"
+  ],
+  "photo_placement": [
+    "hero_background",
+    "menu_items",
+    "interior_gallery",
+    "about_section"
+  ],
+  "suggested_components": {
+    "shadcn": ["card", "carousel", "tabs", "badge", "separator"],
+    "aceternity": ["hero-parallax", "bento-grid", "wobble-card", "sticky-scroll-reveal"],
+    "magic-ui": ["marquee", "animated-shiny-text", "number-ticker"],
+    "21st-dev": ["hero-section", "menu-grid", "hours-and-location", "review-card", "gallery"]
+  }
+}

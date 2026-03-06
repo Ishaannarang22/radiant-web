@@ -1,0 +1,83 @@
+{
+  "industry": "gym",
+  "display_name": "Gym / Fitness Center",
+  "sections": [
+    "hero-with-action-shot",
+    "membership-plans",
+    "classes-schedule",
+    "trainers",
+    "facility-tour",
+    "member-testimonials",
+    "free-trial-cta",
+    "hours-location",
+    "footer"
+  ],
+  "color_schemes": [
+    {
+      "name": "Bold Energy",
+      "primary": "#DC2626",
+      "secondary": "#FEF2F2",
+      "accent": "#1A1A1A",
+      "background": "#FFFFFF",
+      "text": "#171717"
+    },
+    {
+      "name": "Athletic Blue",
+      "primary": "#2563EB",
+      "secondary": "#EFF6FF",
+      "accent": "#F59E0B",
+      "background": "#FFFFFF",
+      "text": "#1E293B"
+    },
+    {
+      "name": "Dark & Powerful",
+      "primary": "#7C3AED",
+      "secondary": "#1A1A2E",
+      "accent": "#22D3EE",
+      "background": "#0F0F1A",
+      "text": "#F8FAFC"
+    }
+  ],
+  "copy_patterns": {
+    "hero_headline": [
+      "Transform your body, transform your life",
+      "Your fitness journey starts here",
+      "Push your limits at {business_name}",
+      "The best gym in {city}"
+    ],
+    "hero_subheadline": [
+      "State-of-the-art equipment, expert trainers",
+      "Join today and get your first week free",
+      "Open 24/7 for your convenience"
+    ],
+    "cta": [
+      "Start Free Trial",
+      "View Membership Plans",
+      "Join Now",
+      "Book a Tour"
+    ],
+    "about": [
+      "{business_name} is {city}'s premier fitness destination.",
+      "We provide the equipment, classes, and coaching you need to reach your goals."
+    ]
+  },
+  "must_have_sections": [
+    "membership_plans",
+    "classes",
+    "hours",
+    "location_map",
+    "reviews"
+  ],
+  "photo_placement": [
+    "hero_background",
+    "facility_gallery",
+    "trainer_headshots",
+    "class_action_shots"
+  ],
+  "suggested_components": {
+    "shadcn": ["card", "tabs", "badge", "button", "table"],
+    "aceternity": ["hero-parallax", "wobble-card", "background-beams", "floating-dock"],
+    "magic-ui": ["number-ticker", "shimmer-button", "animated-grid-pattern", "particles"],
+    "21st-dev": ["hero-section", "pricing-section", "testimonials", "gallery", "stats"]
+  }
+}

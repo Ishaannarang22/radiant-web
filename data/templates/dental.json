@@ -1,0 +1,84 @@
+{
+  "industry": "dental",
+  "display_name": "Dental Practice",
+  "sections": [
+    "hero-with-smile",
+    "services-grid",
+    "about-team",
+    "technology-showcase",
+    "patient-reviews",
+    "insurance-accepted",
+    "appointment-cta",
+    "hours-location",
+    "faq",
+    "footer"
+  ],
+  "color_schemes": [
+    {
+      "name": "Clean Medical",
+      "primary": "#2B7A9E",
+      "secondary": "#E8F4F8",
+      "accent": "#4CAF82",
+      "background": "#FFFFFF",
+      "text": "#1A2B3C"
+    },
+    {
+      "name": "Warm Dental",
+      "primary": "#3A7CA5",
+      "secondary": "#FFF7ED",
+      "accent": "#F4A261",
+      "background": "#FEFCF9",
+      "text": "#2D3748"
+    },
+    {
+      "name": "Modern Clinic",
+      "primary": "#6366F1",
+      "secondary": "#F0F0FF",
+      "accent": "#10B981",
+      "background": "#FAFAFE",
+      "text": "#1E1E2E"
+    }
+  ],
+  "copy_patterns": {
+    "hero_headline": [
+      "Your smile, our passion",
+      "Quality dental care for the whole family",
+      "A healthier smile starts here",
+      "Gentle, modern dentistry in {city}"
+    ],
+    "hero_subheadline": [
+      "Accepting new patients",
+      "Comprehensive dental care you can trust",
+      "State-of-the-art technology, compassionate care"
+    ],
+    "cta": [
+      "Book an Appointment",
+      "Schedule Your Visit",
+      "Call Us Today",
+      "Request a Consultation"
+    ],
+    "about": [
+      "Dr. {name} and our team are committed to providing exceptional dental care.",
+      "We combine the latest technology with a gentle touch."
+    ]
+  },
+  "must_have_sections": [
+    "services",
+    "appointment_booking",
+    "hours",
+    "location_map",
+    "reviews"
+  ],
+  "photo_placement": [
+    "hero_background",
+    "team_photos",
+    "office_interior",
+    "technology_showcase"
+  ],
+  "suggested_components": {
+    "shadcn": ["card", "accordion", "badge", "button", "tabs"],
+    "aceternity": ["bento-grid", "card-hover-effect", "text-generate-effect", "aurora-background"],
+    "magic-ui": ["animated-list", "number-ticker", "shimmer-button"],
+    "21st-dev": ["hero-section", "services-section", "testimonials", "faq", "booking-section"]
+  }
+}

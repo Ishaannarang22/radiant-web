@@ -1,0 +1,84 @@
+{
+  "industry": "plumber",
+  "display_name": "Plumber / HVAC",
+  "sections": [
+    "hero-with-trust-badges",
+    "services-grid",
+    "why-choose-us",
+    "emergency-cta",
+    "service-areas",
+    "reviews-testimonials",
+    "certifications",
+    "hours-location",
+    "contact-form",
+    "footer"
+  ],
+  "color_schemes": [
+    {
+      "name": "Trustworthy Blue",
+      "primary": "#1E56A0",
+      "secondary": "#E8F0FE",
+      "accent": "#F59E0B",
+      "background": "#FFFFFF",
+      "text": "#1A2332"
+    },
+    {
+      "name": "Professional Green",
+      "primary": "#166534",
+      "secondary": "#ECFDF5",
+      "accent": "#2563EB",
+      "background": "#FAFFFE",
+      "text": "#1A2E1A"
+    },
+    {
+      "name": "Bold & Reliable",
+      "primary": "#DC2626",
+      "secondary": "#FEF2F2",
+      "accent": "#1E40AF",
+      "background": "#FFFFFF",
+      "text": "#171717"
+    }
+  ],
+  "copy_patterns": {
+    "hero_headline": [
+      "Fast, reliable {service_type} services in {city}",
+      "Your trusted local {service_type} experts",
+      "24/7 emergency service — we're here when you need us",
+      "{service_type} problems? We fix them right."
+    ],
+    "hero_subheadline": [
+      "Licensed, bonded & insured",
+      "Same-day service available",
+      "Upfront pricing, no surprises"
+    ],
+    "cta": [
+      "Call Now",
+      "Get a Free Estimate",
+      "Schedule Service",
+      "Emergency? Call Now"
+    ],
+    "about": [
+      "{business_name} has been serving {city} and surrounding areas for over {years} years.",
+      "We pride ourselves on honest work, fair prices, and getting the job done right the first time."
+    ]
+  },
+  "must_have_sections": [
+    "services",
+    "phone_number_prominent",
+    "service_areas",
+    "reviews",
+    "hours"
+  ],
+  "photo_placement": [
+    "hero_background",
+    "team_at_work",
+    "service_truck",
+    "certifications"
+  ],
+  "suggested_components": {
+    "shadcn": ["card", "badge", "button", "accordion", "alert"],
+    "aceternity": ["text-generate-effect", "background-beams", "bento-grid"],
+    "magic-ui": ["number-ticker", "shimmer-button", "pulsating-button", "border-beam"],
+    "21st-dev": ["hero-section", "services-section", "testimonials", "contact", "stats"]
+  }
+}
