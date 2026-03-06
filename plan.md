@@ -816,7 +816,7 @@ After Phase 4, you should have:
 
 ### Steps
 
-- [ ] **5.1 Build the landing page**
+- [x] **5.1 Build the landing page**
   - `apps/web/app/page.tsx`
   - Sections:
     1. **Hero** — "Generate a stunning website for any business in 60 seconds"
