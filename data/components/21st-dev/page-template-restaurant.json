@@ -1,0 +1,41 @@
+{
+  "name": "Page Template Restaurant",
+  "library": "21st-dev",
+  "description": "A complete restaurant page template that composes hero, menu, hours/location, reviews, gallery, reservation CTA, and footer sections into a cohesive single-page website.",
+  "whenToUse": "Use as a full-page template for restaurant businesses. Provides a complete, ready-to-customize page structure.",
+  "installation": "npx 21st@latest add page-template-restaurant",
+  "props": [
+    {
+      "name": "businessData",
+      "type": "RestaurantData",
+      "default": "undefined",
+      "description": "Complete business data object including name, menu, hours, reviews, photos"
+    },
+    {
+      "name": "theme",
+      "type": "ThemeConfig",
+      "default": "undefined",
+      "description": "Theme configuration with colors, fonts, and style preferences"
+    },
+    {
+      "name": "sections",
+      "type": "string[]",
+      "default": "[\"hero\", \"menu\", \"hours\", \"reviews\", \"gallery\", \"cta\", \"footer\"]",
+      "description": "Ordered list of sections to include"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { PageTemplateRestaurant } from \"@/components/ui/page-template-restaurant\";\n\nexport default function RestaurantPage({ data }: { data: RestaurantData }) {\n  return (\n    <PageTemplateRestaurant\n      businessData={data}\n      theme={{ primary: \"#D4382C\", secondary: \"#F5E6CC\", font: \"serif\" }}\n      sections={[\"hero\", \"menu\", \"hours\", \"reviews\", \"gallery\", \"cta\", \"footer\"]}\n    />\n  );\n}",
+  "tags": [
+    "template",
+    "restaurant",
+    "full-page",
+    "composition",
+    "business"
+  ]
+}

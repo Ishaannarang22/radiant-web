@@ -412,7 +412,7 @@ Before Claude can generate websites using shadcn/ui, Aceternity UI, Magic UI, et
   - Store as JSON: `data/components/magic-ui/[component].json`
   - Target: ~20-30 components
 
-- [ ] **2.5 Scrape 21st.dev documentation**
+- [x] **2.5 Scrape 21st.dev documentation**
   - Source: https://21st.dev
   - Focus on:
     - Pre-built sections (hero, features, pricing)

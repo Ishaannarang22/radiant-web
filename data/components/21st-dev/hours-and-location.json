@@ -1,0 +1,53 @@
+{
+  "name": "Hours and Location",
+  "library": "21st-dev",
+  "description": "A section displaying business hours in a formatted table alongside location details with an embedded map. Shows current open/closed status dynamically.",
+  "whenToUse": "Use on local business websites to display operating hours and physical location. Essential for restaurants, salons, clinics, and retail stores.",
+  "installation": "npx 21st@latest add hours-location",
+  "props": [
+    {
+      "name": "hours",
+      "type": "BusinessHours",
+      "default": "undefined",
+      "description": "Object mapping days to open/close times"
+    },
+    {
+      "name": "address",
+      "type": "string",
+      "default": "undefined",
+      "description": "Full street address"
+    },
+    {
+      "name": "phone",
+      "type": "string",
+      "default": "undefined",
+      "description": "Contact phone number"
+    },
+    {
+      "name": "showMap",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether to show an embedded map"
+    },
+    {
+      "name": "showStatus",
+      "type": "boolean",
+      "default": "true",
+      "description": "Show current open/closed status badge"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { HoursLocation } from \"@/components/ui/hours-location\";\n\nconst hours = {\n  monday: { open: \"9:00 AM\", close: \"9:00 PM\" },\n  tuesday: { open: \"9:00 AM\", close: \"9:00 PM\" },\n  wednesday: { open: \"9:00 AM\", close: \"9:00 PM\" },\n  sunday: { open: \"10:00 AM\", close: \"8:00 PM\" },\n};\n\nexport default function Info() {\n  return (\n    <HoursLocation\n      hours={hours}\n      address=\"123 Main Street, City, ST 12345\"\n      phone=\"(555) 123-4567\"\n      showMap\n      showStatus\n    />\n  );\n}",
+  "tags": [
+    "section",
+    "hours",
+    "location",
+    "map",
+    "business"
+  ]
+}

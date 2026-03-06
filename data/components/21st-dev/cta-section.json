@@ -1,0 +1,53 @@
+{
+  "name": "CTA Section",
+  "library": "21st-dev",
+  "description": "A call-to-action section with bold headline, supporting text, and prominent action buttons. Supports gradient backgrounds, image overlays, and animated elements.",
+  "whenToUse": "Use as a conversion-focused section, typically placed near the bottom of a page or between content sections to drive user action.",
+  "installation": "npx 21st@latest add cta-section",
+  "props": [
+    {
+      "name": "headline",
+      "type": "string",
+      "default": "undefined",
+      "description": "The main CTA headline text"
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "default": "undefined",
+      "description": "Supporting description text"
+    },
+    {
+      "name": "primaryAction",
+      "type": "{ text: string; href: string }",
+      "default": "undefined",
+      "description": "Primary action button configuration"
+    },
+    {
+      "name": "secondaryAction",
+      "type": "{ text: string; href: string }",
+      "default": "undefined",
+      "description": "Optional secondary action button"
+    },
+    {
+      "name": "variant",
+      "type": "\"gradient\" | \"solid\" | \"image\"",
+      "default": "\"gradient\"",
+      "description": "Background style variant"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { CTASection } from \"@/components/ui/cta-section\";\n\nexport default function CallToAction() {\n  return (\n    <CTASection\n      headline=\"Ready to transform your online presence?\"\n      description=\"Get a beautiful website for your business in under 60 seconds.\"\n      primaryAction={{ text: \"Get Started Free\", href: \"/generate\" }}\n      secondaryAction={{ text: \"View Examples\", href: \"/examples\" }}\n      variant=\"gradient\"\n    />\n  );\n}",
+  "tags": [
+    "section",
+    "cta",
+    "conversion",
+    "action",
+    "layout"
+  ]
+}

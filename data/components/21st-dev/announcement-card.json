@@ -1,0 +1,53 @@
+{
+  "name": "Announcement Card",
+  "library": "21st-dev",
+  "description": "A prominent card component for highlighting announcements, special offers, or events. Features icon, title, description, date, and action button with optional animated border.",
+  "whenToUse": "Use to highlight special promotions, upcoming events, or important announcements on a business website.",
+  "installation": "npx 21st@latest add announcement-card",
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "default": "undefined",
+      "description": "Card title text"
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "default": "undefined",
+      "description": "Card description or body text"
+    },
+    {
+      "name": "date",
+      "type": "string",
+      "default": "undefined",
+      "description": "Event or announcement date"
+    },
+    {
+      "name": "action",
+      "type": "{ text: string; href: string }",
+      "default": "undefined",
+      "description": "Action button configuration"
+    },
+    {
+      "name": "icon",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Icon element displayed in the card"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { AnnouncementCard } from \"@/components/ui/announcement-card\";\nimport { Calendar } from \"lucide-react\";\n\nexport default function Announcement() {\n  return (\n    <AnnouncementCard\n      icon={<Calendar />}\n      title=\"Holiday Hours\"\n      description=\"We'll be closed Dec 24-25 and open reduced hours Dec 26-31.\"\n      date=\"December 2024\"\n      action={{ text: \"View Details\", href: \"/holiday-hours\" }}\n    />\n  );\n}",
+  "tags": [
+    "component",
+    "card",
+    "announcement",
+    "event",
+    "promotion"
+  ]
+}

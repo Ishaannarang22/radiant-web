@@ -1,0 +1,41 @@
+{
+  "name": "Stats Section",
+  "library": "21st-dev",
+  "description": "A section for displaying key statistics or metrics with animated counting numbers, labels, and optional icons. Numbers animate up when scrolled into view.",
+  "whenToUse": "Use to showcase business metrics, achievements, or key numbers. Great for building credibility with concrete data points.",
+  "installation": "npx 21st@latest add stats-section",
+  "props": [
+    {
+      "name": "stats",
+      "type": "Stat[]",
+      "default": "[]",
+      "description": "Array of stat objects with value, label, prefix, and suffix"
+    },
+    {
+      "name": "animated",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether to animate number counting on scroll"
+    },
+    {
+      "name": "variant",
+      "type": "\"inline\" | \"card\" | \"minimal\"",
+      "default": "\"inline\"",
+      "description": "Visual style variant"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { StatsSection } from \"@/components/ui/stats-section\";\n\nconst stats = [\n  { value: 500, suffix: \"+\", label: \"Websites Generated\" },\n  { value: 98, suffix: \"%\", label: \"Customer Satisfaction\" },\n  { value: 60, suffix: \"s\", label: \"Average Generation Time\" },\n];\n\nexport default function Stats() {\n  return <StatsSection stats={stats} animated variant=\"card\" />;\n}",
+  "tags": [
+    "section",
+    "stats",
+    "numbers",
+    "metrics",
+    "animation"
+  ]
+}

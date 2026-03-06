@@ -1,0 +1,47 @@
+{
+  "name": "Banner",
+  "library": "21st-dev",
+  "description": "A dismissible announcement banner that sits at the top of the page. Supports links, countdown timers, and gradient or solid backgrounds. Commonly used for promotions or announcements.",
+  "whenToUse": "Use at the top of a site to announce sales, events, new features, or important updates. Can be dismissed by the visitor.",
+  "installation": "npx 21st@latest add banner",
+  "props": [
+    {
+      "name": "text",
+      "type": "string",
+      "default": "undefined",
+      "description": "Banner announcement text"
+    },
+    {
+      "name": "link",
+      "type": "{ text: string; href: string }",
+      "default": "undefined",
+      "description": "Optional link within the banner"
+    },
+    {
+      "name": "dismissible",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether the banner can be dismissed"
+    },
+    {
+      "name": "variant",
+      "type": "\"info\" | \"warning\" | \"success\" | \"gradient\"",
+      "default": "\"info\"",
+      "description": "Visual style variant"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { Banner } from \"@/components/ui/banner\";\n\nexport default function TopBanner() {\n  return (\n    <Banner\n      text=\"Grand Opening Special: 20% off all services this week!\"\n      link={{ text: \"Book Now\", href: \"/book\" }}\n      variant=\"gradient\"\n      dismissible\n    />\n  );\n}",
+  "tags": [
+    "component",
+    "banner",
+    "announcement",
+    "notification",
+    "promotion"
+  ]
+}

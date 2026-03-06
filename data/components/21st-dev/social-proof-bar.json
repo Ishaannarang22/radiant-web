@@ -1,0 +1,47 @@
+{
+  "name": "Social Proof Bar",
+  "library": "21st-dev",
+  "description": "A compact social proof bar showing aggregate ratings, review counts, and trust badges from platforms like Google, Yelp, and Facebook. Supports animated number reveals.",
+  "whenToUse": "Use near the hero section or above the fold to quickly establish trust with aggregate review data.",
+  "installation": "npx 21st@latest add social-proof-bar",
+  "props": [
+    {
+      "name": "rating",
+      "type": "number",
+      "default": "undefined",
+      "description": "Average star rating"
+    },
+    {
+      "name": "reviewCount",
+      "type": "number",
+      "default": "undefined",
+      "description": "Total number of reviews"
+    },
+    {
+      "name": "platforms",
+      "type": "string[]",
+      "default": "[]",
+      "description": "List of platforms to show badges for (e.g., 'google', 'yelp')"
+    },
+    {
+      "name": "animated",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether to animate numbers on appearance"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { SocialProofBar } from \"@/components/ui/social-proof-bar\";\n\nexport default function Proof() {\n  return (\n    <SocialProofBar\n      rating={4.8}\n      reviewCount={342}\n      platforms={[\"google\", \"yelp\"]}\n      animated\n    />\n  );\n}",
+  "tags": [
+    "component",
+    "social-proof",
+    "rating",
+    "trust",
+    "reviews"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Contact Section",
+  "library": "21st-dev",
+  "description": "A contact section with a form (name, email, message), embedded map, contact details (phone, email, address), and social links. Form includes client-side validation.",
+  "whenToUse": "Use on contact pages or as a section at the bottom of service pages to provide a way for visitors to get in touch.",
+  "installation": "npx 21st@latest add contact-section",
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "default": "\"Get in Touch\"",
+      "description": "Section heading text"
+    },
+    {
+      "name": "showMap",
+      "type": "boolean",
+      "default": "false",
+      "description": "Whether to show an embedded map"
+    },
+    {
+      "name": "contactInfo",
+      "type": "ContactInfo",
+      "default": "undefined",
+      "description": "Contact details: phone, email, address"
+    },
+    {
+      "name": "onSubmit",
+      "type": "(data: FormData) => Promise<void>",
+      "default": "undefined",
+      "description": "Form submission handler"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { ContactSection } from \"@/components/ui/contact-section\";\n\nexport default function Contact() {\n  return (\n    <ContactSection\n      title=\"Get in Touch\"\n      contactInfo={{\n        phone: \"(555) 123-4567\",\n        email: \"hello@mybusiness.com\",\n        address: \"123 Main St, City, ST 12345\",\n      }}\n      onSubmit={async (data) => {\n        await fetch(\"/api/contact\", { method: \"POST\", body: JSON.stringify(data) });\n      }}\n    />\n  );\n}",
+  "tags": [
+    "section",
+    "contact",
+    "form",
+    "map",
+    "communication"
+  ]
+}

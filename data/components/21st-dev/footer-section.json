@@ -1,0 +1,53 @@
+{
+  "name": "Footer Section",
+  "library": "21st-dev",
+  "description": "A comprehensive website footer with multi-column link groups, social media icons, newsletter signup, contact info, and copyright. Responsive design that stacks on mobile.",
+  "whenToUse": "Use as the bottom section of any website to provide navigation links, contact information, and legal notices.",
+  "installation": "npx 21st@latest add footer-section",
+  "props": [
+    {
+      "name": "columns",
+      "type": "FooterColumn[]",
+      "default": "[]",
+      "description": "Array of link group columns with title and links"
+    },
+    {
+      "name": "logo",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Logo element to display in the footer"
+    },
+    {
+      "name": "socialLinks",
+      "type": "SocialLink[]",
+      "default": "[]",
+      "description": "Array of social media links with platform and URL"
+    },
+    {
+      "name": "showNewsletter",
+      "type": "boolean",
+      "default": "false",
+      "description": "Whether to show a newsletter signup form"
+    },
+    {
+      "name": "copyright",
+      "type": "string",
+      "default": "undefined",
+      "description": "Copyright text to display at the bottom"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { FooterSection } from \"@/components/ui/footer-section\";\n\nconst columns = [\n  { title: \"Product\", links: [{ label: \"Features\", href: \"/features\" }, { label: \"Pricing\", href: \"/pricing\" }] },\n  { title: \"Company\", links: [{ label: \"About\", href: \"/about\" }, { label: \"Contact\", href: \"/contact\" }] },\n];\n\nexport default function Footer() {\n  return (\n    <FooterSection\n      columns={columns}\n      copyright=\"2024 Radiant Web. All rights reserved.\"\n      socialLinks={[{ platform: \"twitter\", url: \"https://twitter.com\" }]}\n    />\n  );\n}",
+  "tags": [
+    "section",
+    "footer",
+    "navigation",
+    "layout",
+    "links"
+  ]
+}

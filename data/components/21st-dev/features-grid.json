@@ -1,0 +1,47 @@
+{
+  "name": "Features Grid",
+  "library": "21st-dev",
+  "description": "A responsive grid layout for showcasing product features or services. Each feature card includes an icon, title, and description with hover effects and optional animations.",
+  "whenToUse": "Use to display a set of features, services, or benefits in a visually organized grid. Works well below the hero section.",
+  "installation": "npx 21st@latest add features-grid",
+  "props": [
+    {
+      "name": "features",
+      "type": "Feature[]",
+      "default": "[]",
+      "description": "Array of feature objects with icon, title, and description"
+    },
+    {
+      "name": "columns",
+      "type": "2 | 3 | 4",
+      "default": "3",
+      "description": "Number of columns in the grid layout"
+    },
+    {
+      "name": "variant",
+      "type": "\"card\" | \"minimal\" | \"icon-top\"",
+      "default": "\"card\"",
+      "description": "Visual style variant for feature items"
+    },
+    {
+      "name": "animated",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether to animate features on scroll into view"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { FeaturesGrid } from \"@/components/ui/features-grid\";\nimport { Zap, Shield, Clock } from \"lucide-react\";\n\nconst features = [\n  { icon: <Zap />, title: \"Lightning Fast\", description: \"Generated in under 60 seconds\" },\n  { icon: <Shield />, title: \"Secure\", description: \"Enterprise-grade security built in\" },\n  { icon: <Clock />, title: \"Always On\", description: \"99.9% uptime guaranteed\" },\n];\n\nexport default function Features() {\n  return <FeaturesGrid features={features} columns={3} variant=\"card\" />;\n}",
+  "tags": [
+    "section",
+    "features",
+    "grid",
+    "layout",
+    "cards"
+  ]
+}

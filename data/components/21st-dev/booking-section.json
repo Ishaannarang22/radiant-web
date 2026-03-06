@@ -1,0 +1,47 @@
+{
+  "name": "Booking Section",
+  "library": "21st-dev",
+  "description": "An appointment or reservation booking section with date picker, time slot selection, service selection, and contact form. Supports business-specific booking flows.",
+  "whenToUse": "Use for businesses that take appointments or reservations: restaurants, salons, dentists, doctors, spas.",
+  "installation": "npx 21st@latest add booking-section",
+  "props": [
+    {
+      "name": "services",
+      "type": "BookingService[]",
+      "default": "[]",
+      "description": "Array of bookable services with name and duration"
+    },
+    {
+      "name": "availableSlots",
+      "type": "TimeSlot[]",
+      "default": "[]",
+      "description": "Available time slots for booking"
+    },
+    {
+      "name": "onBook",
+      "type": "(booking: BookingData) => Promise<void>",
+      "default": "undefined",
+      "description": "Callback when a booking is submitted"
+    },
+    {
+      "name": "showServiceSelect",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether to show service selection step"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { BookingSection } from \"@/components/ui/booking-section\";\n\nconst services = [\n  { name: \"Haircut\", duration: 30 },\n  { name: \"Color & Style\", duration: 90 },\n  { name: \"Consultation\", duration: 15 },\n];\n\nexport default function Booking() {\n  return (\n    <BookingSection\n      services={services}\n      onBook={async (data) => {\n        await fetch(\"/api/booking\", { method: \"POST\", body: JSON.stringify(data) });\n      }}\n      showServiceSelect\n    />\n  );\n}",
+  "tags": [
+    "section",
+    "booking",
+    "appointment",
+    "form",
+    "scheduling"
+  ]
+}

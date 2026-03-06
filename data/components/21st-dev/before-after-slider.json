@@ -1,0 +1,53 @@
+{
+  "name": "Before After Slider",
+  "library": "21st-dev",
+  "description": "An interactive comparison slider that lets users drag to compare two images side by side. Supports horizontal and vertical orientations with smooth drag interaction.",
+  "whenToUse": "Use for before/after comparisons: salon transformations, renovation projects, design comparisons, or product improvements.",
+  "installation": "npx 21st@latest add before-after-slider",
+  "props": [
+    {
+      "name": "beforeImage",
+      "type": "string",
+      "default": "undefined",
+      "description": "URL of the 'before' image"
+    },
+    {
+      "name": "afterImage",
+      "type": "string",
+      "default": "undefined",
+      "description": "URL of the 'after' image"
+    },
+    {
+      "name": "beforeLabel",
+      "type": "string",
+      "default": "\"Before\"",
+      "description": "Label for the before side"
+    },
+    {
+      "name": "afterLabel",
+      "type": "string",
+      "default": "\"After\"",
+      "description": "Label for the after side"
+    },
+    {
+      "name": "orientation",
+      "type": "\"horizontal\" | \"vertical\"",
+      "default": "\"horizontal\"",
+      "description": "Direction of the comparison slider"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { BeforeAfterSlider } from \"@/components/ui/before-after-slider\";\n\nexport default function Comparison() {\n  return (\n    <BeforeAfterSlider\n      beforeImage=\"/before.jpg\"\n      afterImage=\"/after.jpg\"\n      beforeLabel=\"Before\"\n      afterLabel=\"After\"\n      orientation=\"horizontal\"\n    />\n  );\n}",
+  "tags": [
+    "component",
+    "comparison",
+    "slider",
+    "images",
+    "interactive"
+  ]
+}

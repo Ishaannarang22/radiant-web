@@ -1,0 +1,53 @@
+{
+  "name": "Map Embed",
+  "library": "21st-dev",
+  "description": "A styled Google Maps or Mapbox embed wrapper with customizable markers, info windows, dark mode support, and responsive sizing. Includes a location pin and address overlay.",
+  "whenToUse": "Use to display a business location on a map. Essential for local businesses, restaurants, and service providers.",
+  "installation": "npx 21st@latest add map-embed",
+  "props": [
+    {
+      "name": "address",
+      "type": "string",
+      "default": "undefined",
+      "description": "Address to display on the map"
+    },
+    {
+      "name": "lat",
+      "type": "number",
+      "default": "undefined",
+      "description": "Latitude coordinate"
+    },
+    {
+      "name": "lng",
+      "type": "number",
+      "default": "undefined",
+      "description": "Longitude coordinate"
+    },
+    {
+      "name": "zoom",
+      "type": "number",
+      "default": "15",
+      "description": "Map zoom level"
+    },
+    {
+      "name": "darkMode",
+      "type": "boolean",
+      "default": "false",
+      "description": "Whether to use dark map theme"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { MapEmbed } from \"@/components/ui/map-embed\";\n\nexport default function Location() {\n  return (\n    <MapEmbed\n      address=\"123 Main Street, New York, NY 10001\"\n      lat={40.7128}\n      lng={-74.006}\n      zoom={15}\n    />\n  );\n}",
+  "tags": [
+    "component",
+    "map",
+    "location",
+    "embed",
+    "business"
+  ]
+}

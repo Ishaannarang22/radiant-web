@@ -1,0 +1,47 @@
+{
+  "name": "Services Section",
+  "library": "21st-dev",
+  "description": "A services showcase section with service cards featuring icons, titles, descriptions, and optional pricing or CTA links. Supports list and grid layouts.",
+  "whenToUse": "Use to display business services, menu categories, or product offerings in a structured layout.",
+  "installation": "npx 21st@latest add services-section",
+  "props": [
+    {
+      "name": "services",
+      "type": "Service[]",
+      "default": "[]",
+      "description": "Array of service objects with icon, title, description, and optional price"
+    },
+    {
+      "name": "layout",
+      "type": "\"grid\" | \"list\" | \"alternating\"",
+      "default": "\"grid\"",
+      "description": "Layout style for displaying services"
+    },
+    {
+      "name": "columns",
+      "type": "2 | 3",
+      "default": "3",
+      "description": "Number of columns in grid layout"
+    },
+    {
+      "name": "showPrice",
+      "type": "boolean",
+      "default": "false",
+      "description": "Whether to display pricing on service cards"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { ServicesSection } from \"@/components/ui/services-section\";\nimport { Scissors, Paintbrush, Sparkles } from \"lucide-react\";\n\nconst services = [\n  { icon: <Scissors />, title: \"Haircut\", description: \"Professional styling\", price: \"$35\" },\n  { icon: <Paintbrush />, title: \"Color\", description: \"Full color treatment\", price: \"$85\" },\n  { icon: <Sparkles />, title: \"Highlights\", description: \"Natural-looking highlights\", price: \"$120\" },\n];\n\nexport default function Services() {\n  return <ServicesSection services={services} layout=\"grid\" showPrice />;\n}",
+  "tags": [
+    "section",
+    "services",
+    "cards",
+    "business",
+    "layout"
+  ]
+}

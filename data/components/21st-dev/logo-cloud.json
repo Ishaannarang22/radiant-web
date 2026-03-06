@@ -1,0 +1,47 @@
+{
+  "name": "Logo Cloud",
+  "library": "21st-dev",
+  "description": "A section displaying partner, client, or technology logos in a horizontal row or animated marquee. Supports grayscale-to-color hover effects and infinite scroll animation.",
+  "whenToUse": "Use to display trusted brands, partners, or certifications. Often placed below the hero section for credibility.",
+  "installation": "npx 21st@latest add logo-cloud",
+  "props": [
+    {
+      "name": "logos",
+      "type": "Logo[]",
+      "default": "[]",
+      "description": "Array of logo objects with src, alt, and optional href"
+    },
+    {
+      "name": "animated",
+      "type": "boolean",
+      "default": "false",
+      "description": "Whether to animate logos in a continuous marquee"
+    },
+    {
+      "name": "grayscale",
+      "type": "boolean",
+      "default": "true",
+      "description": "Show logos in grayscale with color on hover"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "default": "\"Trusted by\"",
+      "description": "Section title text"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { LogoCloud } from \"@/components/ui/logo-cloud\";\n\nconst logos = [\n  { src: \"/logos/google.svg\", alt: \"Google\" },\n  { src: \"/logos/stripe.svg\", alt: \"Stripe\" },\n  { src: \"/logos/vercel.svg\", alt: \"Vercel\" },\n];\n\nexport default function Partners() {\n  return <LogoCloud logos={logos} animated grayscale title=\"Trusted by\" />;\n}",
+  "tags": [
+    "section",
+    "logos",
+    "brands",
+    "trust",
+    "marquee"
+  ]
+}

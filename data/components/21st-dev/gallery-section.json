@@ -1,0 +1,53 @@
+{
+  "name": "Gallery Section",
+  "library": "21st-dev",
+  "description": "A photo gallery section with lightbox viewing, masonry or grid layouts, category filtering, and lazy loading. Supports images and optional captions.",
+  "whenToUse": "Use to showcase photos of products, portfolio items, restaurant dishes, salon transformations, or any visual work.",
+  "installation": "npx 21st@latest add gallery-section",
+  "props": [
+    {
+      "name": "images",
+      "type": "GalleryImage[]",
+      "default": "[]",
+      "description": "Array of image objects with src, alt, caption, and category"
+    },
+    {
+      "name": "layout",
+      "type": "\"grid\" | \"masonry\"",
+      "default": "\"grid\"",
+      "description": "Layout style for the gallery"
+    },
+    {
+      "name": "columns",
+      "type": "2 | 3 | 4",
+      "default": "3",
+      "description": "Number of columns"
+    },
+    {
+      "name": "lightbox",
+      "type": "boolean",
+      "default": "true",
+      "description": "Enable full-screen lightbox on image click"
+    },
+    {
+      "name": "filterable",
+      "type": "boolean",
+      "default": "false",
+      "description": "Show category filter tabs"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { GallerySection } from \"@/components/ui/gallery-section\";\n\nconst images = [\n  { src: \"/gallery/1.jpg\", alt: \"Dish 1\", caption: \"Signature Pasta\", category: \"entrees\" },\n  { src: \"/gallery/2.jpg\", alt: \"Dish 2\", caption: \"Fresh Salad\", category: \"appetizers\" },\n  { src: \"/gallery/3.jpg\", alt: \"Interior\", caption: \"Our Dining Room\", category: \"ambiance\" },\n];\n\nexport default function Gallery() {\n  return <GallerySection images={images} layout=\"masonry\" lightbox filterable />;\n}",
+  "tags": [
+    "section",
+    "gallery",
+    "images",
+    "lightbox",
+    "masonry"
+  ]
+}

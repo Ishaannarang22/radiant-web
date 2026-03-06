@@ -1,0 +1,53 @@
+{
+  "name": "Navbar",
+  "library": "21st-dev",
+  "description": "A responsive navigation bar with logo, menu items, dropdown menus, mobile hamburger menu, and optional CTA button. Supports sticky positioning and scroll-based transparency effects.",
+  "whenToUse": "Use as the primary navigation component at the top of every page. Essential for all website templates.",
+  "installation": "npx 21st@latest add navbar",
+  "props": [
+    {
+      "name": "logo",
+      "type": "React.ReactNode",
+      "default": "undefined",
+      "description": "Logo element displayed on the left"
+    },
+    {
+      "name": "items",
+      "type": "NavItem[]",
+      "default": "[]",
+      "description": "Array of navigation items with label, href, and optional children for dropdowns"
+    },
+    {
+      "name": "ctaButton",
+      "type": "{ text: string; href: string }",
+      "default": "undefined",
+      "description": "Optional CTA button on the right side"
+    },
+    {
+      "name": "sticky",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether the navbar sticks to the top on scroll"
+    },
+    {
+      "name": "transparent",
+      "type": "boolean",
+      "default": "false",
+      "description": "Whether to start with a transparent background"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { Navbar } from \"@/components/ui/navbar\";\n\nconst navItems = [\n  { label: \"Home\", href: \"/\" },\n  { label: \"Services\", href: \"/services\", children: [\n    { label: \"Web Design\", href: \"/services/web-design\" },\n    { label: \"SEO\", href: \"/services/seo\" },\n  ]},\n  { label: \"Contact\", href: \"/contact\" },\n];\n\nexport default function Header() {\n  return (\n    <Navbar\n      logo={<span className=\"font-bold text-xl\">MyBiz</span>}\n      items={navItems}\n      ctaButton={{ text: \"Book Now\", href: \"/book\" }}\n      sticky\n    />\n  );\n}",
+  "tags": [
+    "navigation",
+    "header",
+    "menu",
+    "responsive",
+    "layout"
+  ]
+}

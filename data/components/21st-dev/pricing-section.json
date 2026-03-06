@@ -1,0 +1,47 @@
+{
+  "name": "Pricing Section",
+  "library": "21st-dev",
+  "description": "A complete pricing section with tiered pricing cards, feature comparison lists, toggle for monthly/annual billing, and highlighted recommended plan. Includes animated border effects on hover.",
+  "whenToUse": "Use on pricing pages or as a section on landing pages to display subscription plans and pricing tiers.",
+  "installation": "npx 21st@latest add pricing-section",
+  "props": [
+    {
+      "name": "plans",
+      "type": "PricingPlan[]",
+      "default": "[]",
+      "description": "Array of pricing plans with name, price, features, and CTA"
+    },
+    {
+      "name": "showToggle",
+      "type": "boolean",
+      "default": "true",
+      "description": "Show monthly/annual billing toggle"
+    },
+    {
+      "name": "highlightedPlan",
+      "type": "string",
+      "default": "undefined",
+      "description": "Name of the plan to visually highlight as recommended"
+    },
+    {
+      "name": "currency",
+      "type": "string",
+      "default": "\"$\"",
+      "description": "Currency symbol to display"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { PricingSection } from \"@/components/ui/pricing-section\";\n\nconst plans = [\n  { name: \"Free\", price: 0, features: [\"1 website\", \"Basic templates\"], cta: \"Start Free\" },\n  { name: \"Pro\", price: 29, features: [\"5 websites\", \"Premium templates\", \"Custom domain\"], cta: \"Go Pro\", highlighted: true },\n  { name: \"Agency\", price: 99, features: [\"Unlimited websites\", \"White label\", \"Priority support\"], cta: \"Contact Sales\" },\n];\n\nexport default function Pricing() {\n  return <PricingSection plans={plans} highlightedPlan=\"Pro\" />;\n}",
+  "tags": [
+    "section",
+    "pricing",
+    "cards",
+    "layout",
+    "conversion"
+  ]
+}

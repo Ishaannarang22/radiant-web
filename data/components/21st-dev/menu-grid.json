@@ -1,0 +1,47 @@
+{
+  "name": "Menu Grid",
+  "library": "21st-dev",
+  "description": "A restaurant-style menu grid with categorized items, prices, descriptions, optional photos, and dietary indicators (vegetarian, gluten-free, etc.).",
+  "whenToUse": "Use specifically for restaurant or food business websites to display menu items organized by category.",
+  "installation": "npx 21st@latest add menu-grid",
+  "props": [
+    {
+      "name": "categories",
+      "type": "MenuCategory[]",
+      "default": "[]",
+      "description": "Array of menu categories with name and items"
+    },
+    {
+      "name": "showImages",
+      "type": "boolean",
+      "default": "false",
+      "description": "Whether to show item images"
+    },
+    {
+      "name": "showDietary",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether to show dietary indicator badges"
+    },
+    {
+      "name": "variant",
+      "type": "\"card\" | \"list\" | \"elegant\"",
+      "default": "\"card\"",
+      "description": "Visual style variant"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { MenuGrid } from \"@/components/ui/menu-grid\";\n\nconst categories = [\n  {\n    name: \"Appetizers\",\n    items: [\n      { name: \"Bruschetta\", description: \"Toasted bread with tomatoes\", price: \"$12\", dietary: [\"vegetarian\"] },\n      { name: \"Calamari\", description: \"Crispy fried squid\", price: \"$14\" },\n    ],\n  },\n  {\n    name: \"Entrees\",\n    items: [\n      { name: \"Grilled Salmon\", description: \"Atlantic salmon with herbs\", price: \"$28\", dietary: [\"gluten-free\"] },\n    ],\n  },\n];\n\nexport default function Menu() {\n  return <MenuGrid categories={categories} variant=\"elegant\" showDietary />;\n}",
+  "tags": [
+    "section",
+    "menu",
+    "restaurant",
+    "food",
+    "grid"
+  ]
+}

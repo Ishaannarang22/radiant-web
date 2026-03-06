@@ -1,0 +1,59 @@
+{
+  "name": "Hero Section",
+  "library": "21st-dev",
+  "description": "A full-width hero section with headline, subheadline, CTA buttons, and optional background image or gradient. Supports centered and split-layout variants with animated text reveals.",
+  "whenToUse": "Use as the primary above-the-fold section on any landing page or homepage. Ideal for making a strong first impression with a clear value proposition.",
+  "installation": "npx 21st@latest add hero-section",
+  "props": [
+    {
+      "name": "headline",
+      "type": "string",
+      "default": "undefined",
+      "description": "The main headline text displayed prominently"
+    },
+    {
+      "name": "subheadline",
+      "type": "string",
+      "default": "undefined",
+      "description": "Supporting text below the headline"
+    },
+    {
+      "name": "ctaText",
+      "type": "string",
+      "default": "\"Get Started\"",
+      "description": "Text for the primary call-to-action button"
+    },
+    {
+      "name": "ctaLink",
+      "type": "string",
+      "default": "\"#\"",
+      "description": "Link for the primary CTA button"
+    },
+    {
+      "name": "variant",
+      "type": "\"centered\" | \"split\" | \"image-bg\"",
+      "default": "\"centered\"",
+      "description": "Layout variant for the hero section"
+    },
+    {
+      "name": "backgroundImage",
+      "type": "string",
+      "default": "undefined",
+      "description": "Optional background image URL"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes for customization"
+    }
+  ],
+  "codeExample": "import { HeroSection } from \"@/components/ui/hero-section\";\n\nexport default function Landing() {\n  return (\n    <HeroSection\n      headline=\"Build Beautiful Websites in Minutes\"\n      subheadline=\"AI-powered website generation for local businesses\"\n      ctaText=\"Get Started Free\"\n      ctaLink=\"/generate\"\n      variant=\"centered\"\n    />\n  );\n}",
+  "tags": [
+    "section",
+    "hero",
+    "landing",
+    "layout",
+    "above-the-fold"
+  ]
+}

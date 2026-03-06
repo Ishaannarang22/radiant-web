@@ -1,0 +1,41 @@
+{
+  "name": "Page Template Service",
+  "library": "21st-dev",
+  "description": "A complete service business page template that composes hero, services, about, testimonials, booking, FAQ, and footer into a cohesive single-page website. Suitable for salons, dentists, plumbers, lawyers.",
+  "whenToUse": "Use as a full-page template for service-based businesses like salons, dental offices, law firms, or home services.",
+  "installation": "npx 21st@latest add page-template-service",
+  "props": [
+    {
+      "name": "businessData",
+      "type": "ServiceBusinessData",
+      "default": "undefined",
+      "description": "Complete business data including name, services, hours, reviews"
+    },
+    {
+      "name": "theme",
+      "type": "ThemeConfig",
+      "default": "undefined",
+      "description": "Theme configuration with colors, fonts, and style preferences"
+    },
+    {
+      "name": "sections",
+      "type": "string[]",
+      "default": "[\"hero\", \"services\", \"about\", \"testimonials\", \"booking\", \"faq\", \"footer\"]",
+      "description": "Ordered list of sections to include"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { PageTemplateService } from \"@/components/ui/page-template-service\";\n\nexport default function ServicePage({ data }: { data: ServiceBusinessData }) {\n  return (\n    <PageTemplateService\n      businessData={data}\n      theme={{ primary: \"#1A365D\", secondary: \"#EDF2F7\", font: \"sans-serif\" }}\n      sections={[\"hero\", \"services\", \"about\", \"testimonials\", \"booking\", \"faq\", \"footer\"]}\n    />\n  );\n}",
+  "tags": [
+    "template",
+    "service",
+    "full-page",
+    "composition",
+    "business"
+  ]
+}

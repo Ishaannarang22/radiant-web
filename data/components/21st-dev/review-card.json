@@ -1,0 +1,59 @@
+{
+  "name": "Review Card",
+  "library": "21st-dev",
+  "description": "A styled card for displaying individual customer reviews with star rating, reviewer name, date, verified badge, and review text. Supports Google Reviews style formatting.",
+  "whenToUse": "Use to display individual reviews from Google, Yelp, or custom sources. Can be used inside testimonials sections or standalone.",
+  "installation": "npx 21st@latest add review-card",
+  "props": [
+    {
+      "name": "author",
+      "type": "string",
+      "default": "undefined",
+      "description": "Reviewer's name"
+    },
+    {
+      "name": "rating",
+      "type": "number",
+      "default": "5",
+      "description": "Star rating (1-5)"
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "default": "undefined",
+      "description": "Review text content"
+    },
+    {
+      "name": "date",
+      "type": "string",
+      "default": "undefined",
+      "description": "Date of the review"
+    },
+    {
+      "name": "verified",
+      "type": "boolean",
+      "default": "false",
+      "description": "Whether to show a verified badge"
+    },
+    {
+      "name": "avatar",
+      "type": "string",
+      "default": "undefined",
+      "description": "Reviewer avatar image URL"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { ReviewCard } from \"@/components/ui/review-card\";\n\nexport default function Review() {\n  return (\n    <ReviewCard\n      author=\"Sarah M.\"\n      rating={5}\n      text=\"Amazing experience! The staff was incredibly friendly and professional.\"\n      date=\"2 weeks ago\"\n      verified\n    />\n  );\n}",
+  "tags": [
+    "component",
+    "review",
+    "card",
+    "rating",
+    "social-proof"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Blog Section",
+  "library": "21st-dev",
+  "description": "A blog post listing section with featured post, post cards with thumbnails, excerpts, dates, categories, and read-more links. Supports grid and list layouts.",
+  "whenToUse": "Use on homepages to feature recent blog posts, or on blog index pages to list all articles.",
+  "installation": "npx 21st@latest add blog-section",
+  "props": [
+    {
+      "name": "posts",
+      "type": "BlogPost[]",
+      "default": "[]",
+      "description": "Array of blog post objects with title, excerpt, date, image, and slug"
+    },
+    {
+      "name": "layout",
+      "type": "\"grid\" | \"list\" | \"featured\"",
+      "default": "\"grid\"",
+      "description": "Layout style with optional featured first post"
+    },
+    {
+      "name": "columns",
+      "type": "2 | 3",
+      "default": "3",
+      "description": "Number of columns in grid layout"
+    },
+    {
+      "name": "showCategory",
+      "type": "boolean",
+      "default": "true",
+      "description": "Whether to show category labels on posts"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { BlogSection } from \"@/components/ui/blog-section\";\n\nconst posts = [\n  { title: \"Getting Started\", excerpt: \"Learn how to build your first website.\", date: \"2024-01-15\", slug: \"/blog/getting-started\", image: \"/blog/1.jpg\", category: \"Tutorial\" },\n  { title: \"Design Tips\", excerpt: \"5 design principles for local businesses.\", date: \"2024-01-10\", slug: \"/blog/design-tips\", image: \"/blog/2.jpg\", category: \"Design\" },\n];\n\nexport default function Blog() {\n  return <BlogSection posts={posts} layout=\"featured\" showCategory />;\n}",
+  "tags": [
+    "section",
+    "blog",
+    "content",
+    "articles",
+    "cards"
+  ]
+}

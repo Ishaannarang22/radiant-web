@@ -1,0 +1,41 @@
+{
+  "name": "FAQ Section",
+  "library": "21st-dev",
+  "description": "An FAQ accordion section with expandable question-answer pairs. Supports single or multiple open items, search filtering, and categorized grouping.",
+  "whenToUse": "Use on landing pages, support pages, or pricing pages to address common questions and reduce support inquiries.",
+  "installation": "npx 21st@latest add faq-section",
+  "props": [
+    {
+      "name": "items",
+      "type": "FAQItem[]",
+      "default": "[]",
+      "description": "Array of FAQ items with question and answer text"
+    },
+    {
+      "name": "allowMultiple",
+      "type": "boolean",
+      "default": "false",
+      "description": "Allow multiple items to be expanded simultaneously"
+    },
+    {
+      "name": "showSearch",
+      "type": "boolean",
+      "default": "false",
+      "description": "Show a search/filter input above the FAQ items"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "default": "\"\"",
+      "description": "Additional CSS classes"
+    }
+  ],
+  "codeExample": "import { FAQSection } from \"@/components/ui/faq-section\";\n\nconst faqs = [\n  { question: \"How long does it take?\", answer: \"Most websites are generated in under 60 seconds.\" },\n  { question: \"Can I edit the website after?\", answer: \"Yes, you can customize colors, content, and layout.\" },\n  { question: \"Is it mobile-friendly?\", answer: \"All generated websites are fully responsive.\" },\n];\n\nexport default function FAQ() {\n  return <FAQSection items={faqs} allowMultiple />;\n}",
+  "tags": [
+    "section",
+    "faq",
+    "accordion",
+    "content",
+    "support"
+  ]
+}
