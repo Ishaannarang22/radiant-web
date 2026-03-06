@@ -751,7 +751,7 @@ After Phase 3, you should have:
     - Parses response into individual files
     - Returns: `{ files: { path: string, content: string }[], tokensUsed: { input: number, output: number }, duration: number }`
 
-- [ ] **4.6 Build the response parser**
+- [x] **4.6 Build the response parser**
   - `apps/web/lib/parser.ts`
   - Takes Claude's raw text response
   - Parses the `--- FILE: ... ---` markers into individual file objects
