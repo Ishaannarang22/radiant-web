@@ -739,7 +739,7 @@ After Phase 3, you should have:
     6. Return combined prompts
   - Manage context budget: system prompt should stay under ~80K tokens total
 
-- [ ] **4.5 Build the Claude API client**
+- [x] **4.5 Build the Claude API client**
   - `apps/web/lib/claude.ts`
   - Uses `@anthropic-ai/sdk`
   - Functions:
