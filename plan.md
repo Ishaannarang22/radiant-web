@@ -91,7 +91,7 @@ A monorepo is a single Git repository that contains multiple related projects (c
   - Create `apps/web/lib/env.ts` that validates all required env vars exist at startup
   - If any key is missing, the app crashes immediately with a clear error message listing what's missing
 
-- [ ] **0.10 Verify everything works**
+- [x] **0.10 Verify everything works**
   - Run `pnpm dev` from root — web app starts
   - Run `pnpm build` from root — everything compiles without errors
   - Run `pnpm lint` from root — no linting errors
