@@ -249,7 +249,7 @@ pgvector is a PostgreSQL extension that lets you store "vector embeddings" — a
   - `embedding` — 1536-dimensional vector (OpenAI embedding size, or adjust for chosen model)
   - The index makes similarity searches fast
 
-- [ ] **1.8 Create the `template_embeddings` table**
+- [x] **1.8 Create the `template_embeddings` table**
   ```sql
   CREATE TABLE template_embeddings (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
