@@ -267,7 +267,7 @@ pgvector is a PostgreSQL extension that lets you store "vector embeddings" — a
   - Industry-specific design templates stored as embeddings
   - `section_type` — "hero", "cta", "testimonials", "pricing", "footer", etc.
 
-- [ ] **1.9 Create the `pattern_embeddings` table**
+- [x] **1.9 Create the `pattern_embeddings` table**
   ```sql
   CREATE TABLE pattern_embeddings (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
