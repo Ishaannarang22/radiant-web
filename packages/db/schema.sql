@@ -1,4 +1,6 @@
 -- Radiant Web Database Schema
--- This file will be populated in Phase 1: Database Setup
 -- Tables: users, projects, project_files, generations, businesses
 -- Vector tables: component_embeddings, template_embeddings, pattern_embeddings
+
+-- Enable pgvector extension for vector embeddings (RAG)
+CREATE EXTENSION IF NOT EXISTS vector;

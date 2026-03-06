@@ -120,7 +120,7 @@ pgvector is a PostgreSQL extension that lets you store "vector embeddings" — a
 
 ### Steps
 
-- [ ] **1.1 Enable pgvector in Supabase**
+- [x] **1.1 Enable pgvector in Supabase**
   - Go to Supabase dashboard → SQL Editor
   - Run: `CREATE EXTENSION IF NOT EXISTS vector;`
   - This adds the `vector` data type to PostgreSQL
