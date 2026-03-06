@@ -682,7 +682,7 @@ After Phase 3, you should have:
 
 ### Steps
 
-- [ ] **4.1 Write the base system prompt**
+- [x] **4.1 Write the base system prompt**
   - `apps/web/prompts/system.ts`
   - This prompt is included in EVERY generation call
   - Contents:
