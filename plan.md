@@ -86,7 +86,7 @@ A monorepo is a single Git repository that contains multiple related projects (c
   - Each sub-project extends it: `"extends": "../../tsconfig.json"`
   - This ensures consistent TypeScript behavior everywhere
 
-- [ ] **0.9 Set up environment variable loading**
+- [x] **0.9 Set up environment variable loading**
   - Install `dotenv` in root: `pnpm add -D dotenv`
   - Create `apps/web/lib/env.ts` that validates all required env vars exist at startup
   - If any key is missing, the app crashes immediately with a clear error message listing what's missing
