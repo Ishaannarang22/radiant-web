@@ -201,7 +201,7 @@ pgvector is a PostgreSQL extension that lets you store "vector embeddings" — a
   - `prompt_hash` — Deduplicate identical requests
   - `tokens_input/output` — Track API costs
 
-- [ ] **1.6 Create the `businesses` table**
+- [x] **1.6 Create the `businesses` table**
   ```sql
   CREATE TABLE businesses (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
