@@ -333,7 +333,7 @@ pgvector is a PostgreSQL extension that lets you store "vector embeddings" — a
     3. Logs success/failure for each table
   - Run it and verify all tables exist in Supabase dashboard
 
-- [ ] **1.13 Create TypeScript types for all tables**
+- [x] **1.13 Create TypeScript types for all tables**
   - Create `packages/db/types.ts` with interfaces matching every table
   - Use Supabase's type generator: `pnpm supabase gen types typescript` if available
   - Export all types so other packages can import them
