@@ -584,7 +584,7 @@ After Phase 2, you should have:
     8. Return the profile
   - Total time target: < 10 seconds
 
-- [ ] **3.6 Create API route for scraping**
+- [x] **3.6 Create API route for scraping**
   - `apps/web/app/api/scrape/route.ts`
   - POST endpoint: `{ businessName: string, location: string }`
   - Calls scraper orchestrator

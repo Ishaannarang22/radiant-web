@@ -32,6 +32,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@radiant/scraper':
+        specifier: workspace:*
+        version: link:../../packages/scraper
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
