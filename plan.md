@@ -371,7 +371,7 @@ Before Claude can generate websites using shadcn/ui, Aceternity UI, Magic UI, et
 
 ### Steps
 
-- [ ] **2.1 Create the data directory structure**
+- [x] **2.1 Create the data directory structure**
   ```
   data/
   ├── components/
